@@ -1,0 +1,24 @@
+MySQLにログイン
+$ /Applications/XAMPP/xamppfiles/bin/mysql -u root -p
+
+パスワードを聞かれるのでエンターを押す
+
+データベースを作成
+MariaDB [(none)]> CREATE DATABASE gdss_db;
+
+MariaDB [(none)]> USE gdss_db;
+
+userテーブルを作成
+MariaDB [gdss_db]> CREATE TABLE users ( user_id CHAR(8) DEFAULT '00000000' NOT NULL PRIMARY KEY, password VARCHAR(255) DEFAULT 'pass' NOT NULL,  area_id INT DEFAULT 0 NOT NULL, address VARCHAR(255), remind INT DEFAULT 0 NOT NULL ) engine=InnoDB;
+
+weekテーブルを作成
+MariaDB [gdss_db]> CREATE TABLE week ( area_id INT DEFAULT 0 NOT NULL PRIMARY KEY, burn BIGINT DEFAULT 0 NOT NULL, metal BIGINT DEFAULT 0 NOT NULL, bottle BIGINT DEFAULT 0 NOT NULL, nonburn BIGINT DEFAULT 0 NOT NULL, pet BIGINT DEFAULT 0 NOT NULL, plastic BIGINT DEFAULT 0 NOT NULL, paper BIGINT DEFAULT 0 NOT NULL, cloth BIGINT DEFAULT 0 NOT NULL ) engine=InnoDB;
+
+separateテーブルを作成
+MariaDB [gdss_db]> CREATE TABLE separate ( garbage_id INT AUTO_INCREMENT PRIMARY KEY, garbage_name VARCHAR(255) DEFAULT 'garbage' NOT NULL, type VARCHAR(255) DEFAULT 0 NOT NULL, garbage_remarks VARCHAR(255) );
+
+MySQLからログアウト
+MariaDB [gdss_db]> exit;
+
+テーブルができているかの確認は以下で可能
+MariaDB [gdss_db]> DESC テーブル名;

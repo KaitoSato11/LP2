@@ -15,7 +15,7 @@ weekテーブルを作成
 MariaDB [gdss_db]> CREATE TABLE week ( area_id INT DEFAULT 0 NOT NULL PRIMARY KEY, burn BIGINT DEFAULT 0 NOT NULL, metal BIGINT DEFAULT 0 NOT NULL, bottle BIGINT DEFAULT 0 NOT NULL, nonburn BIGINT DEFAULT 0 NOT NULL, pet BIGINT DEFAULT 0 NOT NULL, plastic BIGINT DEFAULT 0 NOT NULL, paper BIGINT DEFAULT 0 NOT NULL, cloth BIGINT DEFAULT 0 NOT NULL ) engine=InnoDB;
 
 separateテーブルを作成
-MariaDB [gdss_db]> CREATE TABLE separate ( garbage_id INT AUTO_INCREMENT PRIMARY KEY, garbage_name VARCHAR(255) DEFAULT 'garbage' NOT NULL, type VARCHAR(255) DEFAULT 0 NOT NULL, garbage_remarks VARCHAR(255) );
+MariaDB [gdss_db]> CREATE TABLE separate ( garbage_id INT AUTO_INCREMENT PRIMARY KEY, garbage_name VARCHAR(255) DEFAULT 'garbage' NOT NULL, reading VARCHAR(255) DEFAULT 'ごみ' NOT NULL, type VARCHAR(255) DEFAULT 0 NOT NULL, garbage_remarks VARCHAR(255) );
 
 MySQLからログアウト
 MariaDB [gdss_db]> exit;

@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 if(isset($_POST['signup'])){
     $db_name = "mysql:dbname=gdss_db;host-localhost";
     $db_username = "root";
-    $db_password = "pass";
+    $db_password = "";
     try {
         $db = new PDO($db_name, $db_username, $db_password);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

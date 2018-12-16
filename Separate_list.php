@@ -51,7 +51,7 @@ $result2[] = $result;
 <html lang="ja">
 
 <head>
-  <link rel="stylesheet" href="../GDSS/css/test2.css">
+  <link rel="stylesheet" href="./css/design_satozaki.css">
   <title>GDSS ゴミ出し支援システム</title>
     <link rel="icon" href="iconG.ico">
     <meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">

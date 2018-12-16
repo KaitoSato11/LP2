@@ -3,13 +3,25 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
   <link rel="stylesheet" href="../GDSS/css/test2.css">
-  <title>分別一覧画画面</title>
+  <title>GDSS ゴミ出し支援システム</title>
+    <link rel="icon" href="iconG.ico">
+    <meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
+    <!-- <link rel="stylesheet" href="design.css"> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
+<!-- HEADER -->
+<div class="header">
+  <p class="title">GDSS</p>
+  <p class="wayaku">ゴミ出し支援システム</p>
+  <p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
+</div>
 
+<!-- メインコンテンツエリア -->
+<div class="content">
+<!-- ここに各ページの中身いれてください -->
 <div class="bb1">
   <div class="b1">
     <h4>分別ルールはこちら</h4>
@@ -36,8 +48,8 @@
 $array1 = array("あ","か","さ","た","な","は","ま","や","ら","わ");
   for ($i=0; $i < 10; $i++) {
     ?>
-  <div class="list_item"><a href="Separate_list.php"><h2>
-    <?php echo $array1[$i]; ?></h2>
+  <div class="list_item"><?php print '<a href="Separate_list.php?head=' . $array1[$i] . '">';?>
+    <h2><?php echo $array1[$i]; ?></h2>
   </a></div>
   <?php } ?>
 </div>
@@ -47,8 +59,8 @@ $array1 = array("あ","か","さ","た","な","は","ま","や","ら","わ");
 $array2 = array("い","き","し","ち","に","ひ","み","","り","");
   for ($i=0; $i < 10; $i++) {
     ?>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>
-    <?php echo $array2[$i]; ?></h2>
+  <div class="list_item_2"><a href="Separate_list.php"><?php print '<a href="Separate_list.php?head=' . $array2[$i] . '">';?>
+    <h2><?php echo $array2[$i]; ?></h2>
   </a></div>
   <?php } ?>
 </div>
@@ -58,8 +70,8 @@ $array2 = array("い","き","し","ち","に","ひ","み","","り","");
 $array3 = array("う","く","す","つ","ぬ","ふ","む","ゆ","る","");
   for ($i=0; $i < 10; $i++) {
     ?>
-  <div class="list_item_3"><a href="Separate_list.php"><h2>
-    <?php echo $array3[$i]; ?></h2>
+  <div class="list_item_3"><a href="Separate_list.php"><?php print '<a href="Separate_list.php?head=' . $array3[$i] . '">';?>
+    <h2><?php echo $array3[$i]; ?></h2>
   </a></div>
   <?php } ?>
 </div>
@@ -69,19 +81,19 @@ $array3 = array("う","く","す","つ","ぬ","ふ","む","ゆ","る","");
 $array4 = array("え","け","せ","て","ね","へ","め","","れ","");
   for ($i=0; $i < 10; $i++) {
     ?>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>
-    <?php echo $array4[$i]; ?></h2>
+  <div class="list_item_2"><a href="Separate_list.php"><?php print '<a href="Separate_list.php?head=' . $array4[$i] . '">';?>
+    <h2><?php echo $array4[$i]; ?></h2>
   </a></div>
   <?php } ?>
 </div>
 
 <div class="list_a">
   <?php
-$array5 = array("お","こ","そ","と","の","ほ","も","よ","ろ","ん");
+$array5 = array("お","こ","そ","と","の","ほ","も","よ","ろ","を");
   for ($i=0; $i < 10; $i++) {
     ?>
-  <div class="list_item"><a href="Separate_list.php"><h2>
-    <?php echo $array5[$i]; ?></h2>
+  <div class="list_item"><a href="Separate_list.php"><?php print '<a href="Separate_list.php?head=' . $array5[$i] . '">';?>
+    <h2><?php echo $array5[$i]; ?></h2>
   </a></div>
   <?php } ?>
 </div>
@@ -149,6 +161,20 @@ $array5 = array("お","こ","そ","と","の","ほ","も","よ","ろ","ん");
 <div class="list_item"><a href="Separate_list.php"><h2>ろ</h2></a></div>
 <div class="list_item"><a href="Separate_list.php"><h2>を</h2></a></div>
 </div> -->
+</div>
+
+
+<!-- PAGE TOPに戻るボタン
+ぺーじによっては、コメントアウトして消してください -->
+ <a class="pagetop" href="#">PAGE TOP</a>
+
+ <!-- FOOTER -->
+ <div class="footer">
+   <p class="title">GDSS</p>
+   <p class="company">L&P</p>
+ </div>
+</BODY>
+</HTML>
 
 </body>
 

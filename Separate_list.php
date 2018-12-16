@@ -29,7 +29,7 @@ try {
 //データベース操作
 
 //$nameにクリックされた50音の文字を格納
-$name = $_SESSION['head'];
+$name = $_GET['head'];
 
 //SQL作成
 $sql = ("SELECT * FROM separate WHERE reading like '$name%'"); //->アロー演算子 データを引っ張ってくる likeはあいまい検索
@@ -51,11 +51,11 @@ $result2[] = $result;
 <html lang="ja">
 
 <head>
-  <!-- <link rel="stylesheet" href="../GDSS/css/test2.css"> -->
+  <link rel="stylesheet" href="../GDSS/css/test2.css">
   <title>GDSS ゴミ出し支援システム</title>
     <link rel="icon" href="iconG.ico">
     <meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
-    <link rel="stylesheet" href="design.css">
+    <!-- <link rel="stylesheet" href="design.css"> -->
 </head>
 
 

@@ -22,27 +22,30 @@
 <!-- メインコンテンツエリア -->
 <div class="content">
 <!-- ここに各ページの中身いれてください -->
+
+<!-- 分別ルール 粗大ごみ マイページ遷移 -->
 <div class="bb1">
   <div class="b1">
-    <h4>分別ルールはこちら</h4>
+    <h3><a href="Normal_rule.php">分別ルールはこちら</h3></a>
   </div>
   <div class="b2">
-    <h4>粗大ゴミ情報はこちら</h4>
+    <h3><a href="Special_rule.php">粗大ゴミ情報はこちら</h3></a>
   </div>
   <div class="b3">
-    <h4>マイページに戻る</h4>
+    <h3><a href="Mypage.php">マイページに戻る</h3></a>
   </div>
 </div>
 
+<!-- 誘導文 -->
 <div class="bb2">
-<h3>ゴミの名称の頭文字を選んでください</h3>
+<div class="b4"><h3>ゴミの名称の頭文字を選んでください</h3></div>
 </div>
 
 <div class="bb3">
 <h1>一覧</h1>
 </div>
 
-<!-- 50音配列ver -->
+<!-- 50音表作成 -->
 <div class="list_a">
   <?php
 $array1 = array("あ","か","さ","た","な","は","ま","や","ら","わ");
@@ -98,72 +101,6 @@ $array5 = array("お","こ","そ","と","の","ほ","も","よ","ろ","を");
   <?php } ?>
 </div>
 
-
-<!-- 50音直打ちver -->
-<!-- <div class="list_a">
-<div id="list_item"><a href="Separate_list.php"><h2>あ</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>か</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>さ</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>た</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>な</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>は</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>ま</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>や</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>ら</h2></a></div>
-<div id="list_item"><a href="Separate_list.php"><h2>わ</h2></a></div>
-</div>
-
-<div class="list_a">
-  <div class="list_item_2"><a href="Separate_list.php"><h2>い</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>き</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>し</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>ち</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>に</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>ひ</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>み</h2></a></div>
-  <div class="list_item_2"></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>り</h2></a></div>
-  <div class="list_item_2"></div>
-</div>
-<div class="list_a">
-<div class="list_item_3"><a href="Separate_list.php"><h2>う</h2></a></div>
-<div class="list_item_3"><a href="Separate_list.php"><h2>く</h2></a></div>
-<div class="list_item_3"><a href="Separate_list.php"><h2>す</h2></a></div>
-<div class="list_item_3"><a href="Separate_list.php"><h2>つ</h2></a></div>
-<div class="list_item_3"><a href="Separate_list.php"><h2>ぬ</h2></a></div>
-<div class="list_item_3"><a href="Separate_list.php"><h2>ふ</h2></a></div>
-<div class="list_item_3"><a href="Separate_list.php"><h2>む</h2></a></div>
-<div class="list_item_3"><a href="Separate_list.php"><h2>め</h2></a></div>
-<div class="list_item_3"><a href="Separate_list.php"><h2>る</h2></a></div>
-<div class="list_item_3"></div>
-</div>
-<div class="list_a">
-  <div class="list_item_2"><a href="Separate_list.php"><h2>え</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>け</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>せ</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>て</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>ね</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>へ</h2></a></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>め</h2></a></div>
-  <div class="list_item_2"></div>
-  <div class="list_item_2"><a href="Separate_list.php"><h2>れ</h2></a></div>
-  <div class="list_item_2"></div>
-</div>
-<div class="list_a">
-<div class="list_item"><a href="Separate_list.php"><h2>お</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>こ</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>そ</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>の</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>と</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>ほ</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>も</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>よ</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>ろ</h2></a></div>
-<div class="list_item"><a href="Separate_list.php"><h2>を</h2></a></div>
-</div> -->
-</div>
-
-
 <!-- PAGE TOPに戻るボタン
 ぺーじによっては、コメントアウトして消してください -->
  <a class="pagetop" href="#">PAGE TOP</a>
@@ -173,8 +110,8 @@ $array5 = array("お","こ","そ","と","の","ほ","も","よ","ろ","を");
    <p class="title">GDSS</p>
    <p class="company">L&P</p>
  </div>
-</BODY>
-</HTML>
+
+</div>
 
 </body>
 

@@ -14,9 +14,7 @@ $errorMessage = "";
 // 文字化け対策
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET CHARACTER SET 'utf8'");
 
-// PHPのエラーを表示するように設定
-error_reporting(E_ALL & ~E_NOTICE);
-
+// 接続時のコードが長くならないよう変数に入れる
 $dsn = sprintf("mysql:host=%s;dbname=%s;charset=utf8", $db['host'], $db['dbname']);
 
 try {
@@ -32,7 +30,7 @@ try {
 $name = $_GET['head'];
 
 //SQL作成
-$sql = ("SELECT * FROM separate WHERE reading like '$name%'"); //->アロー演算子 データを引っ張ってくる likeはあいまい検索
+$sql = ("SELECT * FROM separate WHERE reading collate utf8_unicode_ci like '$name%' ORDER BY reading ASC"); //->アロー演算子 データを引っ張ってくる likeはあいまい検索
 
 //セッション削除
 // unset($_SESSION['head']);
@@ -70,35 +68,34 @@ $result2[] = $result;
 <!-- メインコンテンツエリア -->
     <div class="content">
       <!-- ここに各ページの中身いれてください -->
-      <div class="bb1">
 
+      <!-- 分別ルール 粗大ごみ マイページ遷移 -->
+      <div class="bb1">
         <div class="b1">
-          <h4><a href="Normal_rule.php" style="text-decoration:none;">分別ルールはこちら</h4>
+          <h3><a href="Normal_rule.php">分別ルールはこちら</h3></a>
         </div>
 
         <div class="b2">
-          <h4><a href="Special_rule.php" style="text-decoration:none;">粗大ゴミ情報はこちら</h4>
+          <h3><a href="Special_rule.php">粗大ゴミ情報はこちら</h3></a>
         </div>
 
         <div class="b3">
-          <h4><a href="Mypage.php" style="text-decoration:none;">マイページに戻る</h4>
+          <h3><a href="Mypage.php">マイページに戻る</h3></a>
         </div>
 
       </div>
 
-      <div class="bb2">
-        <h4></h4>
-      </div>
-
     <!-- table作成 -->
+    <div class="table_gomi">
+
       <table border='1' width="100%">
         <tr>
-          <th colspan="3" align="left" bgcolor="#8fc27a"><?php echo "$name" ?></th>
+          <th colspan="3" align="left" bgcolor="#8fc27a" style="font-size:30px;" ><font color="white"><?php echo "$name" ?></font></th>
         </tr>
         <tr>
-          <th>名称</th>
-          <th>分別</th>
-          <th>分別ルール</th>
+          <th bgcolor="#deeed8">名称</th>
+          <th bgcolor="#deeed8">分別</th>
+          <th bgcolor="#deeed8">分別ルール</th>
         </tr>
 
         <?php
@@ -119,7 +116,9 @@ $result2[] = $result;
     }
     ?>
       </table>
+
     </div>
+
 
 
   <!-- PAGE TOPに戻るボタン
@@ -131,5 +130,7 @@ $result2[] = $result;
      <p class="title">GDSS</p>
      <p class="company">L&P</p>
    </div>
+    </div>
+
 </body>
 </html>

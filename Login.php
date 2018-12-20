@@ -17,7 +17,7 @@ if (isset($_POST['login'])) {
 		$errorMessage = 'パスワードが未入力です';
 	}
 	if(!empty($_POST['userid'])&&!empty($_POST['pass'])) {
-		// 学籍番号を格納
+		// ユーザIDを格納
 		// 特殊文字を変換
 		$userid = htmlspecialchars($_POST['userid'], ENT_QUOTES);
 		// データベースの情報を格納
@@ -35,8 +35,9 @@ if (isset($_POST['login'])) {
 				//passwordが一致しているか確認
 				if (password_verify($pass, $row['password'])) {
 					// セッションにidを格納
-					$_SESSION['ID'] = $row['id'];
-					header("Location: Mypage.php");	// メニュー画面へ
+					$_SESSION['ID'] = $row['user_id'];
+					echo $_SESSION['ID'];
+					header("Location: Mypage.php");// メニュー画面へ
 					exit();	// 処理終了
 				} else {
 					$errorMessage = "パスワードに誤りがあります。";

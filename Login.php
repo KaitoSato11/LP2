@@ -2,7 +2,7 @@
 require_once('config.php');
 session_start();
 if (isset($_SESSION['ID'])) {
-	header('Location: ./main.php');
+	header('Location: ./Main.php');
 	exit();
 }
 $db['host'] = DB_HOST;

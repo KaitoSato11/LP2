@@ -37,7 +37,7 @@ if (isset($_SESSION['ID'])) {
           <ul>
             <li class="top">ユーザー</li>
             <?php
-            $id = $_SESSION["id"];
+            $id = $_SESSION["ID"];
             print "<li>ようこそ" . $id . "さん</li>";
             ?>
             <form method="POST" action="Main.php">

@@ -13,6 +13,18 @@ $errorMessage = "";
 
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET CHARACTER SET 'utf8'");
 
+error_reporting(E_ALL & ~E_NOTICE);
+
+$dns = 'mysql:dbname='.$dbname.';host='.$host.';charset=utf8';
+
+#データベースに接続
+
+try {
+$pdo = new PDO($dns, $user, $pass,
+array(PDO::ATTR_EMULATE_PREPARES => false));
+} catch (PDOException $e) {
+exit('データベースとの接続に失敗しました。'.$e->getMessage());
+}
 
 ?>
 

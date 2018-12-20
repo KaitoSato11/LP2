@@ -25,12 +25,27 @@ error_reporting(E_ALL & ~E_NOTICE);
 $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset=utf8';
 
 #データベースに接続
+try {
+$pdo = new PDO($dsn, $user, $pass);
+} catch (PDOException $e) {
+exit('データベースとの接続に失敗しました。'.$e->getMessage());
+}
 
+#データの抽出
+try{
+	$sql = ("SELECT * FROM week WHERE area_id=?");
+	$stmt = $pdo->query($sql);
+} catch (PDOException $e) {
+  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+}
 
 
 //画面遷移
 if(isset($_POST["henkou"])) {
 	$check = 1;
+}
+if(isset($_POST["sakujo"])) {
+	$check = 2;
 }
 
 ?>
@@ -182,16 +197,21 @@ if(isset($_POST["henkou"])) {
       </table>
     </div>
 		<h4>
-			<a href="Admin_edit_cal_comp.php">
+			<a>
 				<input type="submit" id="henkou" name="henkou" value="変更"/>
 			</a>
 		</h4>
 		<h5>
-			<a href="Admin_edit_cal_comp.php">
+			<a>
 				<input type="submit" id="sakujo" name="sakujo" value="削除"/>
 			</a>
 		</h5>
 	</form>
+	<h6>
+		<a href="Admin_list_cal.php">
+			<input type="submit" id="modoru" name="modoru" value="カレンダー一覧に戻る"/>
+		</a>
+	</h6>
 
     <!-- PAGE TOPに戻るボタン
   ぺーじによっては、コメントアウトして消してください -->

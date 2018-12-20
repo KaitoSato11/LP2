@@ -41,3 +41,17 @@
   <dd>動くけどエラー処理ができてません</dd>
   <dd>完了画面、メイン画面に遷移できません</dd>  
 </dl>
+
+## 中 12/20
+<dl>
+  <dt>iconG.ico 100%</dt>
+  <dd>文句なければ完成で</dd>
+  <dt>sodaimap.jpg 97%</dt>
+  <dd>文句・注文あれば受け付け中</dd>
+  <dt>suiginmap.jpg 97%</dt>
+  <dd>文句・注文あれば受け付け中</dd>
+  <dt>distmap.jpg 30%</dt>
+  <dd>鋭意製作中</dd>
+  <dt>design.css 5%</dt>
+  <dd>ヘッダ、フッタ、PAGETOPボタンのみ完成</dd>
+</dl>

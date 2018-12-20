@@ -15,15 +15,21 @@ $options = array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET CHARACTER SET 'utf8'");
 
 error_reporting(E_ALL & ~E_NOTICE);
 
-$dns = 'mysql:dbname='.$dbname.';host='.$host.';charset=utf8';
+$dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset=utf8';
 
 #データベースに接続
-
 try {
-$pdo = new PDO($dns, $user, $pass,
-array(PDO::ATTR_EMULATE_PREPARES => false));
+$pdo = new PDO($dsn, $user, $pass);
 } catch (PDOException $e) {
 exit('データベースとの接続に失敗しました。'.$e->getMessage());
+}
+
+#データの抽出
+try{
+	$sql = ("SELECT * FROM week WHERE area_id=?");
+	$stmt = $pdo->query($sql);
+} catch (PDOException $e) {
+  exit('データベースの抽出に失敗しました。'.$e->getMessage());
 }
 
 ?>
@@ -69,6 +75,7 @@ exit('データベースとの接続に失敗しました。'.$e->getMessage());
       <tr>
         <td id="east01">東1区</td>
         <td id="east0101"><a href="Admin_edit_cal.php">
+					<?php echo $stmt; ?>
           <input type="submit" value="編集"/>
         </a></td>
         <td id="east0102"><input type="submit" value="編集"/></td>

@@ -5,7 +5,7 @@
 require_once('config.php');
 session_start();
 date_default_timezone_set('Asia/Tokyo');
-if (isset($_SESSION['ID'])) {
+if (!isset($_SESSION['ID'])) {
 	header('Location: ./Main.php');
 	exit();
 }

@@ -1,5 +1,5 @@
 <!--
-ユーザのIDがセッション変数の$_SESSION["id"]に入っているとしています。
+ユーザのIDがセッション変数の$_SESSION["ID"]に入っているとしています。
 -->
 <?php
 require_once('config.php');
@@ -31,6 +31,15 @@ if (!isset($_SESSION['ID'])) {
     <!-- メインコンテンツエリア -->
     <div class="content">
       <!-- ここに各ページの中身いれてください -->
+			<!-- ログアウト判定 -->
+			<?php
+			if (isset($_POST["LOGOUT"])) {
+				$_SESSION = array();
+				session_destroy();
+				header('Location: ./Main.php');
+				exit();
+			}
+			?>
       <!-- サイドメニュー -->
       <div id="side">
         <div id="user">
@@ -40,7 +49,8 @@ if (!isset($_SESSION['ID'])) {
             $id = $_SESSION["ID"];
             print "<li>ようこそ" . $id . "さん</li>";
             ?>
-            <form method="POST" action="Main.php">
+            <form method="POST" action="Mypage.php">
+							<input type="hidden" name="LOGOUT" value="1">
               <li><input type="submit" value="ログアウト"></li>
             </form>
           </ul>

@@ -64,3 +64,13 @@
   <dt>Admin_edit_cal_comp.php 70%</dt>
   <dd>簡単に書いただけ</dd>
 </dl>
+
+## 畠 12/21
+<dl>
+  <dt>Reg_district.php 40%</dt>
+  <dd>少し触ったぐらい</dd>
+  <dt>Mail.php 70%</dt>
+  <dd>もうすぐ完成</dd>
+  <dt>Mail_comp.php 100%</dt>
+  <dd>デザインを触るかも</dd>
+</dl>

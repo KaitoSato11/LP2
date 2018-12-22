@@ -48,11 +48,11 @@
   <dt>iconG.ico 100%</dt>
   <dd>文句なければ完成で</dd>
   <dt>sodaimap.jpg 97%</dt>
-  <dd>文句・注文あれば受け付け中</dd>
+  <dd>ひとまず、文句・注文あれば受け付け中</dd>
   <dt>suiginmap.jpg 97%</dt>
-  <dd>文句・注文あれば受け付け中</dd>
-  <dt>distmap.jpg 30%</dt>
-  <dd>鋭意製作中</dd>
+  <dd>ひとまず、文句・注文あれば受け付け中</dd>
+  <dt>distmap.jpg 95%</dt>
+  <dd>ひとまず完成、文句・注文あれば受け付け中</dd>
   <dt>design.css 5%</dt>
   <dd>ヘッダ、フッタ、PAGETOPボタンのみ完成</dd>
 </dl>

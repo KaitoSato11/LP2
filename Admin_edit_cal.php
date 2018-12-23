@@ -9,44 +9,57 @@ session_start();
 $check = 0;
 
 if (isset($_SESSION['ID'])) {
-	header('Location: ./main.php');
+	header('Location: ./Main.php');
 	exit();
 }
-$db['host'] = DB_HOST;
-$db['user'] = DB_USER;
-$db['pass'] = DB_PASSWORD;
-$db['dbname'] = DB_NAME;
+//$db['host'] = DB_HOST;
+//$db['user'] = DB_USER;
+//$db['pass'] = DB_PASSWORD;
+//$db['dbname'] = DB_NAME;
+$user = 'root';
+$password = '';
+$dbName = 'gdss_db';
+$host = 'localhost';
 $errorMessage = "";
 
-$options = array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET CHARACTER SET 'utf8'");
-
-error_reporting(E_ALL & ~E_NOTICE);
-
-$dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset=utf8';
+$dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
+//'mysql:dbname='.$dbname.';host='.$host.';charset=utf8';
 
 #データベースに接続
 try {
-$pdo = new PDO($dsn, $user, $pass);
+$pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_EMULATE_PREPARES => false));
+//$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+//$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
 exit('データベースとの接続に失敗しました。'.$e->getMessage());
 }
 
 #データの抽出
-try{
-	$sql = ("SELECT * FROM week WHERE area_id=?");
-	$stmt = $pdo->query($sql);
-} catch (PDOException $e) {
-  exit('データベースの抽出に失敗しました。'.$e->getMessage());
-}
+
 
 
 //画面遷移
-if(isset($_POST["henkou"])) {
+if(isset($_POST['henkou'])) {
 	$check = 1;
 }
-if(isset($_POST["sakujo"])) {
+if(isset($_POST['sakujo'])) {
 	$check = 2;
 }
+if(isset($_POST['modo'])) {
+	$check = 0;
+}
+if(isset($_POST['modomodo'])) {
+	$check = 0;
+}
+
+if(isset($_POST['east1a'])) {$chiku = "東1区";}
+if(isset($_POST['east1b'])) {$chiku = "東1区";}
+if(isset($_POST['east1c'])) {$chiku = "東1区";}
+if(isset($_POST['east1d'])) {$chiku = "東1区";}
+if(isset($_POST['east1e'])) {$chiku = "東1区";}
+if(isset($_POST['east1f'])) {$chiku = "東1区";}
+if(isset($_POST['east1g'])) {$chiku = "東1区";}
+if(isset($_POST['east1h'])) {$chiku = "東1区";}
 
 ?>
 
@@ -84,7 +97,7 @@ if(isset($_POST["sakujo"])) {
       <tr><td colspan="100%">カレンダー編集</td></tr>
       <tr>
         <td width="200px">地区名</td>
-        <td width="500px">〇〇地区</td>
+        <td width="500px"><?php print $chiku; ?></td>
       </tr>
 			<tr>
         <td>種類</td>
@@ -241,6 +254,22 @@ if(isset($_POST["sakujo"])) {
 		</style>
 	</HEAD>
 <BODY>
+	<!-- HEADER -->
+	<div class="header">
+		<p class="title">GDSS</p>
+		<p class="wayaku">ゴミ出し支援システム</p>
+		<p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
+	</div>
+	<h3>
+		次の通り変更しますか？
+	</h3>
+	<h4><a href="Admin_edit_cal_comp.php">
+		<input type="submit" value="変更"/>
+	</a></h4>
+	<h4><a>
+		<input type="submit" id="modo" name="modo" value="戻る"/>
+	</a></h4>
+
 
 	<!-- PAGE TOPに戻るボタン
 ぺーじによっては、コメントアウトして消してください -->
@@ -270,6 +299,22 @@ if($check == 2) {
 	</style>
 </HEAD>
 <BODY>
+	<!-- HEADER -->
+	<div class="header">
+		<p class="title">GDSS</p>
+		<p class="wayaku">ゴミ出し支援システム</p>
+		<p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
+	</div>
+<h3>
+	本当に削除しますか？
+</h3>
+<h4><a href="Admin_edit_cal_comp.php">
+	<input type="submit" value="削除"/>
+</a></h4>
+<h4><a>
+	<input type="submit" id="modomodo" name="modomodo"　value="戻る"/>
+</a></h4>
+
 
 <!-- PAGE TOPに戻るボタン
 ぺーじによっては、コメントアウトして消してください -->

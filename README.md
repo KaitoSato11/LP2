@@ -59,10 +59,10 @@
 
 ## 松下 12/20
 <dl>
-  <dt>Admin_list_cal.php 50%</dt>
-  <dd>とりあえず頑張ります</dd>
-  <dt>Admin_edit_cal.php 40%</dt>
-  <dd>こっちも頑張ります</dd>
+  <dt>Admin_list_cal.php 70%</dt>
+  <dd>ちょっとずつ進んでます、頑張ります</dd>
+  <dt>Admin_edit_cal.php 45%</dt>
+  <dd>ちょっとずつ進んでます、こっちも頑張ります</dd>
   <dt>Admin_edit_cal_comp.php 70%</dt>
   <dd>簡単に書いただけ</dd>
 </dl>

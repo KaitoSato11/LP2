@@ -52,14 +52,59 @@ if(isset($_POST['modomodo'])) {
 	$check = 0;
 }
 
-if(isset($_POST['east1a'])) {$chiku = "東1区";}
-if(isset($_POST['east1b'])) {$chiku = "東1区";}
-if(isset($_POST['east1c'])) {$chiku = "東1区";}
-if(isset($_POST['east1d'])) {$chiku = "東1区";}
-if(isset($_POST['east1e'])) {$chiku = "東1区";}
-if(isset($_POST['east1f'])) {$chiku = "東1区";}
-if(isset($_POST['east1g'])) {$chiku = "東1区";}
-if(isset($_POST['east1h'])) {$chiku = "東1区";}
+//ボタンごとの地区判定、ゴミ種判定
+//東
+if(isset($_POST['east1a'])) {$chiku = "東1区"; $gomi = "燃える";}
+if(isset($_POST['east1b'])) {$chiku = "東1区"; $gomi = "金属類";}
+if(isset($_POST['east1c'])) {$chiku = "東1区"; $gomi = "ビン類";}
+if(isset($_POST['east1d'])) {$chiku = "東1区"; $gomi = "他不燃";}
+if(isset($_POST['east1e'])) {$chiku = "東1区"; $gomi = "ペット";}
+if(isset($_POST['east1f'])) {$chiku = "東1区"; $gomi = "プラ";}
+if(isset($_POST['east1g'])) {$chiku = "東1区"; $gomi = "紙類";}
+if(isset($_POST['east1h'])) {$chiku = "東1区"; $gomi = "衣類";}
+if(isset($_POST['east2a'])) {$chiku = "東2区"; $gomi = "燃える";}
+if(isset($_POST['east2b'])) {$chiku = "東2区"; $gomi = "金属類";}
+if(isset($_POST['east2c'])) {$chiku = "東2区"; $gomi = "ビン類";}
+if(isset($_POST['east2d'])) {$chiku = "東2区"; $gomi = "他不燃";}
+if(isset($_POST['east2e'])) {$chiku = "東2区"; $gomi = "ペット";}
+if(isset($_POST['east2f'])) {$chiku = "東2区"; $gomi = "プラ";}
+if(isset($_POST['east2g'])) {$chiku = "東2区"; $gomi = "紙類";}
+if(isset($_POST['east2h'])) {$chiku = "東2区"; $gomi = "衣類";}
+if(isset($_POST['east3a'])) {$chiku = "東3区"; $gomi = "燃える";}
+if(isset($_POST['east3b'])) {$chiku = "東3区"; $gomi = "金属類";}
+if(isset($_POST['east3c'])) {$chiku = "東3区"; $gomi = "ビン類";}
+if(isset($_POST['east3d'])) {$chiku = "東3区"; $gomi = "他不燃";}
+if(isset($_POST['east3e'])) {$chiku = "東3区"; $gomi = "ペット";}
+if(isset($_POST['east3f'])) {$chiku = "東3区"; $gomi = "プラ";}
+if(isset($_POST['east3g'])) {$chiku = "東3区"; $gomi = "紙類";}
+if(isset($_POST['east3h'])) {$chiku = "東3区"; $gomi = "衣類";}
+//西
+if(isset($_POST['east4a'])) {$chiku = "西1区"; $gomi = "燃える";}
+if(isset($_POST['east4b'])) {$chiku = "西1区"; $gomi = "金属類";}
+if(isset($_POST['east4c'])) {$chiku = "西1区"; $gomi = "ビン類";}
+if(isset($_POST['east4d'])) {$chiku = "西1区"; $gomi = "他不燃";}
+if(isset($_POST['east4e'])) {$chiku = "西1区"; $gomi = "ペット";}
+if(isset($_POST['east4f'])) {$chiku = "西1区"; $gomi = "プラ";}
+if(isset($_POST['east4g'])) {$chiku = "西1区"; $gomi = "紙類";}
+if(isset($_POST['east4h'])) {$chiku = "西1区"; $gomi = "衣類";}
+if(isset($_POST['east5a'])) {$chiku = "西2区"; $gomi = "燃える";}
+if(isset($_POST['east5b'])) {$chiku = "西2区"; $gomi = "金属類";}
+if(isset($_POST['east5c'])) {$chiku = "西2区"; $gomi = "ビン類";}
+if(isset($_POST['east5d'])) {$chiku = "西2区"; $gomi = "他不燃";}
+if(isset($_POST['east5e'])) {$chiku = "西2区"; $gomi = "ペット";}
+if(isset($_POST['east5f'])) {$chiku = "西2区"; $gomi = "プラ";}
+if(isset($_POST['east5g'])) {$chiku = "西2区"; $gomi = "紙類";}
+if(isset($_POST['east5h'])) {$chiku = "西2区"; $gomi = "衣類";}
+if(isset($_POST['east6a'])) {$chiku = "西3区"; $gomi = "燃える";}
+if(isset($_POST['east6b'])) {$chiku = "西3区"; $gomi = "金属類";}
+if(isset($_POST['east6c'])) {$chiku = "西3区"; $gomi = "ビン類";}
+if(isset($_POST['east6d'])) {$chiku = "西3区"; $gomi = "他不燃";}
+if(isset($_POST['east6e'])) {$chiku = "西3区"; $gomi = "ペット";}
+if(isset($_POST['east6f'])) {$chiku = "西3区"; $gomi = "プラ";}
+if(isset($_POST['east6g'])) {$chiku = "西3区"; $gomi = "紙類";}
+if(isset($_POST['east6h'])) {$chiku = "西3区"; $gomi = "衣類";}
+
+
 
 ?>
 
@@ -101,7 +146,7 @@ if(isset($_POST['east1h'])) {$chiku = "東1区";}
       </tr>
 			<tr>
         <td>種類</td>
-        <td>〇〇ゴミ</td>
+        <td><?php print $gomi; ?></td>
       </tr>
 			<tr>
         <td height="250px">曜日</td>
@@ -263,6 +308,22 @@ if(isset($_POST['east1h'])) {$chiku = "東1区";}
 	<h3>
 		次の通り変更しますか？
 	</h3>
+	<h3>
+	<table border="1">
+		<tr><td colspan="100px">地区</td></tr>
+		<tr><td><?php print $chiku1; ?></td></tr>
+		<tr><td>ゴミの種類</td></tr>
+		<tr><td><?php print $gomi; ?></td></tr>
+		<tr><td>曜日</td></tr>
+		<tr><td>
+			<?php
+			foreach ($_GET['week1'] as $m) {
+				echo htmlspecialchars($m) . "<br>";
+			}
+			?>
+		</td></tr>
+	</table>
+  </h3>
 	<h4><a href="Admin_edit_cal_comp.php">
 		<input type="submit" value="変更"/>
 	</a></h4>

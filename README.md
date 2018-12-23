@@ -57,7 +57,7 @@
   <dd>ヘッダ、フッタ、PAGETOPボタンのみ完成</dd>
 </dl>
 
-## 松下 12/23時点
+## 松下 12/24時点
 <dl>
   <dt>Admin_list_cal.php 90%</dt>
   <dd>
@@ -66,7 +66,7 @@
   </dd>
   <dt>Admin_edit_cal.php 45%</dt>
   <dd>ちょっとずつ進んでます、頑張ります</dd>
-  <dt>Admin_edit_cal_comp.php 70%</dt>
+  <dt>Admin_edit_cal_comp.php 7%</dt>
   <dd>簡単に書いただけ</dd>
 </dl>
 

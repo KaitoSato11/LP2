@@ -52,57 +52,23 @@ if(isset($_POST['modomodo'])) {
 	$check = 0;
 }
 
-//ボタンごとの地区判定、ゴミ種判定
-//東
-if(isset($_POST['east1a'])) {$chiku = "東1区"; $gomi = "燃える";}
-if(isset($_POST['east1b'])) {$chiku = "東1区"; $gomi = "金属類";}
-if(isset($_POST['east1c'])) {$chiku = "東1区"; $gomi = "ビン類";}
-if(isset($_POST['east1d'])) {$chiku = "東1区"; $gomi = "他不燃";}
-if(isset($_POST['east1e'])) {$chiku = "東1区"; $gomi = "ペット";}
-if(isset($_POST['east1f'])) {$chiku = "東1区"; $gomi = "プラ";}
-if(isset($_POST['east1g'])) {$chiku = "東1区"; $gomi = "紙類";}
-if(isset($_POST['east1h'])) {$chiku = "東1区"; $gomi = "衣類";}
-if(isset($_POST['east2a'])) {$chiku = "東2区"; $gomi = "燃える";}
-if(isset($_POST['east2b'])) {$chiku = "東2区"; $gomi = "金属類";}
-if(isset($_POST['east2c'])) {$chiku = "東2区"; $gomi = "ビン類";}
-if(isset($_POST['east2d'])) {$chiku = "東2区"; $gomi = "他不燃";}
-if(isset($_POST['east2e'])) {$chiku = "東2区"; $gomi = "ペット";}
-if(isset($_POST['east2f'])) {$chiku = "東2区"; $gomi = "プラ";}
-if(isset($_POST['east2g'])) {$chiku = "東2区"; $gomi = "紙類";}
-if(isset($_POST['east2h'])) {$chiku = "東2区"; $gomi = "衣類";}
-if(isset($_POST['east3a'])) {$chiku = "東3区"; $gomi = "燃える";}
-if(isset($_POST['east3b'])) {$chiku = "東3区"; $gomi = "金属類";}
-if(isset($_POST['east3c'])) {$chiku = "東3区"; $gomi = "ビン類";}
-if(isset($_POST['east3d'])) {$chiku = "東3区"; $gomi = "他不燃";}
-if(isset($_POST['east3e'])) {$chiku = "東3区"; $gomi = "ペット";}
-if(isset($_POST['east3f'])) {$chiku = "東3区"; $gomi = "プラ";}
-if(isset($_POST['east3g'])) {$chiku = "東3区"; $gomi = "紙類";}
-if(isset($_POST['east3h'])) {$chiku = "東3区"; $gomi = "衣類";}
-//西
-if(isset($_POST['east4a'])) {$chiku = "西1区"; $gomi = "燃える";}
-if(isset($_POST['east4b'])) {$chiku = "西1区"; $gomi = "金属類";}
-if(isset($_POST['east4c'])) {$chiku = "西1区"; $gomi = "ビン類";}
-if(isset($_POST['east4d'])) {$chiku = "西1区"; $gomi = "他不燃";}
-if(isset($_POST['east4e'])) {$chiku = "西1区"; $gomi = "ペット";}
-if(isset($_POST['east4f'])) {$chiku = "西1区"; $gomi = "プラ";}
-if(isset($_POST['east4g'])) {$chiku = "西1区"; $gomi = "紙類";}
-if(isset($_POST['east4h'])) {$chiku = "西1区"; $gomi = "衣類";}
-if(isset($_POST['east5a'])) {$chiku = "西2区"; $gomi = "燃える";}
-if(isset($_POST['east5b'])) {$chiku = "西2区"; $gomi = "金属類";}
-if(isset($_POST['east5c'])) {$chiku = "西2区"; $gomi = "ビン類";}
-if(isset($_POST['east5d'])) {$chiku = "西2区"; $gomi = "他不燃";}
-if(isset($_POST['east5e'])) {$chiku = "西2区"; $gomi = "ペット";}
-if(isset($_POST['east5f'])) {$chiku = "西2区"; $gomi = "プラ";}
-if(isset($_POST['east5g'])) {$chiku = "西2区"; $gomi = "紙類";}
-if(isset($_POST['east5h'])) {$chiku = "西2区"; $gomi = "衣類";}
-if(isset($_POST['east6a'])) {$chiku = "西3区"; $gomi = "燃える";}
-if(isset($_POST['east6b'])) {$chiku = "西3区"; $gomi = "金属類";}
-if(isset($_POST['east6c'])) {$chiku = "西3区"; $gomi = "ビン類";}
-if(isset($_POST['east6d'])) {$chiku = "西3区"; $gomi = "他不燃";}
-if(isset($_POST['east6e'])) {$chiku = "西3区"; $gomi = "ペット";}
-if(isset($_POST['east6f'])) {$chiku = "西3区"; $gomi = "プラ";}
-if(isset($_POST['east6g'])) {$chiku = "西3区"; $gomi = "紙類";}
-if(isset($_POST['east6h'])) {$chiku = "西3区"; $gomi = "衣類";}
+
+$chiku1 = "東1区";
+$chiku2 = "東2区";
+$chiku3 = "東3区";
+$chiku4 = "西1区";
+$chiku5 = "西2区";
+$chiku6 = "西3区";
+$gomi1 = "燃える";
+$gomi2 = "金属類";
+$gomi3 = "ビン類";
+$gomi4 = "他不燃";
+$gomi5 = "ペット";
+$gomi6 = "プラ";
+$gomi7 = "紙類";
+$gomi8 = "衣類";
+
+
 
 
 
@@ -142,11 +108,113 @@ if(isset($_POST['east6h'])) {$chiku = "西3区"; $gomi = "衣類";}
       <tr><td colspan="100%">カレンダー編集</td></tr>
       <tr>
         <td width="200px">地区名</td>
-        <td width="500px"><?php print $chiku; ?></td>
+        <td width="500px">
+					<?php
+					if(isset($_POST['east1a'])) {print $chiku1;}
+					if(isset($_POST['east1b'])) {print $chiku1;}
+					if(isset($_POST['east1c'])) {print $chiku1;}
+					if(isset($_POST['east1d'])) {print $chiku1;}
+					if(isset($_POST['east1e'])) {print $chiku1;}
+					if(isset($_POST['east1f'])) {print $chiku1;}
+					if(isset($_POST['east1g'])) {print $chiku1;}
+					if(isset($_POST['east1h'])) {print $chiku1;}
+					if(isset($_POST['east2a'])) {print $chiku2;}
+					if(isset($_POST['east2b'])) {print $chiku2;}
+					if(isset($_POST['east2c'])) {print $chiku2;}
+					if(isset($_POST['east2d'])) {print $chiku2;}
+					if(isset($_POST['east2e'])) {print $chiku2;}
+					if(isset($_POST['east2f'])) {print $chiku2;}
+					if(isset($_POST['east2g'])) {print $chiku2;}
+					if(isset($_POST['east2h'])) {print $chiku2;}
+					if(isset($_POST['east3a'])) {print $chiku3;}
+					if(isset($_POST['east3b'])) {print $chiku3;}
+					if(isset($_POST['east3c'])) {print $chiku3;}
+					if(isset($_POST['east3d'])) {print $chiku3;}
+					if(isset($_POST['east3e'])) {print $chiku3;}
+					if(isset($_POST['east3f'])) {print $chiku3;}
+					if(isset($_POST['east3g'])) {print $chiku3;}
+					if(isset($_POST['east3h'])) {print $chiku3;}
+					if(isset($_POST['east4a'])) {print $chiku4;}
+					if(isset($_POST['east4b'])) {print $chiku4;}
+					if(isset($_POST['east4c'])) {print $chiku4;}
+					if(isset($_POST['east4d'])) {print $chiku4;}
+					if(isset($_POST['east4e'])) {print $chiku4;}
+					if(isset($_POST['east4f'])) {print $chiku4;}
+					if(isset($_POST['east4g'])) {print $chiku4;}
+					if(isset($_POST['east4h'])) {print $chiku4;}
+					if(isset($_POST['east5a'])) {print $chiku5;}
+					if(isset($_POST['east5b'])) {print $chiku5;}
+					if(isset($_POST['east5c'])) {print $chiku5;}
+					if(isset($_POST['east5d'])) {print $chiku5;}
+					if(isset($_POST['east5e'])) {print $chiku5;}
+					if(isset($_POST['east5f'])) {print $chiku5;}
+					if(isset($_POST['east5g'])) {print $chiku5;}
+					if(isset($_POST['east5h'])) {print $chiku5;}
+					if(isset($_POST['east6a'])) {print $chiku6;}
+					if(isset($_POST['east6b'])) {print $chiku6;}
+					if(isset($_POST['east6c'])) {print $chiku6;}
+					if(isset($_POST['east6d'])) {print $chiku6;}
+					if(isset($_POST['east6e'])) {print $chiku6;}
+					if(isset($_POST['east6f'])) {print $chiku6;}
+					if(isset($_POST['east6g'])) {print $chiku6;}
+					if(isset($_POST['east6h'])) {print $chiku6;}
+					?>
+				</td>
       </tr>
 			<tr>
         <td>種類</td>
-        <td><?php print $gomi; ?></td>
+        <td>
+					<?php
+					if(isset($_POST['east1a'])) {print $gomi1;}
+					if(isset($_POST['east1b'])) {print $gomi2;}
+					if(isset($_POST['east1c'])) {print $gomi3;}
+					if(isset($_POST['east1d'])) {print $gomi4;}
+					if(isset($_POST['east1e'])) {print $gomi5;}
+					if(isset($_POST['east1f'])) {print $gomi6;}
+					if(isset($_POST['east1g'])) {print $gomi7;}
+					if(isset($_POST['east1h'])) {print $gomi8;}
+					if(isset($_POST['east2a'])) {print $gomi1;}
+					if(isset($_POST['east2b'])) {print $gomi2;}
+					if(isset($_POST['east2c'])) {print $gomi3;}
+					if(isset($_POST['east2d'])) {print $gomi4;}
+					if(isset($_POST['east2e'])) {print $gomi5;}
+					if(isset($_POST['east2f'])) {print $gomi6;}
+					if(isset($_POST['east2g'])) {print $gomi7;}
+					if(isset($_POST['east2h'])) {print $gomi8;}
+					if(isset($_POST['east3a'])) {print $gomi1;}
+					if(isset($_POST['east3b'])) {print $gomi2;}
+					if(isset($_POST['east3c'])) {print $gomi3;}
+					if(isset($_POST['east3d'])) {print $gomi4;}
+					if(isset($_POST['east3e'])) {print $gomi5;}
+					if(isset($_POST['east3f'])) {print $gomi6;}
+					if(isset($_POST['east3g'])) {print $gomi7;}
+					if(isset($_POST['east3h'])) {print $gomi8;}
+					if(isset($_POST['east4a'])) {print $gomi1;}
+					if(isset($_POST['east4b'])) {print $gomi2;}
+					if(isset($_POST['east4c'])) {print $gomi3;}
+					if(isset($_POST['east4d'])) {print $gomi4;}
+					if(isset($_POST['east4e'])) {print $gomi5;}
+					if(isset($_POST['east4f'])) {print $gomi6;}
+					if(isset($_POST['east4g'])) {print $gomi7;}
+					if(isset($_POST['east4h'])) {print $gomi8;}
+					if(isset($_POST['east5a'])) {print $gomi1;}
+					if(isset($_POST['east5b'])) {print $gomi2;}
+					if(isset($_POST['east5c'])) {print $gomi3;}
+					if(isset($_POST['east5d'])) {print $gomi4;}
+					if(isset($_POST['east5e'])) {print $gomi5;}
+					if(isset($_POST['east5f'])) {print $gomi6;}
+					if(isset($_POST['east5g'])) {print $gomi7;}
+					if(isset($_POST['east5h'])) {print $gomi8;}
+					if(isset($_POST['east6a'])) {print $gomi1;}
+					if(isset($_POST['east6b'])) {print $gomi2;}
+					if(isset($_POST['east6c'])) {print $gomi3;}
+					if(isset($_POST['east6d'])) {print $gomi4;}
+					if(isset($_POST['east6e'])) {print $gomi5;}
+					if(isset($_POST['east6f'])) {print $gomi6;}
+					if(isset($_POST['east6g'])) {print $gomi7;}
+					if(isset($_POST['east6h'])) {print $gomi8;}
+					?>
+				</td>
       </tr>
 			<tr>
         <td height="250px">曜日</td>
@@ -288,6 +356,9 @@ if(isset($_POST['east6h'])) {$chiku = "西3区"; $gomi = "衣類";}
 	<!--変更確認画面-->
 	<?php
 	if($check == 1) {
+		if(isset($_POST['modo'])) {
+			$check = 0;
+		}
 	?>
 	<HEAD>
 		<meta charset="utf-8">
@@ -311,7 +382,7 @@ if(isset($_POST['east6h'])) {$chiku = "西3区"; $gomi = "衣類";}
 	<h3>
 	<table border="1">
 		<tr><td colspan="100px">地区</td></tr>
-		<tr><td><?php print $chiku1; ?></td></tr>
+		<tr><td><?php print $chiku; ?></td></tr>
 		<tr><td>ゴミの種類</td></tr>
 		<tr><td><?php print $gomi; ?></td></tr>
 		<tr><td>曜日</td></tr>
@@ -327,9 +398,11 @@ if(isset($_POST['east6h'])) {$chiku = "西3区"; $gomi = "衣類";}
 	<h4><a href="Admin_edit_cal_comp.php">
 		<input type="submit" value="変更"/>
 	</a></h4>
+	<form method="POST" action="">
 	<h4><a>
 		<input type="submit" id="modo" name="modo" value="戻る"/>
 	</a></h4>
+  </form>
 
 
 	<!-- PAGE TOPに戻るボタン
@@ -372,9 +445,11 @@ if($check == 2) {
 <h4><a href="Admin_edit_cal_comp.php">
 	<input type="submit" value="削除"/>
 </a></h4>
+<form method="POST" action="">
 <h4><a>
 	<input type="submit" id="modomodo" name="modomodo"　value="戻る"/>
 </a></h4>
+</form>
 
 
 <!-- PAGE TOPに戻るボタン

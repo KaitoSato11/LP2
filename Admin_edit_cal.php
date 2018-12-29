@@ -283,42 +283,71 @@ $gomi8 = "衣類";
 					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第3土曜日
 					<input type="hidden" name="week1[]" value="0">
 					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4土曜日
-				-->
+-->
+
           <input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第1日曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第2日曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第3日曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第4日曜日
 					<br>
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第1月曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第2月曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第3月曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第4月曜日
 					<br>
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第1火曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第2火曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第3火曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第4火曜日
 					<br>
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第1水曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第2水曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第3水曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第4水曜日
 					<br>
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第1木曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第2木曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第3木曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第4木曜日
 					<br>
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第1金曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第2金曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第3金曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第4金曜日
 					<br>
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第1土曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第2土曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第3土曜日
+					<input type="hidden" name="week[]" value="0"/>
 					<input type="checkbox" name="week[]" value="1">第4土曜日
+				
 
 				</td>
       </tr>
@@ -329,19 +358,19 @@ $gomi8 = "衣類";
 				<input type="submit" name="henkou" value="変更"/>
 			</a>
 		</h4>
-		</form>
-		<form method="POST" action="">
+		<!--</form>
+		<form method="POST" action="">-->
 		<h5>
 			<a>
 				<input type="submit" name="sakujo" value="削除"/>
 			</a>
 		</h5>
-	</form>
 	<h6>
 		<a href="Admin_list_cal.php">
 			<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
 		</a>
 	</h6>
+	</form>
 
     <!-- PAGE TOPに戻るボタン
   ぺーじによっては、コメントアウトして消してください -->
@@ -389,9 +418,34 @@ $gomi8 = "衣類";
 		<tr><td>曜日</td></tr>
 		<tr><td>
 			<?php
-			$week1 = $_REQUEST['week1'];
-			print $week1;
-			//foreach ($_GET['week1'] as $m) {echo htmlspecialchars($m) . "<br>";}
+			if (isset($_POST['week']) && is_array($_POST['week'])){
+				$week = $_POST['week'];
+				print_r($week);
+      }
+			if ($week[1]==1) {print "第1日曜日";
+			?><br>
+		  <?php }
+			if ($week[2]==1) {print "第2日曜日";
+			?><br>
+		  <?php }
+			if ($week[3]==1) {print "第3日曜日";
+			?><br>
+		  <?php }
+			if ($week[4]==1) {print "第4日曜日";
+			?><br>
+		  <?php }
+			if ($week[5]==1) {print "第1月曜日";
+			?><br>
+		  <?php }
+			if ($week[6]==1) {print "第2月曜日";
+			?><br>
+		  <?php }
+			if ($week[7]==1) {print "第3月曜日";
+			?><br>
+		  <?php }
+			if ($week[8]==1) {print "第4月曜日";
+			?><br>
+		  <?php }
 			?>
 		</td></tr>
 	</table>

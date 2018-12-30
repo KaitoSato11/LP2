@@ -59,15 +59,16 @@
   <dd>ヘッダ、フッタ、PAGETOPボタンのみ完成</dd>
 </dl>
 
-## 松下 12/30時点
+## 松下 12/31時点
 <dl>
+  <dt>年内に終わらないと思います、ごめんなさい</dt>
   <dt>Admin_list_cal.php 90%</dt>
   <dd>
     ほぼほぼできたと思います。
     改良点とか多いかも？
   </dd>
-  <dt>Admin_edit_cal.php 55%</dt>
-  <dd>checkboxの処理に苦戦中、結構時間かかるかも</dd>
+  <dt>Admin_edit_cal.php 60%</dt>
+  <dd>データの移動に苦戦中</dd>
   <dt>Admin_edit_cal_comp.php 75%</dt>
   <dd>簡単に書いただけ</dd>
 </dl>

@@ -285,69 +285,69 @@ $gomi8 = "衣類";
 					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4土曜日
 -->
 
-          <input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第1日曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第2日曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第3日曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第4日曜日
+          <input type="hidden" name="week[0]" value="0"/>
+					<input type="checkbox" name="week[0]" value="1">第1日曜日
+					<input type="hidden" name="week[1]" value="0"/>
+					<input type="checkbox" name="week[1]" value="1">第2日曜日
+					<input type="hidden" name="week[2]" value="0"/>
+					<input type="checkbox" name="week[2]" value="1">第3日曜日
+					<input type="hidden" name="week[3]" value="0"/>
+					<input type="checkbox" name="week[3]" value="1">第4日曜日
 					<br>
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第1月曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第2月曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第3月曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第4月曜日
+					<input type="hidden" name="week[4]" value="0"/>
+					<input type="checkbox" name="week[4]" value="1">第1月曜日
+					<input type="hidden" name="week[5]" value="0"/>
+					<input type="checkbox" name="week[5]" value="1">第2月曜日
+					<input type="hidden" name="week[6]" value="0"/>
+					<input type="checkbox" name="week[6]" value="1">第3月曜日
+					<input type="hidden" name="week[7]" value="0"/>
+					<input type="checkbox" name="week[7]" value="1">第4月曜日
 					<br>
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第1火曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第2火曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第3火曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第4火曜日
+					<input type="hidden" name="week[8]" value="0"/>
+					<input type="checkbox" name="week[8]" value="1">第1火曜日
+					<input type="hidden" name="week[9]" value="0"/>
+					<input type="checkbox" name="week[9]" value="1">第2火曜日
+					<input type="hidden" name="week[10]" value="0"/>
+					<input type="checkbox" name="week[10]" value="1">第3火曜日
+					<input type="hidden" name="week[11]" value="0"/>
+					<input type="checkbox" name="week[11]" value="1">第4火曜日
 					<br>
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第1水曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第2水曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第3水曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第4水曜日
+					<input type="hidden" name="week[12]" value="0"/>
+					<input type="checkbox" name="week[12]" value="1">第1水曜日
+					<input type="hidden" name="week[13]" value="0"/>
+					<input type="checkbox" name="week[13]" value="1">第2水曜日
+					<input type="hidden" name="week[14]" value="0"/>
+					<input type="checkbox" name="week[14]" value="1">第3水曜日
+					<input type="hidden" name="week[15]" value="0"/>
+					<input type="checkbox" name="week[15]" value="1">第4水曜日
 					<br>
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第1木曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第2木曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第3木曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第4木曜日
+					<input type="hidden" name="week[16]" value="0"/>
+					<input type="checkbox" name="week[16]" value="1">第1木曜日
+					<input type="hidden" name="week[17]" value="0"/>
+					<input type="checkbox" name="week[17]" value="1">第2木曜日
+					<input type="hidden" name="week[18]" value="0"/>
+					<input type="checkbox" name="week[18]" value="1">第3木曜日
+					<input type="hidden" name="week[19]" value="0"/>
+					<input type="checkbox" name="week[19]" value="1">第4木曜日
 					<br>
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第1金曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第2金曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第3金曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第4金曜日
+					<input type="hidden" name="week[20]" value="0"/>
+					<input type="checkbox" name="week[20]" value="1">第1金曜日
+					<input type="hidden" name="week[21]" value="0"/>
+					<input type="checkbox" name="week[21]" value="1">第2金曜日
+					<input type="hidden" name="week[22]" value="0"/>
+					<input type="checkbox" name="week[22]" value="1">第3金曜日
+					<input type="hidden" name="week[23]" value="0"/>
+					<input type="checkbox" name="week[23]" value="1">第4金曜日
 					<br>
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第1土曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第2土曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第3土曜日
-					<input type="hidden" name="week[]" value="0"/>
-					<input type="checkbox" name="week[]" value="1">第4土曜日
-				
+					<input type="hidden" name="week[24]" value="0"/>
+					<input type="checkbox" name="week[24]" value="1">第1土曜日
+					<input type="hidden" name="week[25]" value="0"/>
+					<input type="checkbox" name="week[25]" value="1">第2土曜日
+					<input type="hidden" name="week[26]" value="0"/>
+					<input type="checkbox" name="week[26]" value="1">第3土曜日
+					<input type="hidden" name="week[27]" value="0"/>
+					<input type="checkbox" name="week[27]" value="1">第4土曜日
+
 
 				</td>
       </tr>
@@ -420,33 +420,92 @@ $gomi8 = "衣類";
 			<?php
 			if (isset($_POST['week']) && is_array($_POST['week'])){
 				$week = $_POST['week'];
-				print_r($week);
+				//print_r($week);
       }
-			if ($week[1]==1) {print "第1日曜日";
+			if ($week[0]==1) {print "第1日曜日";
 			?><br>
 		  <?php }
-			if ($week[2]==1) {print "第2日曜日";
+			if ($week[1]==1) {print "第2日曜日";
 			?><br>
 		  <?php }
-			if ($week[3]==1) {print "第3日曜日";
+			if ($week[2]==1) {print "第3日曜日";
 			?><br>
 		  <?php }
-			if ($week[4]==1) {print "第4日曜日";
+			if ($week[3]==1) {print "第4日曜日";
 			?><br>
 		  <?php }
-			if ($week[5]==1) {print "第1月曜日";
+			if ($week[4]==1) {print "第1月曜日";
 			?><br>
 		  <?php }
-			if ($week[6]==1) {print "第2月曜日";
+			if ($week[5]==1) {print "第2月曜日";
 			?><br>
 		  <?php }
-			if ($week[7]==1) {print "第3月曜日";
+			if ($week[6]==1) {print "第3月曜日";
 			?><br>
 		  <?php }
-			if ($week[8]==1) {print "第4月曜日";
+			if ($week[7]==1) {print "第4月曜日";
 			?><br>
 		  <?php }
-			?>
+			if ($week[8]==1) {print "第1火曜日";
+			?><br>
+		  <?php }
+			if ($week[9]==1) {print "第2火曜日";
+			?><br>
+		  <?php }
+			if ($week[10]==1) {print "第3火曜日";
+			?><br>
+		  <?php }
+			if ($week[11]==1) {print "第4火曜日";
+			?><br>
+		  <?php }
+			if ($week[12]==1) {print "第1水曜日";
+			?><br>
+		  <?php }
+			if ($week[13]==1) {print "第2水曜日";
+			?><br>
+		  <?php }
+			if ($week[14]==1) {print "第3水曜日";
+			?><br>
+		  <?php }
+			if ($week[15]==1) {print "第4水曜日";
+			?><br>
+		  <?php }
+			if ($week[16]==1) {print "第1木曜日";
+			?><br>
+		  <?php }
+			if ($week[17]==1) {print "第2木曜日";
+			?><br>
+		  <?php }
+			if ($week[18]==1) {print "第3木曜日";
+			?><br>
+		  <?php }
+			if ($week[19]==1) {print "第4木曜日";
+			?><br>
+		  <?php }
+			if ($week[20]==1) {print "第1金曜日";
+			?><br>
+		  <?php }
+			if ($week[21]==1) {print "第2金曜日";
+			?><br>
+		  <?php }
+			if ($week[22]==1) {print "第3金曜日";
+			?><br>
+		  <?php }
+			if ($week[23]==1) {print "第4金曜日";
+			?><br>
+		  <?php }
+			if ($week[24]==1) {print "第1土曜日";
+			?><br>
+		  <?php }
+			if ($week[25]==1) {print "第2土曜日";
+			?><br>
+		  <?php }
+			if ($week[26]==1) {print "第3土曜日";
+			?><br>
+		  <?php }
+			if ($week[27]==1) {print "第4土曜日";
+			?><br>
+		  <?php } ?>
 		</td></tr>
 	</table>
   </h3>

@@ -38,22 +38,20 @@
         <table class="t01" border="1" width="100%">
           <tr>
             <th></th>
-            <th width="4%" align="center">分別</th>
-            <th width="6%">収集日</th>
+            <th width="2%" align="center">分別</th>
+            <th width="5%">収集日</th>
             <th colspan="5">出せるもの</th>
-            <th width="">注意点</th>
+            <th width="30%">注意点</th>
           </tr>
           <tr>
-            <td rowspan="8" width="2%">直接持ち込むもの</td>
-            <td rowspan="1">水銀を含むゴミ</td>
-            <td rowspan="1">随時持ち込み</td>
-            <td class="a1" colspan="4" style="border-right: hidden" width="50">
-              <img src="./img/keikoutou.png" alt="蛍光灯" width="100">
-              　　<img src="./img/denchi.png" alt="蛍光灯" width="100" height="100">
-              　　<img src="./img/taionkei.png" alt="蛍光灯" width="100" height="100">
-              　<img src="./img/kagami.png" alt="蛍光灯" width="100" height="100">
-              <p>蛍光灯　　　　　　乾電池　　　　　体温計　　　　　鏡　</p>
-            <td width="200" rowspan="1">
+            <td rowspan="8" width="2%" align="center">直接持ち込むもの</td>
+            <td rowspan="1" align="center">水銀を含むゴミ</td>
+            <td align="center">随時持ち込み</td>
+            <td class="a1" colspan="3" style="border-right: hidden" width="50">
+              <div class="zu1">
+                <img src="./img/mato.png" alt="まとめ">
+              </div>
+            <td width="200" colspan="2">
               <p>出せる場所</p>
               <ul>
                 <li>香美市本庁舎北側通用口前</li>
@@ -72,10 +70,10 @@
             </td>
           </tr>
           <tr>
-            <td rowspan="7">粗大ごみ</td>
-            <td rowspan="7">毎月第3回目の日曜日と翌日の月曜日(香北町永野粗大ごみ置き場については第3回目の日曜日のみ)
-            9:30~12:00
-            13:00~16:00
+            <td rowspan="7" align="center">粗大ごみ</td>
+            <td rowspan="7" align="center">毎月第3回目の日曜日と翌日の月曜日(香北町永野粗大ごみ置き場については第3回目の日曜日のみ)<br>
+              9:30 ~ 12:00
+              13:00 ~ 16:00
             </td>
 
             <td width="15%" align="center"> 持ち込めるもの</td>
@@ -112,6 +110,9 @@
                 <li>鏡・ガラス・陶磁器等</li>
                 <li>蛍光灯・乾電池</li>
               </ul>
+              <div class="zu1">
+                  <img src="./img/gomi1.png" alt="ゴミまとめ">
+              </div>
             </td>
             <td rowspan="6">
               <ul>
@@ -124,22 +125,37 @@
                 <li>家の改築・模様替え等によるごみ(瓦・土・ブロック等)</li>
                 <li>建築廃材及び灰等</li>
               </ul>
+              <div class="zu1">
+                  <img src="./img/gomi2.png" alt="ゴミまとめ">
+              </div>
             </td>
             <td>一輪車、台車、自転車又は自動二輪者による搬入</td>
             <td>200円</td>
-            <td>自転車の画像</td>
+            <td>
+              <div class="zu2">
+              <img src="./img/zitensya.png" alt="掃除機">
+            </div>
+            </td>
           </tr>
 
           <tr>
-            <td>乗用車及び最大積載量250kg以下の車両による搬入</td>
+            <td width="10%">乗用車及び最大積載量250kg以下の車両による搬入</td>
             <td>1000円</td>
-            <td>乗用車の画像</td>
+            <td>
+              <div class="zu2">
+              <img src="./img/zidousya.png" alt="掃除機">
+            </div>
+            </td>
           </tr>
 
           <tr>
             <td>最大積載量251kg異常500kg以下の車両による搬入</td>
             <td>2000円</td>
-            <td>軽トラの画像</td>
+            <td>
+              <div class="zu2">
+              <img src="./img/keitora.png" alt="掃除機">
+            </div>
+            </td>
           </tr>
 
           <tr>
@@ -151,13 +167,32 @@
           <tr>
             <td>最大積載量</td>
             <td>8200円</td>
-            <td>画像</td>
+            <td>
+              <div class="zu2">
+              <img src="./img/truck.png" alt="掃除機">
+            </div>
+            </td>
           </tr>
 
           <tr>
             <td colspan="3">※以後、最大積載量が1,000kg増えるごとに4100円加算</td>
           </tr>
         </table>
+      </div>
+    </div>
+
+    <div class="tizu">
+      <div class="line">
+        <h2></h2>
+      </div>
+      <div class="title1">
+        <h2>MAP</h2>
+      </div>
+      <div class="tizu2">
+        <h3>水銀を含むゴミ廃棄場所</h3>
+        <img src="./img/suiginmap.jpg" alt="水銀を含むゴミ廃棄場所" >
+        <h3>粗大ゴミ廃棄場所</h3>
+        <img src="./img/sodaimap.jpg" alt="粗大ゴミ廃棄場所" >
       </div>
     </div>
   </div>
@@ -172,7 +207,7 @@
     <div class="footer">
       <p class="title">GDSS</p>
       <p class="company">L&P</p>
-    </div> -->
+    </div>
 </BODY>
 
 </HTML>

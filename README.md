@@ -17,20 +17,17 @@
   <dt>Separate.php 100%(気づいていないミスあるかも)</dt>
     <dd>
       HTMLファイルのクラス名を意味のあるものにしたほうがいい？  
-      ※CSSファイルも適当ですが書いてます
     </dd>  
   <dt>Separate_list 100%(同じくミスあるかも)</dt>
     <dd>
       同じくファイルのクラス名  
-      これもCSS書いてます
     </dd>  
-  <dt>Normal_rule.php 10%(画像貼るだけでいいならすぐ終わる)</dt>
-    <dd>特になし</dd>  
-  <dt>Special_rule.php 0%(同じく貼るだけなら終わる)</dt>
-    <dd>特になし</dd>  
+  <dt>Normal_rule.php 95%(体裁整えるだけ)</dt>
+    <dd>フリーのイラストがなくて困ってます</dd>  
+  <dt>Special_rule.php 70%</dt>
+    <dd>画像を作る作業してます</dd>  
   <dt>design_satozaki.css</dt>
-    文字の色が変更できないクラスがある。  
-    文字の太さの変更ができない。変更できるフォントにするべき？  
+   ↑4ファイルのcss適当に書いてます
 </dl>
 
 ## 江川 1/1

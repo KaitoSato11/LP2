@@ -41,7 +41,7 @@
           <th width="5%">収集日</th>
           <th colspan="2">出せるもの</th>
           <th width="20%">注意点</th>
-          <th width="5%">使用できるゴミ袋</th>
+          <th width="8%">使用できるゴミ袋</th>
         </tr>
         <tr>
           <td rowspan="9" width="2%">ゴミステーションに出せるもの</td>
@@ -52,7 +52,12 @@
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <div class="zu1">
+              <img src="./img/mato2.png" alt="まとめ">
+              <img src="./img/mato3.png" alt="まとめ">
+            </div>
+          </td>
           <td>
             <ul>
               <li><u>ビン・缶・硬質プラスチックなどの燃えないゴミは絶対に入れないでください。</u></li>
@@ -77,17 +82,19 @@
 
           <td align="center" valign="top">
             金属類(飲料用の缶)　アルミ缶・スチール缶<br>
-            <img src="./img/keikoutou.png" alt="蛍光灯" width="100">
-            <p>
+            <div class="zu1">
+              <img src="./img/mato4.png" alt="まとめ">
+            </div>
               <ul>
                 <li>中身を出して水洗いしてください</li>
                 <li>飲料用の缶は、アルミ缶とスチール缶に分ける必要はありません</li>
               </ul>
-            </p>
           </td>
           <td align="center">
             金属類(その他)<br>
-            <img src="./img/keikoutou.png" alt="蛍光灯" width="100"><br>
+            <div class="zu1">
+              <img src="./img/mato5.png" alt="まとめ">
+            </div>
             <ul>
               <li>飲料用の缶以外は飲料用の缶と袋を分ける必要があります</li>
               <li>刃物は危険のないように紙等で包み、袋に表示して出してください</li>

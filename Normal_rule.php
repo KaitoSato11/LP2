@@ -55,7 +55,6 @@
           <td colspan="2">
             <div class="zu1">
               <img src="./img/mato2.png" alt="まとめ">
-              <img src="./img/mato3.png" alt="まとめ">
             </div>
           </td>
           <td>
@@ -85,10 +84,10 @@
             <div class="zu1">
               <img src="./img/mato4.png" alt="まとめ">
             </div>
-              <ul>
-                <li>中身を出して水洗いしてください</li>
-                <li>飲料用の缶は、アルミ缶とスチール缶に分ける必要はありません</li>
-              </ul>
+            <ul>
+              <li>中身を出して水洗いしてください</li>
+              <li>飲料用の缶は、アルミ缶とスチール缶に分ける必要はありません</li>
+            </ul>
           </td>
           <td align="center">
             金属類(その他)<br>
@@ -122,7 +121,10 @@
           </td>
           <td>
             透明ビン・茶色ビン・その他の色のビン(食品用・飲み薬用)<br>
-            <img src="./img/keikoutou.png" alt="蛍光灯" width="100"><br>
+            <div class="bin">
+              <img src="./img/bin.png" alt="まとめ" width="100px" height="100px">
+            </div>
+
             <ul>
               <li>ビンの色ごとに分ける必要はありません</li>
               <li>中身を出して水洗いしてください</li>
@@ -130,8 +132,11 @@
             </ul>
           </td>
           <td>
-            <img src="./img/keikoutou.png" alt="蛍光灯" width="100"><br>
-            化粧品用・劇薬剤用のビンや割れたビン、コップや灰皿などのガラス製品はその他の不燃物へ入れてください</td>
+            <div class="zu1">
+              <img src="./img/mato6.png" alt="まとめ">
+            </div>
+            化粧品用・劇薬剤用のビンや割れたビン、コップや灰皿などのガラス製品はその他の不燃物へ入れてください
+          </td>
           <td>
             <ul>
               <li>ビンの色ごとに分ける必要はありません</li>
@@ -153,7 +158,11 @@
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <div class="zu1">
+              <img src="./img/mato11.png" alt="まとめ">
+            </div>
+          </td>
           <td>
             <ul>
               <li>割れた物は新聞紙等に包んで危険のないよう袋に表示してください</li>
@@ -172,7 +181,11 @@
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <div class="zu1">
+              <img src="./img/mato7.png" alt="まとめ">
+            </div>
+          </td>
           <td>
             <ul>
               <li>キャップとラベルは必ず取って、中身を出して水洗いしてください</li>
@@ -191,7 +204,11 @@
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <div class="zu1">
+              <img src="./img/mato8.png" alt="まとめ">
+            </div>
+          </td>
           <td>
             <ul>
               <li><u>商品を包むプラスチック製でできた容器・包装</u>がリサイクルの対象になります</li>
@@ -211,7 +228,11 @@
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <div class="zu1">
+              <img src="./img/mato9.png" alt="まとめ">
+            </div>
+          </td>
           <td>
             <ul>
               <li>紙類は、ひもで縛って出してください(ひも以外のものを使わないでください)</li>
@@ -228,7 +249,11 @@
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
-          <td colspan="2"></td>
+          <td colspan="2">
+            <div class="zu1">
+              <img src="./img/mato10.png" alt="まとめ">
+            </div>
+          </td>
           <td>
             <ul>
               <li>衣類は、雨の日に出さないでください</li>
@@ -245,15 +270,15 @@
   </div>
 
 
-    <!-- PAGE TOPに戻るボタン
+  <!-- PAGE TOPに戻るボタン
   ぺーじによっては、コメントアウトして消してください -->
-    <a class="pagetop" href="#">PAGE TOP</a>
+  <a class="pagetop" href="#">PAGE TOP</a>
 
-    <!-- FOOTER -->
-    <div class="footer">
-      <p class="title">GDSS</p>
-      <p class="company">L&P</p>
-    </div>
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="title">GDSS</p>
+    <p class="company">L&P</p>
+  </div>
 </BODY>
 
 </HTML>

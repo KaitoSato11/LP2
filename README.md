@@ -12,7 +12,7 @@
   <dd>試験用だから消しても良いです。</dd>
 </dl>
 
-## 里崎 1/1
+## 里崎 1/2
 <dl>
   <dt>Separate.php 100%(気づいていないミスあるかも)</dt>
     <dd>
@@ -24,8 +24,8 @@
     </dd>  
   <dt>Normal_rule.php 95%(体裁整えるだけ)</dt>
     <dd>フリーのイラストがなくて困ってます</dd>  
-  <dt>Special_rule.php 70%</dt>
-    <dd>画像を作る作業してます</dd>  
+  <dt>Special_rule.php 90%</dt>
+    <dd>曜日のデータ取得まだです</dd>  
   <dt>design_satozaki.css</dt>
    ↑4ファイルのcss適当に書いてます
 </dl>

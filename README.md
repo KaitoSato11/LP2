@@ -68,8 +68,8 @@
     ほぼほぼできたと思います。
     改良点とか多いかも？
   </dd>
-  <dt>Admin_edit_cal.php 65%</dt>
-  <dd>データの移動に苦戦中</dd>
+  <dt>Admin_edit_cal.php 70%</dt>
+  <dd>Mysql操作やってます</dd>
   <dt>Admin_edit_cal_comp.php 75%</dt>
   <dd>簡単に書いただけ</dd>
 </dl>

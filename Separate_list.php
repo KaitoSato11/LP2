@@ -2,14 +2,14 @@
 require_once('config.php');
 session_start();
 if (isset($_SESSION['ID'])) {
-    header('Location: ./main.php');
+    header('Location: ./Main.php');
     exit();
 }
 $db['host'] = DB_HOST;
 $db['user'] = DB_USER;
 $db['pass'] = DB_PASSWORD;
 $db['dbname'] = DB_NAME;
-$errorMessage = "";
+
 
 // 文字化け対策
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET CHARACTER SET 'utf8'");
@@ -32,9 +32,6 @@ $name = $_GET['head'];
 //SQL作成
 $sql = ("SELECT * FROM separate WHERE reading collate utf8_unicode_ci like '$name%' ORDER BY reading ASC"); //->アロー演算子 データを引っ張ってくる likeはあいまい検索
 
-//セッション削除
-// unset($_SESSION['head']);
-
 //SQL実行
 $stmt = $pdo->query($sql); //query:prepare使わないやつ
 
@@ -51,56 +48,58 @@ $result2[] = $result;
 <head>
   <link rel="stylesheet" href="./css/design_satozaki.css">
   <title>GDSS ゴミ出し支援システム</title>
-    <link rel="icon" href="iconG.ico">
-    <meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
-    <!-- <link rel="stylesheet" href="design.css"> -->
+  <link rel="icon" href="iconG.ico">
+  <meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
+  <!-- <link rel="stylesheet" href="design.css"> -->
 </head>
 
 
 <body>
-<!-- HEADER -->
-<div class="header">
-  <p class="title">GDSS</p>
-  <p class="wayaku">ゴミ出し支援システム</p>
-  <p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
-</div>
+  <!-- HEADER -->
+  <div class="header">
+    <p class="title">GDSS</p>
+    <p class="wayaku">ゴミ出し支援システム</p>
+    <p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
+  </div>
 
-<!-- メインコンテンツエリア -->
-    <div class="content">
-      <!-- ここに各ページの中身いれてください -->
+  <!-- メインコンテンツエリア -->
+  <div class="content">
+    <!-- ここに各ページの中身いれてください -->
 
-      <!-- 分別ルール 粗大ごみ マイページ遷移 -->
-      <div class="bb1">
-        <div class="b1">
-          <h3><a href="Normal_rule.php">分別ルールはこちら</h3></a>
-        </div>
-
-        <div class="b2">
-          <h3><a href="Special_rule.php">粗大ゴミ情報はこちら</h3></a>
-        </div>
-
-        <div class="b3">
-          <h3><a href="Mypage.php">マイページに戻る</h3></a>
-        </div>
-
+    <!-- 分別ルール 粗大ごみ マイページ遷移 -->
+    <div class="Main_Block1">
+      <div class="Block1">
+        <h3><a href="Normal_rule.php">分別ルールはこちら</h3></a>
       </div>
 
-    <!-- table作成 -->
-    <div class="table_gomi">
+      <div class="Block2">
+        <h3><a href="Special_rule.php">粗大ゴミ情報はこちら</h3></a>
+      </div>
 
-      <table border='1' width="100%">
+      <div class="Block3">
+        <h3><a href="Mypage.php">マイページに戻る</h3></a>
+      </div>
+
+    </div>
+
+    <!-- table作成 -->
+    <div class="Table_Garbage">
+      <table class="Garbage_List" border='1' width="100%">
         <tr>
-          <th colspan="3" align="left" bgcolor="#8fc27a" style="font-size:30px;" ><font color="white"><?php echo "$name" ?></font></th>
+          <th class="th1" colspan="3">
+            <font color="white">
+              <?php echo "$name" ?>
+            </font>
+          </th>
         </tr>
         <tr>
-          <th bgcolor="#deeed8">名称</th>
-          <th bgcolor="#deeed8">分別</th>
-          <th bgcolor="#deeed8">分別ルール</th>
+          <th class="th2">名称</th>
+          <th class="th2">分別</th>
+          <th class="th2">分別ルール</th>
         </tr>
 
         <?php
-    foreach ($result2 as $result) { //fireach:forみたいなの
-        ?>
+        foreach ($result2 as $result) { //fireach:forみたいなの?>
         <tr>
           <td>
             <?php echo $result['garbage_name']; ?>
@@ -118,19 +117,18 @@ $result2[] = $result;
       </table>
 
     </div>
-
-
-
+  </div>
   <!-- PAGE TOPに戻るボタン
  ぺーじによっては、コメントアウトして消してください -->
-   <a class="pagetop" href="#">PAGE TOP</a>
+  <a class="pagetop" href="#">PAGE TOP</a>
 
-   <!-- FOOTER -->
-   <div class="footer">
-     <p class="title">GDSS</p>
-     <p class="company">L&P</p>
-   </div>
-    </div>
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="title">GDSS</p>
+    <p class="company">L&P</p>
+  </div>
+
 
 </body>
+
 </html>

@@ -12,17 +12,11 @@
   <dd>試験用だから消しても良いです。</dd>
 </dl>
 
-## 里崎 1/2
+## 里崎 1/4
 <dl>
-  <dt>Separate.php 100%(気づいていないミスあるかも)</dt>
-    <dd>
-      HTMLファイルのクラス名を意味のあるものにしたほうがいい？  
-    </dd>  
+  <dt>Separate.php 100%(気づいていないミスあるかも)</dt>  
   <dt>Separate_list 100%(同じくミスあるかも)</dt>
-    <dd>
-      同じくファイルのクラス名  
-    </dd>  
-  <dt>Normal_rule.php 95%(体裁整えるだけ)</dt>
+  <dt>Normal_rule.php 95%</dt>
     <dd>フリーのイラストがなくて困ってます</dd>  
   <dt>Special_rule.php 90%</dt>
     <dd>曜日のデータ取得まだです</dd>  

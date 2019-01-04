@@ -56,7 +56,7 @@
     </div>
 
     <!-- 50音表作成 あ段-->
-    <div class="Separate_list">
+    <div class="Separate_List">
       <?php
         $array1 = array("あ","か","さ","た","な","は","ま","や","ら","わ");
         for ($i=0; $i < 10; $i++) {
@@ -74,7 +74,7 @@
     </div>
 
     <!-- 50音表作成 い段-->
-    <div class="Separate_list">
+    <div class="Separate_List">
       <?php
         $array2 = array("い","き","し","ち","に","ひ","み","","り","");
         for ($i=0; $i < 10; $i++) {
@@ -91,7 +91,7 @@
     </div>
 
     <!-- 50音表作成 う段-->
-    <div class="Separate_list">
+    <div class="Separate_List">
       <?php
         $array3 = array("う","く","す","つ","ぬ","ふ","む","ゆ","る","");
         for ($i=0; $i < 10; $i++) {
@@ -108,7 +108,7 @@
     </div>
 
     <!-- 50音表作成 え段-->
-    <div class="Separate_list">
+    <div class="Separate_List">
       <?php
         $array4 = array("え","け","せ","て","ね","へ","め","","れ","");
         for ($i=0; $i < 10; $i++) {
@@ -125,7 +125,7 @@
     </div>
 
     <!-- 50音表作成 お段-->
-    <div class="Separate_list">
+    <div class="Separate_List">
       <?php
         $array5 = array("お","こ","そ","と","の","ほ","も","よ","ろ","を");
         for ($i=0; $i < 10; $i++) {

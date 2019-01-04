@@ -3,7 +3,90 @@ a {
   color: black;
 }
 
-.bb1 {
+
+BODY {
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/*===================
+ ヘッダ・フッダ・PAGETOPに戻るボタンのCSS
+===================*/
+/* HEADER */
+div.header {
+  max-width: 100%;
+  height: 60px;
+  background-color: #8fc27a;
+  border-top: 10px solid #3c78d8;
+}
+p.title {
+  max-height: 60px;
+  font-family: arial black;
+  font-size: 45px;
+  margin: 0 auto;
+  float: left;
+  padding: 0 10px;
+  position: absolute;
+}
+p.wayaku {
+  float: left;
+  margin: 0;
+  padding: 30px 10px 0px;
+  position: absolute;
+  top: 10px;
+  left: 160px;
+}
+p.desc {
+  font-size: 15px;
+  text-align: right;
+  margin: 0;
+  padding: 35px 0px 10px 0px;
+}
+
+/* FOOTER */
+div.footer {
+  max-width: 100%;
+  height: 60px;
+  background-color: #8fc27a;
+  border-bottom: 10px solid #3c78d8;
+}
+p.company {
+  max-height: 60px;
+  font-family: arial black;
+  font-size: 40px;
+  margin: 0;
+  text-align: right;
+}
+
+/* PAGE TOPに戻るボタン */
+a.pagetop {
+  position: fixed;
+  bottom: 80px;
+  right: 15px;
+  background-color: #a4c2f4;
+  padding: 25px 5px;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+a.pagetop:hover {
+  background-color: #6d9eeb;
+  color: white;
+}
+
+/* メインコンテンツ用仮置き */
+div.content {
+  min-height: 800px;
+  margin: 25px auto;
+  max-width: 1024px;
+}
+
+/*===================
+ Separate.phpのCSS
+===================*/
+.Main_Block1 {
   display: flex;
   flex-wrap: : nowrap;
   justify-content: space-around;
@@ -11,61 +94,51 @@ a {
   text-align: center;
 }
 
-.b1 {
+.Block1 {
   border: solid 1px #3c78d8;
   background-color: #a4c2f4;
   width: 30%;
 }
 
-.b2 {
+.Block2 {
   border: solid 1px #FFDEAD;
   background-color: #FFEFD5;
   width: 30%;
 }
 
-.b3 {
+.Block3 {
   border: solid 1px #3c78d8;
   background-color: #6d9eeb;
   width: 30%;
   color: #FFFFFF;
 }
 
-.bb2 {
+.Main_Block2 {
   height: 50px;
   background-color: #fff8e0;
 }
 
-.b4 {
+.Block4 {
   line-height: 50px;
   margin-left: 10px;
 }
 
-.b5 {
-  border: solid 1px #3c78d8;
-  background-color: #6d9eeb;
-  width: 30%;
-  color: #FFFFFF;
-  margin-left: 50%;
-  min-width: 170px;
-}
-
-.bb3 {
+.Main_Block3 {
   background-color: #8fc27a;
   color: #FFFFFF;
 }
 
-.list_a {
+.Separate_List {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 700px;
-  /* min-width: 500px; */
   margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
 
-#list_item {
+.Separate_List_Item1 {
   flex: auto;
   display: flex;
   min-width: 55px;
@@ -76,18 +149,7 @@ a {
   align-items: center;
 }
 
-.list_item {
-  flex: auto;
-  display: flex;
-  min-width: 55px;
-  height: 50px;
-  border: solid 1px;
-  margin: 5px;
-  justify-content: center;
-  align-items: center;
-}
-
-.list_item_2 {
+.Separate_List_Item2 {
   flex: auto;
   min-width: 55px;
   height: 50px;
@@ -99,22 +161,17 @@ a {
   align-items: center;
 }
 
-.list_item_2:nth-child(8) {
+.Separate_List_Item2:nth-child(8) {
   background-color: #FFFFFF;
   border: none;
 }
 
-.list_item_2:nth-child(10) {
+.Separate_List_Item2:nth-child(10) {
   background-color: #FFFFFF;
   border: none;
 }
 
-.list_item_3:nth-child(10) {
-  background-color: #FFFFFF;
-  border: none;
-}
-
-.list_item_3 {
+.Separate_List_Item3 {
   flex: auto;
   min-width: 55px;
   height: 50px;
@@ -125,77 +182,103 @@ a {
   align-items: center;
 }
 
-.table_gomi {
+.Separate_List_Item3:nth-child(10) {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+/*===================
+ Separate_list.phpのCSS
+===================*/
+.Table_Garbage {
   margin-top: 10px;
 }
 
-table {
+table.Garbage_List {
   border-collapse: collapse;
+  margin: auto;
+}
+
+table.Garbage_List th.th1{
+  background-color: #8fc27a;
+  text-align: left;
+  font-size: 30px;
+}
+
+table.Garbage_List th.th2 {
+  background-color: #deeed8;
+}
+
+table.Garbage_List td {
+  background-color: #fff8e0;
+}
+
+/*===================
+ Special_rule.phpのCSS
+===================*/
+.Block5 {
+  border: solid 1px #3c78d8;
+  background-color: #6d9eeb;
+  width: 30%;
+  color: #FFFFFF;
+  margin-left: 70%;
+  min-width: 170px;
 }
 
 .Spesial {
-  width: 80%;
+  width: 100%;
   height: auto;
   background-color: #fff8e0;
   margin: auto;
   min-width: 900px;
 }
 
-.line {
-  height: 2px;
+.Line {
+  height: 3px;
   background-color: #3c78d8;
 }
 
-.title1 {
+.Title1 {
   background-color: #8fc27a;
   margin-top: -20px;
   padding-left: 10px;
 }
 
-table.t01 td {
+table.Special_rule {
+  border-collapse: collapse;
+}
+
+table.Special_rule td {
   background-color: #fff8e0;
 }
 
-table.t01 td.a1 {
-  text-align: center;
-}
-
-li {
-  padding-left: 0px;
-}
-
-.tizu {
-  width: 80%;
-  height: auto;
-  margin: auto;
-  object-fit: fill;
-}
-
-.tizu img {
-  max-width: 100%;
-width: auto;
-height: auto;
-text-align: center;
-}
-
-.zu1 img {
+.Zu1 img {
   max-width: 100%;
   max-height: 100%;
   height: auto;
   width: auto;
 }
 
-
-.zu2 {
-  text-align: center;
-}
-.zu2 img {
+.Zu2 img {
   max-width: 100%;
   max-height: 100%;
   height: 120px;
   width: auto;
 }
 
-.tizu2 {
-    text-align: center;
+.Tizu {
+  text-align: center;
+}
+
+.Tizu img {
+max-width: 100%;
+width: auto;
+height: auto;
+}
+
+/*===================
+ Normal_rule.phpのCSS
+===================*/
+.bin {
+  text-align: center;
 }

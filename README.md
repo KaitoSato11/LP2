@@ -68,14 +68,13 @@
   <dd>簡単に書いただけ</dd>
 </dl>
 
-## 畠 12/28時点
+## 畠 1/4時点
 <dl>
-  <dt>Reg_district.php 70%</dt>
-  <dd>アロー演算子と格闘中</dd>
-  <dt>Mail.php 70%</dt>
-  <dd>アロー演算子と格闘中</dd>
+  <dt>Reg_district.php 80%</dt>
+  <dd>アロー演算子解決</dd>
+  <dt>Mail.php 80%</dt>
+  <dd>問題がないか検証中</dd>
   <dt>Admin_delete_user.php 70%</dt>
-  <dd>アロー演算子と格闘中</dd>
   <dt>Reg_district_comp.php 100%</dt>
   <dd>たぶんできた</dd>
   <dt>Mail_comp.php 100%</dt>

@@ -1,3 +1,16 @@
+<?php
+require_once('config.php');
+session_start();
+if (isset($_SESSION['ID'])) {
+    header('Location: ./Main.php');
+    exit();
+}
+$db['host'] = DB_HOST;
+$db['user'] = DB_USER;
+$db['pass'] = DB_PASSWORD;
+$db['dbname'] = DB_NAME;
+?>
+
 <!DOCTYPE html>
 <HTML lang="ja">
 
@@ -21,23 +34,23 @@
   <!-- メインコンテンツエリア -->
   <div class="content">
     <!-- ここに各ページの中身いれてください -->
-    <div class="bb1">
-      <div class="b5">
-        <h3><a href="Mypage.php">マイページに戻る</h3></a>
-      </div>
+    <div class="Main_Block1">
+      <a class="Block5" href="Mypage.php">
+        <h3>マイページに戻る</h3>
+      </a>
     </div>
 
-    <div class="Spesial">
-      <div class="line">
+    <div class="Normal">
+      <div class="Line">
         <h2></h2>
       </div>
-      <div class="title1">
+      <div class="Title">
         <h2>粗大・特別ゴミルール</h2>
       </div>
-      <table class="t02" border="1" width="100%">
+      <table class="Normal_rule" border="1" width="100%">
         <tr>
           <th></th>
-          <th width="3%" align="center" colspan="2">分別</th>
+          <th width="3%" colspan="2">分別</th>
           <th width="5%">収集日</th>
           <th colspan="2">出せるもの</th>
           <th width="20%">注意点</th>
@@ -45,7 +58,9 @@
         </tr>
         <tr>
           <td rowspan="9" width="2%">ゴミステーションに出せるもの</td>
-          <td colspan="2">燃えるゴミ</td>
+          <td colspan="2">
+            燃えるゴミ
+          </td>
           <td align="center">
             毎週
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
@@ -53,8 +68,8 @@
             曜日
           </td>
           <td colspan="2">
-            <div class="zu1">
-              <img src="./img/mato2.png" alt="まとめ">
+            <div class="Zu1">
+              <img src="./img/mato2.png" alt="まとめ2">
             </div>
           </td>
           <td>
@@ -72,27 +87,27 @@
         <tr>
           <td rowspan="7">資源ゴミ</td>
           <td>金属類</td>
-          <td>
+          <td align="center">
             毎週
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
 
-          <td align="center" valign="top">
-            金属類(飲料用の缶)　アルミ缶・スチール缶<br>
-            <div class="zu1">
-              <img src="./img/mato4.png" alt="まとめ">
+          <td valign="top">
+            <p class="center"><b>金属類(飲料用の缶)アルミ缶・スチール缶</b></p>
+            <div class="Zu1">
+              <img src="./img/mato4.png" alt="まとめ4">
             </div>
             <ul>
               <li>中身を出して水洗いしてください</li>
               <li>飲料用の缶は、アルミ缶とスチール缶に分ける必要はありません</li>
             </ul>
           </td>
-          <td align="center">
-            金属類(その他)<br>
-            <div class="zu1">
-              <img src="./img/mato5.png" alt="まとめ">
+          <td>
+            <p class="center"><b>金属類(その他)</b></p>
+            <div class="Zu1">
+              <img src="./img/mato5.png" alt="まとめ5">
             </div>
             <ul>
               <li>飲料用の缶以外は飲料用の缶と袋を分ける必要があります</li>
@@ -113,16 +128,16 @@
           <td>
             ビン類
           </td>
-          <td>
+          <td align="center">
             毎週
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
           <td>
-            透明ビン・茶色ビン・その他の色のビン(食品用・飲み薬用)<br>
+            <p class="center"><b>透明ビン・茶色ビン・その他の色のビン(食品用・飲み薬用)</b></p>
             <div class="bin">
-              <img src="./img/bin.png" alt="まとめ" width="100px" height="100px">
+              <img src="./img/bin.png" alt="ビン" width="100px" height="100px">
             </div>
 
             <ul>
@@ -132,8 +147,8 @@
             </ul>
           </td>
           <td>
-            <div class="zu1">
-              <img src="./img/mato6.png" alt="まとめ">
+            <div class="Zu1">
+              <img src="./img/mato6.png" alt="まとめ6">
             </div>
             化粧品用・劇薬剤用のビンや割れたビン、コップや灰皿などのガラス製品はその他の不燃物へ入れてください
           </td>
@@ -152,15 +167,15 @@
 
         <tr>
           <td>その他の不燃物</td>
-          <td>
+          <td align="center">
             毎週
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
           <td colspan="2">
-            <div class="zu1">
-              <img src="./img/mato11.png" alt="まとめ">
+            <div class="Zu1">
+              <img src="./img/mato11.png" alt="まとめ11">
             </div>
           </td>
           <td>
@@ -176,14 +191,14 @@
 
         <tr>
           <td>ペットボトル</td>
-          <td> 毎週
+          <td align="center"> 毎週
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
           <td colspan="2">
-            <div class="zu1">
-              <img src="./img/mato7.png" alt="まとめ">
+            <div class="Zu1">
+              <img src="./img/mato7.png" alt="まとめ7">
             </div>
           </td>
           <td>
@@ -198,15 +213,15 @@
 
         <tr>
           <td>容器包装プラスチック</td>
-          <td>
+          <td align="center">
             毎週
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
           <td colspan="2">
-            <div class="zu1">
-              <img src="./img/mato8.png" alt="まとめ">
+            <div class="Zu1">
+              <img src="./img/mato8.png" alt="まとめ8">
             </div>
           </td>
           <td>
@@ -222,15 +237,15 @@
 
         <tr>
           <td>紙類</td>
-          <td>
+          <td align="center">
             毎週
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           </td>
           <td colspan="2">
-            <div class="zu1">
-              <img src="./img/mato9.png" alt="まとめ">
+            <div class="Zu1">
+              <img src="./img/mato9.png" alt="まとめ9">
             </div>
           </td>
           <td>
@@ -244,14 +259,14 @@
 
         <tr>
           <td>衣類</td>
-          <td>
+          <td align="center">
             毎週
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
             <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
             曜日
           <td colspan="2">
-            <div class="zu1">
-              <img src="./img/mato10.png" alt="まとめ">
+            <div class="Zu1">
+              <img src="./img/mato10.png" alt="まとめ10">
             </div>
           </td>
           <td>

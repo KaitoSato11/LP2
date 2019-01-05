@@ -41,7 +41,6 @@ $result2[] = $result;
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -68,17 +67,15 @@ $result2[] = $result;
 
     <!-- 分別ルール 粗大ごみ マイページ遷移 -->
     <div class="Main_Block1">
-      <div class="Block1">
-        <h3><a href="Normal_rule.php">分別ルールはこちら</h3></a>
-      </div>
-
-      <div class="Block2">
-        <h3><a href="Special_rule.php">粗大ゴミ情報はこちら</h3></a>
-      </div>
-
-      <div class="Block3">
-        <h3><a href="Mypage.php">マイページに戻る</h3></a>
-      </div>
+      <a class="Block1" href="Normal_rule.php">
+        <h3>分別ルールはこちら</h3>
+      </a>
+      <a class="Block2" href="Special_rule.php">
+        <h3>粗大ゴミ情報はこちら</h3>
+      </a>
+      <a class="Block3" href="Mypage.php">
+        <h3>マイページに戻る</h3>
+      </a>
 
     </div>
 
@@ -112,7 +109,7 @@ $result2[] = $result;
           </td>
         </tr>
         <?php
-    }
+        }
     ?>
       </table>
 

@@ -18,8 +18,7 @@
   <dt>Separate_list 100%(同じくミスあるかも)</dt>
   <dt>Normal_rule.php 95%</dt>
     <dd>フリーのイラストがなくて困ってます</dd>  
-  <dt>Special_rule.php 90%</dt>
-    <dd>曜日のデータ取得まだです</dd>  
+  <dt>Special_rule.php 95%</dt>
   <dt>design_satozaki.css</dt>
    ↑4ファイルのcss適当に書いてます
 </dl>

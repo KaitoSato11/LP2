@@ -37,6 +37,57 @@ try{
 } catch (PDOException $e) {
   exit('データベースの抽出に失敗しました。'.$e->getMessage());
 }
+
+$east1_1=null;
+$east1_2=null;
+$east1_3=null;
+$east1_4=null;
+$east1_5=null;
+$east1_6=null;
+$east1_7=null;
+$east1_8=null;
+$east2_1=null;
+$east2_2=null;
+$east2_3=null;
+$east2_4=null;
+$east2_5=null;
+$east2_6=null;
+$east2_7=null;
+$east2_8=null;
+$east3_1=null;
+$east3_2=null;
+$east3_3=null;
+$east3_4=null;
+$east3_5=null;
+$east3_6=null;
+$east3_7=null;
+$east3_8=null;
+$east4_1=null;
+$east4_2=null;
+$east4_3=null;
+$east4_4=null;
+$east4_5=null;
+$east4_6=null;
+$east4_7=null;
+$east4_8=null;
+$east5_1=null;
+$east5_2=null;
+$east5_3=null;
+$east5_4=null;
+$east5_5=null;
+$east5_6=null;
+$east5_7=null;
+$east5_8=null;
+$east6_1=null;
+$east6_2=null;
+$east6_3=null;
+$east6_4=null;
+$east6_5=null;
+$east6_6=null;
+$east6_7=null;
+$east6_8=null;
+
+
 $value1 = $stmt1->fetch();
 
 $east1_burn = $value1[1];
@@ -1654,7 +1705,7 @@ if ($east6_h[25]==1) {$east6_8[]="第2土曜日";}
 if ($east6_h[26]==1) {$east6_8[]="第3土曜日";}
 if ($east6_h[27]==1) {$east6_8[]="第4土曜日";}
 
-
+$nasi = "回収日なし";
 
 ?>
 
@@ -1701,80 +1752,112 @@ if ($east6_h[27]==1) {$east6_8[]="第4土曜日";}
         <td id="east01">東1区</td>
         <td id="east0101">
 					<?php
+					if ($east1_1 != null){
 					for($i = 0 ; $i < count($east1_1); $i++){
 					  print $east1_1[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east1_1 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east1a" value="編集"/>
 				  </a>
 			  </td>
         <td id="east0102">
 					<?php
+					if ($east1_2 != null){
 					for($i = 0 ; $i < count($east1_2); $i++){
 					  print $east1_2[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east1_2 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east1b" value="編集"/>
 				  </a>
 				</td>
         <td id="east0103">
 					<?php
+					if ($east1_3 != null){
 					for($i = 0 ; $i < count($east1_3); $i++){
 					  print $east1_3[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east1_3 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east1c" value="編集"/>
 				  </a>
 				</td>
         <td id="east0104">
 					<?php
+					if ($east1_4 != null){
 					for($i = 0 ; $i < count($east1_4); $i++){
 					  print $east1_4[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east1_4 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east1d" value="編集"/>
 				  </a>
 				</td>
         <td id="east0105">
 					<?php
+					if ($east1_5 != null){
 					for($i = 0 ; $i < count($east1_5); $i++){
 					  print $east1_5[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east1_5 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east1e" value="編集"/>
 				  </a>
 				</td>
         <td id="east0106">
 					<?php
+					if ($east1_6 != null){
 					for($i = 0 ; $i < count($east1_6); $i++){
 					  print $east1_6[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east1_6 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east1f" value="編集"/>
 				  </a>
 				</td>
         <td id="east0107">
 					<?php
+					if ($east1_7 != null){
 					for($i = 0 ; $i < count($east1_7); $i++){
 					  print $east1_7[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east1_7 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east1g" value="編集"/>
 				  </a>
 				</td>
         <td id="east0108">
 					<?php
+					if ($east1_8 != null){
 					for($i = 0 ; $i < count($east1_8); $i++){
 					  print $east1_8[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east1_8 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east1h" value="編集"/>
 				  </a>
@@ -1784,80 +1867,112 @@ if ($east6_h[27]==1) {$east6_8[]="第4土曜日";}
         <td id="east02">東2区</td>
         <td id="east0201">
 					<?php
+					if ($east2_1 != null){
 					for($i = 0 ; $i < count($east2_1); $i++){
 					  print $east2_1[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east2_1 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east2a" value="編集"/>
 				  </a>
 				</td>
         <td id="east0202">
 					<?php
+					if ($east2_2 != null){
 					for($i = 0 ; $i < count($east2_2); $i++){
 					  print $east2_2[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east2_2 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east2b" value="編集"/>
 				  </a>
 				</td>
         <td id="east0203">
 					<?php
+					if ($east2_3 != null){
 					for($i = 0 ; $i < count($east2_3); $i++){
 					  print $east2_3[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east2_3 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east2c" value="編集"/>
 				  </a>
 				</td>
         <td id="east0204">
 					<?php
+					if ($east2_4 != null){
 					for($i = 0 ; $i < count($east2_4); $i++){
 					  print $east2_4[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east2_4 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east2d" value="編集"/>
 				  </a>
 				</td>
         <td id="east0205">
 					<?php
+					if ($east2_5 != null){
 					for($i = 0 ; $i < count($east2_5); $i++){
 					  print $east2_5[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east2_5 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east2e" value="編集"/>
 				  </a>
 				</td>
         <td id="east0206">
 					<?php
+					if ($east2_6 != null){
 					for($i = 0 ; $i < count($east2_6); $i++){
 					  print $east2_6[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east2_6 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east2f" value="編集"/>
 				  </a>
 				</td>
         <td id="east0207">
 					<?php
+					if ($east2_7 != null){
 					for($i = 0 ; $i < count($east2_7); $i++){
 					  print $east2_7[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east2_7 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east2g" value="編集"/>
 				  </a>
 				</td>
         <td id="east0208">
 					<?php
+					if ($east2_8 != null){
 					for($i = 0 ; $i < count($east2_8); $i++){
 					  print $east2_8[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east2_8 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east2h" value="編集"/>
 				  </a>
@@ -1867,80 +1982,112 @@ if ($east6_h[27]==1) {$east6_8[]="第4土曜日";}
         <td id="east03">東3区</td>
         <td id="east0301">
 					<?php
+					if ($east3_1 != null){
 					for($i = 0 ; $i < count($east3_1); $i++){
 					  print $east3_1[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east3_1 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east3a" value="編集"/>
 				  </a>
 				</td>
         <td id="east0302">
 					<?php
+					if ($east3_2 != null){
 					for($i = 0 ; $i < count($east3_2); $i++){
 					  print $east3_2[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east3_2 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east3b" value="編集"/>
 				  </a>
 				</td>
         <td id="east0303">
 					<?php
+					if ($east3_3 != null){
 					for($i = 0 ; $i < count($east3_3); $i++){
 					  print $east3_3[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east3_3 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east3c" value="編集"/>
 				  </a>
 				</td>
         <td id="east0304">
 					<?php
+					if ($east3_4 != null){
 					for($i = 0 ; $i < count($east3_4); $i++){
 					  print $east3_4[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east3_4 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east3d" value="編集"/>
 				  </a>
 				</td>
         <td id="east0305">
 					<?php
+					if ($east3_5 != null){
 					for($i = 0 ; $i < count($east3_5); $i++){
 					  print $east3_5[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east3_5 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east3e" value="編集"/>
 				  </a>
 				</td>
         <td id="east0306">
 					<?php
+					if ($east3_6 != null){
 					for($i = 0 ; $i < count($east3_6); $i++){
 					  print $east3_6[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east3_6 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east3f" value="編集"/>
 				  </a>
 				</td>
         <td id="east0307">
 					<?php
+					if ($east3_7 != null){
 					for($i = 0 ; $i < count($east3_7); $i++){
 					  print $east3_7[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east3_7 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east3g" value="編集"/>
 				  </a>
 				</td>
         <td id="east0308">
 					<?php
+					if ($east3_8 != null){
 					for($i = 0 ; $i < count($east3_8); $i++){
 					  print $east3_8[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east3_8 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east3h" value="編集"/>
 				  </a>
@@ -1950,80 +2097,112 @@ if ($east6_h[27]==1) {$east6_8[]="第4土曜日";}
         <td id="west01">西1区</td>
         <td id="west0101">
 					<?php
+					if ($east4_1 != null){
 					for($i = 0 ; $i < count($east4_1); $i++){
 					  print $east4_1[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east4_1 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east4a" value="編集"/>
 				  </a>
 				</td>
         <td id="west0102">
 					<?php
+					if ($east4_2 != null){
 					for($i = 0 ; $i < count($east4_2); $i++){
 					  print $east4_2[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east4_2 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east4b" value="編集"/>
 				  </a>
 				</td>
         <td id="west0103">
 					<?php
+					if ($east4_3 != null){
 					for($i = 0 ; $i < count($east4_3); $i++){
 					  print $east4_3[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east4_3 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east4c" value="編集"/>
 				  </a>
 				</td>
         <td id="west0104">
 					<?php
+					if ($east4_4 != null){
 					for($i = 0 ; $i < count($east4_4); $i++){
 					  print $east4_4[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east4_4 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east4d" value="編集"/>
 				  </a>
 				</td>
         <td id="west0105">
 					<?php
+					if ($east4_5 != null){
 					for($i = 0 ; $i < count($east4_5); $i++){
 					  print $east4_5[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east4_5 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east4e" value="編集"/>
 				  </a>
 				</td>
         <td id="west0106">
 					<?php
+					if ($east4_6 != null){
 					for($i = 0 ; $i < count($east4_6); $i++){
 					  print $east4_6[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east4_6 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east4f" value="編集"/>
 				  </a>
 				</td>
         <td id="west0107">
 					<?php
+					if ($east4_7 != null){
 					for($i = 0 ; $i < count($east4_7); $i++){
 					  print $east4_7[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east4_7 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east4g" value="編集"/>
 				  </a>
 				</td>
         <td id="west0108">
 					<?php
+					if ($east4_8 != null){
 					for($i = 0 ; $i < count($east4_8); $i++){
 					  print $east4_8[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east4_8 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east4h" value="編集"/>
 				  </a>
@@ -2033,80 +2212,112 @@ if ($east6_h[27]==1) {$east6_8[]="第4土曜日";}
         <td id="west02">西2区</td>
         <td id="west0201">
 					<?php
+					if ($east5_1 != null){
 					for($i = 0 ; $i < count($east5_1); $i++){
 					  print $east5_1[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east5_1 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east5a" value="編集"/>
 				  </a>
 				</td>
         <td id="west0202">
 					<?php
+					if ($east5_2 != null){
 					for($i = 0 ; $i < count($east5_2); $i++){
 					  print $east5_2[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east5_2 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east5b" value="編集"/>
 				  </a>
 				</td>
         <td id="west0203">
 					<?php
+					if ($east5_3 != null){
 					for($i = 0 ; $i < count($east5_3); $i++){
 					  print $east5_3[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east5_3 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east5c" value="編集"/>
 				  </a>
 				</td>
         <td id="west0204">
 					<?php
+					if ($east5_4 != null){
 					for($i = 0 ; $i < count($east5_4); $i++){
 					  print $east5_4[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east5_4 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east5d" value="編集"/>
 				  </a>
 				</td>
         <td id="west0205">
 					<?php
+					if ($east5_5 != null){
 					for($i = 0 ; $i < count($east5_5); $i++){
 					  print $east5_5[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east5_5 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east5e" value="編集"/>
 				  </a>
 				</td>
         <td id="west0206">
 					<?php
+					if ($east5_6 != null){
 					for($i = 0 ; $i < count($east5_6); $i++){
 					  print $east5_6[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east5_6 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east5f" value="編集"/>
 				  </a>
 				</td>
         <td id="west0207">
 					<?php
+					if ($east5_7 != null){
 					for($i = 0 ; $i < count($east5_7); $i++){
 					  print $east5_7[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east5_7 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east5g" value="編集"/>
 				  </a>
 				</td>
         <td id="west0208">
 					<?php
+					if ($east5_8 != null){
 					for($i = 0 ; $i < count($east5_8); $i++){
 					  print $east5_8[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east5_8 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east5h" value="編集"/>
 				  </a>
@@ -2116,80 +2327,112 @@ if ($east6_h[27]==1) {$east6_8[]="第4土曜日";}
         <td id="west03">西3区</td>
         <td id="west0301">
 					<?php
+					if ($east6_1 != null){
 					for($i = 0 ; $i < count($east6_1); $i++){
 					  print $east6_1[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east6_1 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east6a" value="編集"/>
 				  </a>
 				</td>
         <td id="west0302">
 					<?php
+					if ($east6_2 != null){
 					for($i = 0 ; $i < count($east6_2); $i++){
 					  print $east6_2[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east6_2 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east6b" value="編集"/>
 				  </a>
 				</td>
         <td id="west0303">
 					<?php
+					if ($east6_3 != null){
 					for($i = 0 ; $i < count($east6_3); $i++){
 					  print $east6_3[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east6_3 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east6c" value="編集"/>
 				  </a>
 				</td>
         <td id="west0304">
 					<?php
+					if ($east6_4 != null){
 					for($i = 0 ; $i < count($east6_4); $i++){
 					  print $east6_4[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east6_4 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east6d" value="編集"/>
 				  </a>
 				</td>
         <td id="west0305">
 					<?php
+					if ($east6_5 != null){
 					for($i = 0 ; $i < count($east6_5); $i++){
 					  print $east6_5[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east6_5 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east6e" value="編集"/>
 				  </a>
 				</td>
         <td id="west0306">
 					<?php
+					if ($east6_6 != null){
 					for($i = 0 ; $i < count($east6_6); $i++){
 					  print $east6_6[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east6_6 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east6f" value="編集"/>
 				  </a>
 				</td>
         <td id="west0307">
 					<?php
+					if ($east6_7 != null){
 					for($i = 0 ; $i < count($east6_7); $i++){
 					  print $east6_7[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east6_7 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east6g" value="編集"/>
 				  </a>
 				</td>
         <td id="west0308">
 					<?php
+					if ($east6_8 != null){
 					for($i = 0 ; $i < count($east6_8); $i++){
 					  print $east6_8[$i];
 					?><br>
-					<?php } ?>
+				<?php }}
+				if ($east6_8 == null){print $nasi; ?>
+					<br>
+				<?php } ?>
 					<a href="Admin_edit_cal.php">
           <input type="submit" name="east6h" value="編集"/>
 				  </a>

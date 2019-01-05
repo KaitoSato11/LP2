@@ -34,10 +34,11 @@ $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $stmt = $db -> perepare("INSERT INTO users(area_id) VALUES (:area_id)");
 $stmt -> bindValue(":area_id", $dist, PDO::PARAM_INT);
 $stmt -> execute();
-header("Location: ./Reg_district_comp.php");
+header("Location: Reg_district_comp.php");
 exit();
 }
 
+//画面遷移
 if(isset($_POST["dist"])){
 $check = 1;
 }
@@ -46,6 +47,7 @@ if(isset($_POST["back"])){
 }
 ?>
 
+//地区登録画面
 <?php if($check=="0"){ ?>
   <body>
       <div class="content">
@@ -84,6 +86,7 @@ if(isset($_POST["back"])){
 </body>
 <?php } ?>
 
+ //地区登録確認画面
 <?php if($check=="1"){ ?>
   <body>
   <div class="content" align="center">
@@ -96,7 +99,7 @@ if(isset($_POST["back"])){
 <tr bgcolor="#8fc27a" height="50"><th colspan="2">変更後地区</br></h3></th></tr>
  <tr height="80"><td align="center"><?php echo $dist; ?></td></tr>
 </table>
-   <form action="Reg_district_comp.php" method="POST">
+   <form action="" method="POST">
      <input type="submit" value="変更・登録" name="signup" id="signup" style="WIDTH:70px; HEIGHT:30px;">
    </form>
 

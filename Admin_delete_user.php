@@ -23,6 +23,7 @@ header('Location: ./Main.php');
 exit();
 }
 try{
+  //データベース接続
   $db_name = "mysql:db_name=gdss_db;host=localhost";
   $db_username = "root";
   $db_password = "";
@@ -34,20 +35,22 @@ try{
   $stmh = $db ->prepare($sql);
   $stmh -> execute();
 
+  //利用者削除
   if(isset($_POST['delete_user'])){
     $stmt=$db->prepare("DELETE FROM gdss_db.users WHERE user_id=?");
     if($stmt){
       $stmt->bindparam(1, $user_id,PDO::PARAM_STR);
       $user_id=$_POST['user_id'];
       $stmt->execute();
-
+　　　header('Location:Admin_delete_user_comp.php');
+      exit();	    
     }
   }
 }catch(PDOException $Exception){
   die('接続に失敗しました:' .$Exception->getMessage());
 }
 
-
+//画面遷移
 if(isset($_POST['result'])){
   $check=1;
 	}
@@ -58,9 +61,9 @@ if(isset($_POST['result'])){
 
 ?>
 
+//利用者一覧
   <?php if($check=="0"){ ?>
     <body>
-      <!-- HEADER -->
     <div class="content">
     <table border="1" align="center" cellspacing="0" width="720">
     <tr bgcolor="#8fc27a" height="40"><th colspan="3">利用者一覧</th></tr>
@@ -80,10 +83,10 @@ if(isset($_POST['result'])){
     <?php } $pdo = null; ?>
     </table>
     </div>
-
     </body>
   <?php } ?>
 
+//削除確認画面
   <?php if($check=="1"){ ?>
     <body>
       <div align="center">
@@ -97,7 +100,7 @@ if(isset($_POST['result'])){
         <tr height="40"><td><?php echo $_POST['user_id']; ?></td></tr>
       </table>
       <p style="margin:30px">
-              <form  action="Admin_delete_user_comp.php" method="POST">
+              <form  action="" method="POST">
                 <input type="hidden" name="address" value="<?php echo $row['address'];?>">
                 <input type="hidden"  name="user_id" value="<?php echo $_POST['user_id']; ?>">
                 <input type="submit" value="削除" name="delete_user" style="color:white; background-color:red; WIDTH:160px; HEIGHT:50px;">

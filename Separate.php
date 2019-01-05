@@ -2,8 +2,8 @@
   require_once('config.php');
   session_start();
   if (isset($_SESSION['ID'])) {
-     header('Location: ./Main.php');
-     exit();
+      header('Location: ./Main.php');
+      exit();
   }
 ?>
 
@@ -33,15 +33,15 @@
 
     <!-- 分別ルール 粗大ごみ マイページ遷移 -->
     <div class="Main_Block1">
-      <div class="Block1">
-        <h3><a href="Normal_rule.php">分別ルールはこちら</h3></a>
-      </div>
-      <div class="Block2">
-        <h3><a href="Special_rule.php">粗大ゴミ情報はこちら</h3></a>
-      </div>
-      <div class="Block3">
-        <h3><a href="Mypage.php">マイページに戻る</h3></a>
-      </div>
+      <a class="Block1" href="Normal_rule.php">
+        <h3>分別ルールはこちら</h3>
+      </a>
+      <a class="Block2" href="Special_rule.php">
+        <h3>粗大ゴミ情報はこちら</h3>
+      </a>
+      <a class="Block3" href="Mypage.php">
+        <h3>マイページに戻る</h3>
+      </a>
     </div>
 
     <!-- 誘導文 -->
@@ -60,7 +60,7 @@
       <?php
         $array1 = array("あ","か","さ","た","な","は","ま","や","ら","わ");
         for ($i=0; $i < 10; $i++) {
-      ?>
+            ?>
       <div class="Separate_List_Item1">
         <?php print '<a href="Separate_list.php?head=' . $array1[$i] . '">'; ?>
         <h2>
@@ -69,7 +69,7 @@
         </a>
       </div>
       <?php
-      }
+        }
       ?>
     </div>
 
@@ -78,15 +78,16 @@
       <?php
         $array2 = array("い","き","し","ち","に","ひ","み","","り","");
         for ($i=0; $i < 10; $i++) {
-      ?>
+            ?>
       <div class="Separate_List_Item2">
-          <?php print '<a href="Separate_list.php?head=' . $array2[$i] . '">'; ?>
-          <h2>
-            <?php echo $array2[$i]; ?>
-          </h2>
-        </a></div>
+        <?php print '<a href="Separate_list.php?head=' . $array2[$i] . '">'; ?>
+        <h2>
+          <?php echo $array2[$i]; ?>
+        </h2>
+        </a>
+      </div>
       <?php
-      }
+        }
       ?>
     </div>
 
@@ -95,15 +96,16 @@
       <?php
         $array3 = array("う","く","す","つ","ぬ","ふ","む","ゆ","る","");
         for ($i=0; $i < 10; $i++) {
-      ?>
+            ?>
       <div class="Separate_List_Item3">
-          <?php print '<a href="Separate_list.php?head=' . $array3[$i] . '">'; ?>
-          <h2>
-            <?php echo $array3[$i]; ?>
-          </h2>
-        </a></div>
+        <?php print '<a href="Separate_list.php?head=' . $array3[$i] . '">'; ?>
+        <h2>
+          <?php echo $array3[$i]; ?>
+        </h2>
+        </a>
+      </div>
       <?php
-      }
+        }
       ?>
     </div>
 
@@ -112,15 +114,16 @@
       <?php
         $array4 = array("え","け","せ","て","ね","へ","め","","れ","");
         for ($i=0; $i < 10; $i++) {
-      ?>
+            ?>
       <div class="Separate_List_Item2">
-          <?php print '<a href="Separate_list.php?head=' . $array4[$i] . '">'; ?>
-          <h2>
-            <?php echo $array4[$i]; ?>
-          </h2>
-        </a></div>
+        <?php print '<a href="Separate_list.php?head=' . $array4[$i] . '">'; ?>
+        <h2>
+          <?php echo $array4[$i]; ?>
+        </h2>
+        </a>
+      </div>
       <?php
-      }
+        }
       ?>
     </div>
 
@@ -129,27 +132,28 @@
       <?php
         $array5 = array("お","こ","そ","と","の","ほ","も","よ","ろ","を");
         for ($i=0; $i < 10; $i++) {
-      ?>
+            ?>
       <div class="Separate_List_Item1">
-          <?php print '<a href="Separate_list.php?head=' . $array5[$i] . '">'; ?>
-          <h2>
-            <?php echo $array5[$i]; ?>
-          </h2>
-        </a></div>
+        <?php print '<a href="Separate_list.php?head=' . $array5[$i] . '">'; ?>
+        <h2>
+          <?php echo $array5[$i]; ?>
+        </h2>
+        </a>
+      </div>
       <?php
-      }
+        }
       ?>
     </div>
 
   </div>
-    <!-- PAGE TOPに戻るボタン。ぺージによっては、コメントアウトして消してください -->
-    <a class="pagetop" href="#">PAGE TOP</a>
+  <!-- PAGE TOPに戻るボタン。ぺージによっては、コメントアウトして消してください -->
+  <a class="pagetop" href="#">PAGE TOP</a>
 
-    <!-- FOOTER -->
-    <div class="footer">
-      <p class="title">GDSS</p>
-      <p class="company">L&P</p>
-    </div>
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="title">GDSS</p>
+    <p class="company">L&P</p>
+  </div>
 
 
 

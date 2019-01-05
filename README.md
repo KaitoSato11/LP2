@@ -74,7 +74,7 @@
   <dt>Reg_district.php 80%</dt>
   <dd>アロー演算子解決</dd>
   <dt>Mail.php 80%</dt>
-  9d>問題がないか検証中</dd>
+  <dd>問題がないか検証中</dd>
   <dt>Admin_delete_user.php 100%</dt>
   <dd>完成(おそらく)</dd>
   <dt>Reg_district_comp.php 100%</dt>

@@ -35,16 +35,16 @@ $db['dbname'] = DB_NAME;
   <div class="content">
     <!-- ここに各ページの中身いれてください -->
     <div class="Main_Block1">
-      <div class="Block5">
-        <h3><a href="Mypage.php">マイページに戻る</h3></a>
-      </div>
+      <a class="Block5" href="Mypage.php">
+        <h3>マイページに戻る</h3>
+      </a>
     </div>
 
     <div class="Spesial">
       <div class="Line">
         <h2></h2>
       </div>
-      <div class="Title1">
+      <div class="Title">
         <h2>粗大・特別ゴミルール</h2>
       </div>
       <table class="Special_rule" border="1" width="100%">
@@ -89,12 +89,12 @@ $db['dbname'] = DB_NAME;
             13:00 ~ 16:00
           </td>
 
-          <td width="15%" align="center"> 持ち込めるもの</td>
-          <td width="15%" align="center">持ち込めないもの</td>
+          <td width="15%" align="center">〇持ち込めるもの</td>
+          <td width="15%" align="center">×持ち込めないもの</td>
           <td colspan="3" align="center">持ち込み手数料(1台につき)</td>
           <td rowspan="7">
             <ul>
-              <li>持ち込み場所・日時</li>
+              <li><b>持ち込み場所・日時</b></li>
               市立一般廃棄物処理場<br>
               (鏡野中学校東側の道を北へと約600m)<br>
               毎月第3回目の日曜日と翌日の月曜日<br>
@@ -162,7 +162,7 @@ $db['dbname'] = DB_NAME;
         </tr>
 
         <tr>
-          <td>最大積載量251kg異常500kg以下の車両による搬入</td>
+          <td>最大積載量251kg以上500kg以下の車両による搬入</td>
           <td>2000円</td>
           <td>
             <div class="Zu2">
@@ -172,13 +172,13 @@ $db['dbname'] = DB_NAME;
         </tr>
 
         <tr>
-          <td>最大積載量</td>
+          <td>最大積載量501kg以上1,000以下の車両による搬入の車両による搬入</td>
           <td>4100円</td>
           <td>画像</td>
         </tr>
 
         <tr>
-          <td>最大積載量</td>
+          <td>最大積載量1,001kg以上2,000以下の車両による搬入</td>
           <td>8200円</td>
           <td>
             <div class="Zu2">
@@ -193,18 +193,18 @@ $db['dbname'] = DB_NAME;
       </table>
     </div>
 
-    <div class="Main_Block4">
+    <div class="Main_Block5">
       <div class="Line">
         <h2></h2>
       </div>
-      <div class="Title1">
+      <div class="Title">
         <h2>MAP</h2>
       </div>
       <div class="Tizu">
         <h3>水銀を含むゴミ廃棄場所</h3>
-        <img src="./img/suiginmap.jpg" alt="水銀を含むゴミ廃棄場所">
+        <img src="./img/suiginmap.jpg" alt="水銀を含むゴミ廃棄場所" border="2">
         <h3>粗大ゴミ廃棄場所</h3>
-        <img src="./img/sodaimap.jpg" alt="粗大ゴミ廃棄場所">
+        <img src="./img/sodaimap.jpg" alt="粗大ゴミ廃棄場所" border="2">
       </div>
     </div>
   </div>

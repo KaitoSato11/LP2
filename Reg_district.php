@@ -19,9 +19,25 @@
 session_start();
 $check=0;
 $errorMessage="";
+
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $dist = $_POST['dist'];
 }
+
+(isset($_POST['signup'])){
+$db_name = "mysql:db_name=gdss_db;host=localhost";
+$db_username = "root";
+$db_password = "";
+$db = new PDO($db_name, $db_username, $db_password);
+$db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$stmt = $db -> perepare("INSERT INTO users(area_id) VALUES (:area_id)");
+$stmt -> bindValue(":area_id", $dist, PDO::PARAM_INT);
+$stmt -> execute();
+header("Location: ./Reg_district_comp.php");
+exit();
+}
+
 if(isset($_POST["dist"])){
 $check = 1;
 }

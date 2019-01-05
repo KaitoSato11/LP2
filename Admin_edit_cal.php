@@ -48,7 +48,7 @@ if(isset($_POST['sakujo'])) {
 if(isset($_POST['modo'])) {
 	$check = 0;
 }
-if(isset($_POST['modomodo'])) {
+if(isset($_POST['modo1'])) {
 	$check = 0;
 }
 
@@ -220,70 +220,6 @@ $gomi8 = "衣類";
         <td height="250px">曜日</td>
         <td height="250px">
 					<form method="POST" action="">
-					<!--
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第1日曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第2日曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第3日曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4日曜日
-					<br>
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第1月曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第2月曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第3月曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4月曜日
-					<br>
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第1火曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第2火曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第3火曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4火曜日
-					<br>
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第1水曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第2水曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第3水曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4水曜日
-					<br>
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第1木曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第2木曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第3木曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4木曜日
-					<br>
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第1金曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第2金曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第3金曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4金曜日
-					<br>
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第1土曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第2土曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第3土曜日
-					<input type="hidden" name="week1[]" value="0">
-					<input type="checkbox" onclick="this.form.week1[].value=this.checked ? 1 : 0">第4土曜日
--->
 
           <input type="hidden" name="week[0]" value="0"/>
 					<input type="checkbox" name="week[0]" value="1">第1日曜日
@@ -393,6 +329,37 @@ $gomi8 = "衣類";
 	if($check == 1) {
 		$chikku = $_POST['chikku'];
 		$gommi = $_POST['gommi'];
+
+		if (isset($_POST['week']) && is_array($_POST['week'])){
+			$week = $_POST['week'];
+			//print_r($week);
+		}
+		$week_id = implode($week);
+    //print $week_id;
+		$week_id = bindec($week_id);
+		//print $week_id;
+		if ($chikku == "東1区"){$chiku_id = 1;}
+		if ($chikku == "東2区"){$chiku_id = 2;}
+		if ($chikku == "東3区"){$chiku_id = 3;}
+		if ($chikku == "西1区"){$chiku_id = 4;}
+		if ($chikku == "西2区"){$chiku_id = 5;}
+		if ($chikku == "西3区"){$chiku_id = 6;}
+		if ($gommi == "燃える"){$gomi_id = "burn";}
+		if ($gommi == "金属類"){$gomi_id = "metal";}
+		if ($gommi == "ビン類"){$gomi_id = "bottle";}
+		if ($gommi == "他不燃"){$gomi_id = "nonburn";}
+		if ($gommi == "ペット"){$gomi_id = "pet";}
+		if ($gommi == "プラ"){$gomi_id = "plastic";}
+		if ($gommi == "紙類"){$gomi_id = "paper";}
+		if ($gommi == "衣類"){$gomi_id = "cloth";}
+
+		try{
+			$sql = "UPDATE week SET $gomi_id=$week_id WHERE area_id=$chiku_id";
+			$stmt1 = $pdo->prepare($sql);
+			$stmt1->execute();
+		} catch (PDOException $e) {
+		  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+		}
 	?>
 	<HEAD>
 		<meta charset="utf-8">
@@ -422,10 +389,7 @@ $gomi8 = "衣類";
 		<tr><td>曜日</td></tr>
 		<tr><td>
 			<?php
-			if (isset($_POST['week']) && is_array($_POST['week'])){
-				$week = $_POST['week'];
-				//print_r($week);
-      }
+
 			if ($week[0]==1) {print "第1日曜日";
 			?><br>
 		  <?php }
@@ -542,6 +506,37 @@ $gomi8 = "衣類";
 if($check == 2) {
 	$chikku = $_POST['chikku'];
 	$gommi = $_POST['gommi'];
+
+	if (isset($_POST['week']) && is_array($_POST['week'])){
+		$week = $_POST['week'];
+		//print_r($week);
+	}
+	$week_id = implode($week);
+	//print $week_id;
+	$week_id = bindec($week_id);
+	//print $week_id;
+	if ($chikku == "東1区"){$chiku_id = 1;}
+	if ($chikku == "東2区"){$chiku_id = 2;}
+	if ($chikku == "東3区"){$chiku_id = 3;}
+	if ($chikku == "西1区"){$chiku_id = 4;}
+	if ($chikku == "西2区"){$chiku_id = 5;}
+	if ($chikku == "西3区"){$chiku_id = 6;}
+	if ($gommi == "燃える"){$gomi_id = "burn";}
+	if ($gommi == "金属類"){$gomi_id = "metal";}
+	if ($gommi == "ビン類"){$gomi_id = "bottle";}
+	if ($gommi == "他不燃"){$gomi_id = "nonburn";}
+	if ($gommi == "ペット"){$gomi_id = "pet";}
+	if ($gommi == "プラ"){$gomi_id = "plastic";}
+	if ($gommi == "紙類"){$gomi_id = "paper";}
+	if ($gommi == "衣類"){$gomi_id = "cloth";}
+
+	try{
+		$sql = "UPDATE week SET $gomi_id=0 WHERE area_id=$chiku_id";
+		$stmt1 = $pdo->prepare($sql);
+		$stmt1->execute();
+	} catch (PDOException $e) {
+		exit('データベースの抽出に失敗しました。'.$e->getMessage());
+	}
 ?>
 <HEAD>
 	<meta charset="utf-8">
@@ -573,7 +568,7 @@ if($check == 2) {
 </a></h4>
 <form method="POST" action="">
 <h4><a>
-	<input type="submit" name="modomodo"　value="戻る"/>
+	<input type="submit" name="modo1" value="戻る"/>
 </a></h4>
 </form>
 

@@ -36,7 +36,7 @@ $stmt = $db -> perepare("INSERT INTO users(address, remind) VALUES (:mail_adress
 $stmt -> bindParam(":mail_adress", $mail_adress, PDO::PARAM_STR);
 $stmt -> bindValue(":remind", $remind01, PDO::PARAM_INT);
 $stmt -> execute();
-header("Location: ./Mail_comp.php");
+header("Location:Mail_comp.php");
 exit();
 }
 
@@ -90,7 +90,7 @@ if(isset($_POST['result'])){
   <body>
     <div align="center">
       <div class="box gray">
-        <form id="check_adress" name="check_adress" action="Mail_comp.php" method="POST">
+        <form id="check_adress" name="check_adress" action="" method="POST">
   	<table>
   	  <tr><td>メールアドレス</td><td><?php echo $_POST['mail_adress']; ?></td></tr>
   	  <tr><td>リマインド受け取り可否</td><td><?($POST[remind01]== "1"){受け取る}else{受け取らない} ?></td></tr>

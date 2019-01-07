@@ -53,9 +53,9 @@
   <dd>ヘッダ、フッタ、PAGETOPボタンのみ完成</dd>
 </dl>
 
-## 松下 1/6時点
+## 松下 1/7時点
 <dl>
-  <dt>Admin_list_cal.php 90%</dt>
+  <dt>Admin_list_cal.php 95%</dt>
   <dd>
     ほぼほぼできたと思います。
     微修正してます。
@@ -63,7 +63,7 @@
   <dt>Admin_edit_cal.php 90%</dt>
   <dd>
     ほぼほぼできたと思います。
-    バグ修正してます。
+    ちょっとだけ苦戦中？
   </dd>
   <dt>Admin_edit_cal_comp.php 90%</dt>
   <dd>簡単に書いただけ、たすとこあればたします。</dd>

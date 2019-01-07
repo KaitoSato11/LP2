@@ -175,7 +175,7 @@ if ($east1_a[24]==1) {$east1_1[]="第1土曜日";}
 if ($east1_a[25]==1) {$east1_1[]="第2土曜日";}
 if ($east1_a[26]==1) {$east1_1[]="第3土曜日";}
 if ($east1_a[27]==1) {$east1_1[]="第4土曜日";}
-if (($east1_a[24]==1 && $east1_a[25]==1) && ($east1_a[24]==1 && $east1_a[25]==1)){
+if (($east1_a[24]==1 && $east1_a[25]==1) && ($east1_a[26]==1 && $east1_a[27]==1)){
 	$result = array_diff($east1_1, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
 	$east1_1 = array_values($result);
 	$east1_1[]="毎週土曜日";
@@ -230,10 +230,20 @@ if ($east1_b[20]==1) {$east1_2[]="第1金曜日";}
 if ($east1_b[21]==1) {$east1_2[]="第2金曜日";}
 if ($east1_b[22]==1) {$east1_2[]="第3金曜日";}
 if ($east1_b[23]==1) {$east1_2[]="第4金曜日";}
+if (($east1_b[20]==1 && $east1_b[21]==1) && ($east1_b[22]==1 && $east1_b[23]==1)){
+	$result = array_diff($east1_2, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east1_2 = array_values($result);
+	$east1_2[]="毎週金曜日";
+}
 if ($east1_b[24]==1) {$east1_2[]="第1土曜日";}
 if ($east1_b[25]==1) {$east1_2[]="第2土曜日";}
 if ($east1_b[26]==1) {$east1_2[]="第3土曜日";}
 if ($east1_b[27]==1) {$east1_2[]="第4土曜日";}
+if (($east1_b[24]==1 && $east1_b[25]==1) && ($east1_b[26]==1 && $east1_b[27]==1)){
+	$result = array_diff($east1_2, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east1_2 = array_values($result);
+	$east1_2[]="毎週土曜日";
+}
 //東1区bottle
 if ($east1_c[0]==1) {$east1_3[]="第1日曜日";}
 if ($east1_c[1]==1) {$east1_3[]="第2日曜日";}
@@ -284,10 +294,20 @@ if ($east1_c[20]==1) {$east1_3[]="第1金曜日";}
 if ($east1_c[21]==1) {$east1_3[]="第2金曜日";}
 if ($east1_c[22]==1) {$east1_3[]="第3金曜日";}
 if ($east1_c[23]==1) {$east1_3[]="第4金曜日";}
+if (($east1_c[20]==1 && $east1_c[21]==1) && ($east1_c[22]==1 && $east1_c[23]==1)){
+	$result = array_diff($east1_3, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east1_3 = array_values($result);
+	$east1_3[]="毎週金曜日";
+}
 if ($east1_c[24]==1) {$east1_3[]="第1土曜日";}
 if ($east1_c[25]==1) {$east1_3[]="第2土曜日";}
 if ($east1_c[26]==1) {$east1_3[]="第3土曜日";}
 if ($east1_c[27]==1) {$east1_3[]="第4土曜日";}
+if (($east1_c[24]==1 && $east1_c[25]==1) && ($east1_c[26]==1 && $east1_c[27]==1)){
+	$result = array_diff($east1_3, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east1_3 = array_values($result);
+	$east1_3[]="毎週土曜日";
+}
 //東1区nonburn
 if ($east1_d[0]==1) {$east1_4[]="第1日曜日";}
 if ($east1_d[1]==1) {$east1_4[]="第2日曜日";}
@@ -338,10 +358,20 @@ if ($east1_d[20]==1) {$east1_4[]="第1金曜日";}
 if ($east1_d[21]==1) {$east1_4[]="第2金曜日";}
 if ($east1_d[22]==1) {$east1_4[]="第3金曜日";}
 if ($east1_d[23]==1) {$east1_4[]="第4金曜日";}
+if (($east1_d[20]==1 && $east1_d[21]==1) && ($east1_d[22]==1 && $east1_d[23]==1)){
+	$result = array_diff($east1_4, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east1_4 = array_values($result);
+	$east1_4[]="毎週金曜日";
+}
 if ($east1_d[24]==1) {$east1_4[]="第1土曜日";}
 if ($east1_d[25]==1) {$east1_4[]="第2土曜日";}
 if ($east1_d[26]==1) {$east1_4[]="第3土曜日";}
 if ($east1_d[27]==1) {$east1_4[]="第4土曜日";}
+if (($east1_d[24]==1 && $east1_d[25]==1) && ($east1_d[26]==1 && $east1_d[27]==1)){
+	$result = array_diff($east1_4, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east1_4 = array_values($result);
+	$east1_4[]="毎週土曜日";
+}
 //東1区pet
 if ($east1_e[0]==1) {$east1_5[]="第1日曜日";}
 if ($east1_e[1]==1) {$east1_5[]="第2日曜日";}
@@ -392,10 +422,20 @@ if ($east1_e[20]==1) {$east1_5[]="第1金曜日";}
 if ($east1_e[21]==1) {$east1_5[]="第2金曜日";}
 if ($east1_e[22]==1) {$east1_5[]="第3金曜日";}
 if ($east1_e[23]==1) {$east1_5[]="第4金曜日";}
+if (($east1_e[20]==1 && $east1_e[21]==1) && ($east1_e[22]==1 && $east1_e[23]==1)){
+	$result = array_diff($east1_5, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east1_5 = array_values($result);
+	$east1_5[]="毎週金曜日";
+}
 if ($east1_e[24]==1) {$east1_5[]="第1土曜日";}
 if ($east1_e[25]==1) {$east1_5[]="第2土曜日";}
 if ($east1_e[26]==1) {$east1_5[]="第3土曜日";}
 if ($east1_e[27]==1) {$east1_5[]="第4土曜日";}
+if (($east1_e[24]==1 && $east1_e[25]==1) && ($east1_e[26]==1 && $east1_e[27]==1)){
+	$result = array_diff($east1_5, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east1_5 = array_values($result);
+	$east1_5[]="毎週土曜日";
+}
 //東1区plastic
 if ($east1_f[0]==1) {$east1_6[]="第1日曜日";}
 if ($east1_f[1]==1) {$east1_6[]="第2日曜日";}
@@ -446,10 +486,20 @@ if ($east1_f[20]==1) {$east1_6[]="第1金曜日";}
 if ($east1_f[21]==1) {$east1_6[]="第2金曜日";}
 if ($east1_f[22]==1) {$east1_6[]="第3金曜日";}
 if ($east1_f[23]==1) {$east1_6[]="第4金曜日";}
+if (($east1_f[20]==1 && $east1_f[21]==1) && ($east1_f[22]==1 && $east1_f[23]==1)){
+	$result = array_diff($east1_6, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east1_6 = array_values($result);
+	$east1_6[]="毎週金曜日";
+}
 if ($east1_f[24]==1) {$east1_6[]="第1土曜日";}
 if ($east1_f[25]==1) {$east1_6[]="第2土曜日";}
 if ($east1_f[26]==1) {$east1_6[]="第3土曜日";}
 if ($east1_f[27]==1) {$east1_6[]="第4土曜日";}
+if (($east1_f[24]==1 && $east1_f[25]==1) && ($east1_f[26]==1 && $east1_f[27]==1)){
+	$result = array_diff($east1_6, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east1_6 = array_values($result);
+	$east1_6[]="毎週土曜日";
+}
 //東1区paper
 if ($east1_g[0]==1) {$east1_7[]="第1日曜日";}
 if ($east1_g[1]==1) {$east1_7[]="第2日曜日";}
@@ -500,10 +550,20 @@ if ($east1_g[20]==1) {$east1_7[]="第1金曜日";}
 if ($east1_g[21]==1) {$east1_7[]="第2金曜日";}
 if ($east1_g[22]==1) {$east1_7[]="第3金曜日";}
 if ($east1_g[23]==1) {$east1_7[]="第4金曜日";}
+if (($east1_g[20]==1 && $east1_g[21]==1) && ($east1_g[22]==1 && $east1_g[23]==1)){
+	$result = array_diff($east1_7, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east1_7 = array_values($result);
+	$east1_7[]="毎週金曜日";
+}
 if ($east1_g[24]==1) {$east1_7[]="第1土曜日";}
 if ($east1_g[25]==1) {$east1_7[]="第2土曜日";}
 if ($east1_g[26]==1) {$east1_7[]="第3土曜日";}
 if ($east1_g[27]==1) {$east1_7[]="第4土曜日";}
+if (($east1_g[24]==1 && $east1_g[25]==1) && ($east1_g[26]==1 && $east1_g[27]==1)){
+	$result = array_diff($east1_7, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east1_7 = array_values($result);
+	$east1_7[]="毎週土曜日";
+}
 //東1区cloth
 if ($east1_h[0]==1) {$east1_8[]="第1日曜日";}
 if ($east1_h[1]==1) {$east1_8[]="第2日曜日";}
@@ -554,10 +614,20 @@ if ($east1_h[20]==1) {$east1_8[]="第1金曜日";}
 if ($east1_h[21]==1) {$east1_8[]="第2金曜日";}
 if ($east1_h[22]==1) {$east1_8[]="第3金曜日";}
 if ($east1_h[23]==1) {$east1_8[]="第4金曜日";}
+if (($east1_h[20]==1 && $east1_h[21]==1) && ($east1_h[22]==1 && $east1_h[23]==1)){
+	$result = array_diff($east1_8, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east1_8 = array_values($result);
+	$east1_8[]="毎週金曜日";
+}
 if ($east1_h[24]==1) {$east1_8[]="第1土曜日";}
 if ($east1_h[25]==1) {$east1_8[]="第2土曜日";}
 if ($east1_h[26]==1) {$east1_8[]="第3土曜日";}
 if ($east1_h[27]==1) {$east1_8[]="第4土曜日";}
+if (($east1_h[24]==1 && $east1_h[25]==1) && ($east1_h[26]==1 && $east1_h[27]==1)){
+	$result = array_diff($east1_8, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east1_8 = array_values($result);
+	$east1_8[]="毎週土曜日";
+}
 
 //ここから東2区
 #データの抽出
@@ -646,10 +716,20 @@ if ($east2_a[20]==1) {$east2_1[]="第1金曜日";}
 if ($east2_a[21]==1) {$east2_1[]="第2金曜日";}
 if ($east2_a[22]==1) {$east2_1[]="第3金曜日";}
 if ($east2_a[23]==1) {$east2_1[]="第4金曜日";}
+if (($east2_a[20]==1 && $east2_a[21]==1) && ($east2_a[22]==1 && $east2_a[23]==1)){
+	$result = array_diff($east2_1, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east2_1 = array_values($result);
+	$east2_1[]="毎週金曜日";
+}
 if ($east2_a[24]==1) {$east2_1[]="第1土曜日";}
 if ($east2_a[25]==1) {$east2_1[]="第2土曜日";}
 if ($east2_a[26]==1) {$east2_1[]="第3土曜日";}
 if ($east2_a[27]==1) {$east2_1[]="第4土曜日";}
+if (($east2_a[24]==1 && $east2_a[25]==1) && ($east2_a[26]==1 && $east2_a[27]==1)){
+	$result = array_diff($east2_1, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east2_1 = array_values($result);
+	$east2_1[]="毎週土曜日";
+}
 //東2区metal
 if ($east2_b[0]==1) {$east2_2[]="第1日曜日";}
 if ($east2_b[1]==1) {$east2_2[]="第2日曜日";}
@@ -700,10 +780,20 @@ if ($east2_b[20]==1) {$east2_2[]="第1金曜日";}
 if ($east2_b[21]==1) {$east2_2[]="第2金曜日";}
 if ($east2_b[22]==1) {$east2_2[]="第3金曜日";}
 if ($east2_b[23]==1) {$east2_2[]="第4金曜日";}
+if (($east2_b[20]==1 && $east2_b[21]==1) && ($east2_b[22]==1 && $east2_b[23]==1)){
+	$result = array_diff($east2_2, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east2_2 = array_values($result);
+	$east2_2[]="毎週金曜日";
+}
 if ($east2_b[24]==1) {$east2_2[]="第1土曜日";}
 if ($east2_b[25]==1) {$east2_2[]="第2土曜日";}
 if ($east2_b[26]==1) {$east2_2[]="第3土曜日";}
 if ($east2_b[27]==1) {$east2_2[]="第4土曜日";}
+if (($east2_b[24]==1 && $east2_b[25]==1) && ($east2_b[26]==1 && $east2_b[27]==1)){
+	$result = array_diff($east2_2, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east2_2 = array_values($result);
+	$east2_2[]="毎週土曜日";
+}
 //東2区bottle
 if ($east2_c[0]==1) {$east2_3[]="第1日曜日";}
 if ($east2_c[1]==1) {$east2_3[]="第2日曜日";}
@@ -754,10 +844,20 @@ if ($east2_c[20]==1) {$east2_3[]="第1金曜日";}
 if ($east2_c[21]==1) {$east2_3[]="第2金曜日";}
 if ($east2_c[22]==1) {$east2_3[]="第3金曜日";}
 if ($east2_c[23]==1) {$east2_3[]="第4金曜日";}
+if (($east2_c[20]==1 && $east2_c[21]==1) && ($east2_c[22]==1 && $east2_c[23]==1)){
+	$result = array_diff($east2_3, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east2_3 = array_values($result);
+	$east2_3[]="毎週金曜日";
+}
 if ($east2_c[24]==1) {$east2_3[]="第1土曜日";}
 if ($east2_c[25]==1) {$east2_3[]="第2土曜日";}
 if ($east2_c[26]==1) {$east2_3[]="第3土曜日";}
 if ($east2_c[27]==1) {$east2_3[]="第4土曜日";}
+if (($east2_c[24]==1 && $east2_c[25]==1) && ($east2_c[26]==1 && $east2_c[27]==1)){
+	$result = array_diff($east2_3, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east2_3 = array_values($result);
+	$east2_3[]="毎週土曜日";
+}
 //東2区nonburn
 if ($east2_d[0]==1) {$east2_4[]="第1日曜日";}
 if ($east2_d[1]==1) {$east2_4[]="第2日曜日";}
@@ -808,10 +908,20 @@ if ($east2_d[20]==1) {$east2_4[]="第1金曜日";}
 if ($east2_d[21]==1) {$east2_4[]="第2金曜日";}
 if ($east2_d[22]==1) {$east2_4[]="第3金曜日";}
 if ($east2_d[23]==1) {$east2_4[]="第4金曜日";}
+if (($east2_d[20]==1 && $east2_d[21]==1) && ($east2_d[22]==1 && $east2_d[23]==1)){
+	$result = array_diff($east2_4, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east2_4 = array_values($result);
+	$east2_4[]="毎週金曜日";
+}
 if ($east2_d[24]==1) {$east2_4[]="第1土曜日";}
 if ($east2_d[25]==1) {$east2_4[]="第2土曜日";}
 if ($east2_d[26]==1) {$east2_4[]="第3土曜日";}
 if ($east2_d[27]==1) {$east2_4[]="第4土曜日";}
+if (($east2_d[24]==1 && $east2_d[25]==1) && ($east2_d[26]==1 && $east2_d[27]==1)){
+	$result = array_diff($east2_4, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east2_4 = array_values($result);
+	$east2_4[]="毎週土曜日";
+}
 //東2区pet
 if ($east2_e[0]==1) {$east2_5[]="第1日曜日";}
 if ($east2_e[1]==1) {$east2_5[]="第2日曜日";}
@@ -862,10 +972,20 @@ if ($east2_e[20]==1) {$east2_5[]="第1金曜日";}
 if ($east2_e[21]==1) {$east2_5[]="第2金曜日";}
 if ($east2_e[22]==1) {$east2_5[]="第3金曜日";}
 if ($east2_e[23]==1) {$east2_5[]="第4金曜日";}
+if (($east2_e[20]==1 && $east2_e[21]==1) && ($east2_e[22]==1 && $east2_e[23]==1)){
+	$result = array_diff($east2_5, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east2_5 = array_values($result);
+	$east2_5[]="毎週金曜日";
+}
 if ($east2_e[24]==1) {$east2_5[]="第1土曜日";}
 if ($east2_e[25]==1) {$east2_5[]="第2土曜日";}
 if ($east2_e[26]==1) {$east2_5[]="第3土曜日";}
 if ($east2_e[27]==1) {$east2_5[]="第4土曜日";}
+if (($east2_e[24]==1 && $east2_e[25]==1) && ($east2_e[26]==1 && $east2_e[27]==1)){
+	$result = array_diff($east2_5, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east2_5 = array_values($result);
+	$east2_5[]="毎週土曜日";
+}
 //東2区plastic
 if ($east2_f[0]==1) {$east2_6[]="第1日曜日";}
 if ($east2_f[1]==1) {$east2_6[]="第2日曜日";}
@@ -916,10 +1036,20 @@ if ($east2_f[20]==1) {$east2_6[]="第1金曜日";}
 if ($east2_f[21]==1) {$east2_6[]="第2金曜日";}
 if ($east2_f[22]==1) {$east2_6[]="第3金曜日";}
 if ($east2_f[23]==1) {$east2_6[]="第4金曜日";}
+if (($east2_f[20]==1 && $east2_f[21]==1) && ($east2_f[22]==1 && $east2_f[23]==1)){
+	$result = array_diff($east2_6, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east2_6 = array_values($result);
+	$east2_6[]="毎週金曜日";
+}
 if ($east2_f[24]==1) {$east2_6[]="第1土曜日";}
 if ($east2_f[25]==1) {$east2_6[]="第2土曜日";}
 if ($east2_f[26]==1) {$east2_6[]="第3土曜日";}
 if ($east2_f[27]==1) {$east2_6[]="第4土曜日";}
+if (($east2_f[24]==1 && $east2_f[25]==1) && ($east2_f[26]==1 && $east2_f[27]==1)){
+	$result = array_diff($east2_6, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east2_6 = array_values($result);
+	$east2_6[]="毎週土曜日";
+}
 //東2区paper
 if ($east2_g[0]==1) {$east2_7[]="第1日曜日";}
 if ($east2_g[1]==1) {$east2_7[]="第2日曜日";}
@@ -970,10 +1100,20 @@ if ($east2_g[20]==1) {$east2_7[]="第1金曜日";}
 if ($east2_g[21]==1) {$east2_7[]="第2金曜日";}
 if ($east2_g[22]==1) {$east2_7[]="第3金曜日";}
 if ($east2_g[23]==1) {$east2_7[]="第4金曜日";}
+if (($east2_g[20]==1 && $east2_g[21]==1) && ($east2_g[22]==1 && $east2_g[23]==1)){
+	$result = array_diff($east2_7, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east2_7 = array_values($result);
+	$east2_7[]="毎週金曜日";
+}
 if ($east2_g[24]==1) {$east2_7[]="第1土曜日";}
 if ($east2_g[25]==1) {$east2_7[]="第2土曜日";}
 if ($east2_g[26]==1) {$east2_7[]="第3土曜日";}
 if ($east2_g[27]==1) {$east2_7[]="第4土曜日";}
+if (($east2_g[24]==1 && $east2_g[25]==1) && ($east2_g[26]==1 && $east2_g[27]==1)){
+	$result = array_diff($east2_7, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east2_7 = array_values($result);
+	$east2_7[]="毎週土曜日";
+}
 //東2区cloth
 if ($east2_h[0]==1) {$east2_8[]="第1日曜日";}
 if ($east2_h[1]==1) {$east2_8[]="第2日曜日";}
@@ -1024,10 +1164,20 @@ if ($east2_h[20]==1) {$east2_8[]="第1金曜日";}
 if ($east2_h[21]==1) {$east2_8[]="第2金曜日";}
 if ($east2_h[22]==1) {$east2_8[]="第3金曜日";}
 if ($east2_h[23]==1) {$east2_8[]="第4金曜日";}
+if (($east2_h[20]==1 && $east2_h[21]==1) && ($east2_h[22]==1 && $east2_h[23]==1)){
+	$result = array_diff($east2_8, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east2_8 = array_values($result);
+	$east2_8[]="毎週金曜日";
+}
 if ($east2_h[24]==1) {$east2_8[]="第1土曜日";}
 if ($east2_h[25]==1) {$east2_8[]="第2土曜日";}
 if ($east2_h[26]==1) {$east2_8[]="第3土曜日";}
 if ($east2_h[27]==1) {$east2_8[]="第4土曜日";}
+if (($east2_h[24]==1 && $east2_h[25]==1) && ($east2_h[26]==1 && $east2_h[27]==1)){
+	$result = array_diff($east2_8, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east2_8 = array_values($result);
+	$east2_8[]="毎週土曜日";
+}
 
 //ここから東3区
 #データの抽出
@@ -1116,10 +1266,20 @@ if ($east3_a[20]==1) {$east3_1[]="第1金曜日";}
 if ($east3_a[21]==1) {$east3_1[]="第2金曜日";}
 if ($east3_a[22]==1) {$east3_1[]="第3金曜日";}
 if ($east3_a[23]==1) {$east3_1[]="第4金曜日";}
+if (($east3_a[20]==1 && $east3_a[21]==1) && ($east3_a[22]==1 && $east3_a[23]==1)){
+	$result = array_diff($east3_1, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east3_1 = array_values($result);
+	$east3_1[]="毎週金曜日";
+}
 if ($east3_a[24]==1) {$east3_1[]="第1土曜日";}
 if ($east3_a[25]==1) {$east3_1[]="第2土曜日";}
 if ($east3_a[26]==1) {$east3_1[]="第3土曜日";}
 if ($east3_a[27]==1) {$east3_1[]="第4土曜日";}
+if (($east3_a[24]==1 && $east3_a[25]==1) && ($east3_a[26]==1 && $east3_a[27]==1)){
+	$result = array_diff($east3_1, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east3_1 = array_values($result);
+	$east3_1[]="毎週土曜日";
+}
 //東3区metal
 if ($east3_b[0]==1) {$east3_2[]="第1日曜日";}
 if ($east3_b[1]==1) {$east3_2[]="第2日曜日";}
@@ -1170,10 +1330,20 @@ if ($east3_b[20]==1) {$east3_2[]="第1金曜日";}
 if ($east3_b[21]==1) {$east3_2[]="第2金曜日";}
 if ($east3_b[22]==1) {$east3_2[]="第3金曜日";}
 if ($east3_b[23]==1) {$east3_2[]="第4金曜日";}
+if (($east3_b[20]==1 && $east3_b[21]==1) && ($east3_b[22]==1 && $east3_b[23]==1)){
+	$result = array_diff($east3_2, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east3_2 = array_values($result);
+	$east3_2[]="毎週金曜日";
+}
 if ($east3_b[24]==1) {$east3_2[]="第1土曜日";}
 if ($east3_b[25]==1) {$east3_2[]="第2土曜日";}
 if ($east3_b[26]==1) {$east3_2[]="第3土曜日";}
 if ($east3_b[27]==1) {$east3_2[]="第4土曜日";}
+if (($east3_b[24]==1 && $east3_b[25]==1) && ($east3_b[26]==1 && $east3_b[27]==1)){
+	$result = array_diff($east3_2, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east3_2 = array_values($result);
+	$east3_2[]="毎週土曜日";
+}
 //東3区bottle
 if ($east3_c[0]==1) {$east3_3[]="第1日曜日";}
 if ($east3_c[1]==1) {$east3_3[]="第2日曜日";}
@@ -1224,10 +1394,20 @@ if ($east3_c[20]==1) {$east3_3[]="第1金曜日";}
 if ($east3_c[21]==1) {$east3_3[]="第2金曜日";}
 if ($east3_c[22]==1) {$east3_3[]="第3金曜日";}
 if ($east3_c[23]==1) {$east3_3[]="第4金曜日";}
+if (($east3_c[20]==1 && $east3_c[21]==1) && ($east3_c[22]==1 && $east3_c[23]==1)){
+	$result = array_diff($east3_3, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east3_3 = array_values($result);
+	$east3_3[]="毎週金曜日";
+}
 if ($east3_c[24]==1) {$east3_3[]="第1土曜日";}
 if ($east3_c[25]==1) {$east3_3[]="第2土曜日";}
 if ($east3_c[26]==1) {$east3_3[]="第3土曜日";}
 if ($east3_c[27]==1) {$east3_3[]="第4土曜日";}
+if (($east3_c[24]==1 && $east3_c[25]==1) && ($east3_c[26]==1 && $east3_c[27]==1)){
+	$result = array_diff($east3_3, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east3_3 = array_values($result);
+	$east3_3[]="毎週土曜日";
+}
 //東3区nonburn
 if ($east3_d[0]==1) {$east3_4[]="第1日曜日";}
 if ($east3_d[1]==1) {$east3_4[]="第2日曜日";}
@@ -1278,10 +1458,20 @@ if ($east3_d[20]==1) {$east3_4[]="第1金曜日";}
 if ($east3_d[21]==1) {$east3_4[]="第2金曜日";}
 if ($east3_d[22]==1) {$east3_4[]="第3金曜日";}
 if ($east3_d[23]==1) {$east3_4[]="第4金曜日";}
+if (($east3_d[20]==1 && $east3_d[21]==1) && ($east3_d[22]==1 && $east3_d[23]==1)){
+	$result = array_diff($east3_4, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east3_4 = array_values($result);
+	$east3_4[]="毎週金曜日";
+}
 if ($east3_d[24]==1) {$east3_4[]="第1土曜日";}
 if ($east3_d[25]==1) {$east3_4[]="第2土曜日";}
 if ($east3_d[26]==1) {$east3_4[]="第3土曜日";}
 if ($east3_d[27]==1) {$east3_4[]="第4土曜日";}
+if (($east3_d[24]==1 && $east3_d[25]==1) && ($east3_d[26]==1 && $east3_d[27]==1)){
+	$result = array_diff($east3_4, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east3_4 = array_values($result);
+	$east3_4[]="毎週土曜日";
+}
 //東3区pet
 if ($east3_e[0]==1) {$east3_5[]="第1日曜日";}
 if ($east3_e[1]==1) {$east3_5[]="第2日曜日";}
@@ -1332,10 +1522,20 @@ if ($east3_e[20]==1) {$east3_5[]="第1金曜日";}
 if ($east3_e[21]==1) {$east3_5[]="第2金曜日";}
 if ($east3_e[22]==1) {$east3_5[]="第3金曜日";}
 if ($east3_e[23]==1) {$east3_5[]="第4金曜日";}
+if (($east3_e[20]==1 && $east3_e[21]==1) && ($east3_e[22]==1 && $east3_e[23]==1)){
+	$result = array_diff($east3_5, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east3_5 = array_values($result);
+	$east3_5[]="毎週金曜日";
+}
 if ($east3_e[24]==1) {$east3_5[]="第1土曜日";}
 if ($east3_e[25]==1) {$east3_5[]="第2土曜日";}
 if ($east3_e[26]==1) {$east3_5[]="第3土曜日";}
 if ($east3_e[27]==1) {$east3_5[]="第4土曜日";}
+if (($east3_e[24]==1 && $east3_e[25]==1) && ($east3_e[26]==1 && $east3_e[27]==1)){
+	$result = array_diff($east3_5, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east3_5 = array_values($result);
+	$east3_5[]="毎週土曜日";
+}
 //東3区plastic
 if ($east3_f[0]==1) {$east3_6[]="第1日曜日";}
 if ($east3_f[1]==1) {$east3_6[]="第2日曜日";}
@@ -1386,10 +1586,20 @@ if ($east3_f[20]==1) {$east3_6[]="第1金曜日";}
 if ($east3_f[21]==1) {$east3_6[]="第2金曜日";}
 if ($east3_f[22]==1) {$east3_6[]="第3金曜日";}
 if ($east3_f[23]==1) {$east3_6[]="第4金曜日";}
+if (($east3_f[20]==1 && $east3_f[21]==1) && ($east3_f[22]==1 && $east3_f[23]==1)){
+	$result = array_diff($east3_6, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east3_6 = array_values($result);
+	$east3_6[]="毎週金曜日";
+}
 if ($east3_f[24]==1) {$east3_6[]="第1土曜日";}
 if ($east3_f[25]==1) {$east3_6[]="第2土曜日";}
 if ($east3_f[26]==1) {$east3_6[]="第3土曜日";}
 if ($east3_f[27]==1) {$east3_6[]="第4土曜日";}
+if (($east3_f[24]==1 && $east3_f[25]==1) && ($east3_f[26]==1 && $east3_f[27]==1)){
+	$result = array_diff($east3_6, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east3_6 = array_values($result);
+	$east3_6[]="毎週土曜日";
+}
 //東3区paper
 if ($east3_g[0]==1) {$east3_7[]="第1日曜日";}
 if ($east3_g[1]==1) {$east3_7[]="第2日曜日";}
@@ -1440,10 +1650,20 @@ if ($east3_g[20]==1) {$east3_7[]="第1金曜日";}
 if ($east3_g[21]==1) {$east3_7[]="第2金曜日";}
 if ($east3_g[22]==1) {$east3_7[]="第3金曜日";}
 if ($east3_g[23]==1) {$east3_7[]="第4金曜日";}
+if (($east3_g[20]==1 && $east3_g[21]==1) && ($east3_g[22]==1 && $east3_g[23]==1)){
+	$result = array_diff($east3_7, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east3_7 = array_values($result);
+	$east3_7[]="毎週金曜日";
+}
 if ($east3_g[24]==1) {$east3_7[]="第1土曜日";}
 if ($east3_g[25]==1) {$east3_7[]="第2土曜日";}
 if ($east3_g[26]==1) {$east3_7[]="第3土曜日";}
 if ($east3_g[27]==1) {$east3_7[]="第4土曜日";}
+if (($east3_g[24]==1 && $east3_g[25]==1) && ($east3_g[26]==1 && $east3_g[27]==1)){
+	$result = array_diff($east3_7, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east3_7 = array_values($result);
+	$east3_7[]="毎週土曜日";
+}
 //東3区cloth
 if ($east3_h[0]==1) {$east3_8[]="第1日曜日";}
 if ($east3_h[1]==1) {$east3_8[]="第2日曜日";}
@@ -1494,10 +1714,20 @@ if ($east3_h[20]==1) {$east3_8[]="第1金曜日";}
 if ($east3_h[21]==1) {$east3_8[]="第2金曜日";}
 if ($east3_h[22]==1) {$east3_8[]="第3金曜日";}
 if ($east3_h[23]==1) {$east3_8[]="第4金曜日";}
+if (($east3_h[20]==1 && $east3_h[21]==1) && ($east3_h[22]==1 && $east3_h[23]==1)){
+	$result = array_diff($east3_8, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east3_8 = array_values($result);
+	$east3_8[]="毎週金曜日";
+}
 if ($east3_h[24]==1) {$east3_8[]="第1土曜日";}
 if ($east3_h[25]==1) {$east3_8[]="第2土曜日";}
 if ($east3_h[26]==1) {$east3_8[]="第3土曜日";}
 if ($east3_h[27]==1) {$east3_8[]="第4土曜日";}
+if (($east3_h[24]==1 && $east3_h[25]==1) && ($east3_h[26]==1 && $east3_h[27]==1)){
+	$result = array_diff($east3_8, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east3_8 = array_values($result);
+	$east3_8[]="毎週土曜日";
+}
 
 //ここから西1区
 #データの抽出
@@ -1586,10 +1816,20 @@ if ($east4_a[20]==1) {$east4_1[]="第1金曜日";}
 if ($east4_a[21]==1) {$east4_1[]="第2金曜日";}
 if ($east4_a[22]==1) {$east4_1[]="第3金曜日";}
 if ($east4_a[23]==1) {$east4_1[]="第4金曜日";}
+if (($east4_a[20]==1 && $east4_a[21]==1) && ($east4_a[22]==1 && $east4_a[23]==1)){
+	$result = array_diff($east4_1, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east4_1 = array_values($result);
+	$east4_1[]="毎週金曜日";
+}
 if ($east4_a[24]==1) {$east4_1[]="第1土曜日";}
 if ($east4_a[25]==1) {$east4_1[]="第2土曜日";}
 if ($east4_a[26]==1) {$east4_1[]="第3土曜日";}
 if ($east4_a[27]==1) {$east4_1[]="第4土曜日";}
+if (($east4_a[24]==1 && $east4_a[25]==1) && ($east4_a[26]==1 && $east4_a[27]==1)){
+	$result = array_diff($east4_1, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east4_1 = array_values($result);
+	$east4_1[]="毎週土曜日";
+}
 //西1区metal
 if ($east4_b[0]==1) {$east4_2[]="第1日曜日";}
 if ($east4_b[1]==1) {$east4_2[]="第2日曜日";}
@@ -1640,10 +1880,20 @@ if ($east4_b[20]==1) {$east4_2[]="第1金曜日";}
 if ($east4_b[21]==1) {$east4_2[]="第2金曜日";}
 if ($east4_b[22]==1) {$east4_2[]="第3金曜日";}
 if ($east4_b[23]==1) {$east4_2[]="第4金曜日";}
+if (($east4_b[20]==1 && $east4_b[21]==1) && ($east4_b[22]==1 && $east4_b[23]==1)){
+	$result = array_diff($east4_2, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east4_2 = array_values($result);
+	$east4_2[]="毎週金曜日";
+}
 if ($east4_b[24]==1) {$east4_2[]="第1土曜日";}
 if ($east4_b[25]==1) {$east4_2[]="第2土曜日";}
 if ($east4_b[26]==1) {$east4_2[]="第3土曜日";}
 if ($east4_b[27]==1) {$east4_2[]="第4土曜日";}
+if (($east4_b[24]==1 && $east4_b[25]==1) && ($east4_b[26]==1 && $east4_b[27]==1)){
+	$result = array_diff($east4_2, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east4_2 = array_values($result);
+	$east4_2[]="毎週土曜日";
+}
 //西1区bottle
 if ($east4_c[0]==1) {$east4_3[]="第1日曜日";}
 if ($east4_c[1]==1) {$east4_3[]="第2日曜日";}
@@ -1694,10 +1944,20 @@ if ($east4_c[20]==1) {$east4_3[]="第1金曜日";}
 if ($east4_c[21]==1) {$east4_3[]="第2金曜日";}
 if ($east4_c[22]==1) {$east4_3[]="第3金曜日";}
 if ($east4_c[23]==1) {$east4_3[]="第4金曜日";}
+if (($east4_c[20]==1 && $east4_c[21]==1) && ($east4_c[22]==1 && $east4_c[23]==1)){
+	$result = array_diff($east4_3, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east4_3= array_values($result);
+	$east4_3[]="毎週金曜日";
+}
 if ($east4_c[24]==1) {$east4_3[]="第1土曜日";}
 if ($east4_c[25]==1) {$east4_3[]="第2土曜日";}
 if ($east4_c[26]==1) {$east4_3[]="第3土曜日";}
 if ($east4_c[27]==1) {$east4_3[]="第4土曜日";}
+if (($east4_c[24]==1 && $east4_c[25]==1) && ($east4_c[26]==1 && $east4_c[27]==1)){
+	$result = array_diff($east4_3, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east4_3 = array_values($result);
+	$east4_3[]="毎週土曜日";
+}
 //西1区nonburn
 if ($east4_d[0]==1) {$east4_4[]="第1日曜日";}
 if ($east4_d[1]==1) {$east4_4[]="第2日曜日";}
@@ -1748,10 +2008,20 @@ if ($east4_d[20]==1) {$east4_4[]="第1金曜日";}
 if ($east4_d[21]==1) {$east4_4[]="第2金曜日";}
 if ($east4_d[22]==1) {$east4_4[]="第3金曜日";}
 if ($east4_d[23]==1) {$east4_4[]="第4金曜日";}
+if (($east4_d[20]==1 && $east4_d[21]==1) && ($east4_d[22]==1 && $east4_d[23]==1)){
+	$result = array_diff($east4_4, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east4_4 = array_values($result);
+	$east4_4[]="毎週金曜日";
+}
 if ($east4_d[24]==1) {$east4_4[]="第1土曜日";}
 if ($east4_d[25]==1) {$east4_4[]="第2土曜日";}
 if ($east4_d[26]==1) {$east4_4[]="第3土曜日";}
 if ($east4_d[27]==1) {$east4_4[]="第4土曜日";}
+if (($east4_d[24]==1 && $east4_d[25]==1) && ($east4_d[26]==1 && $east4_d[27]==1)){
+	$result = array_diff($east4_4, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east4_4 = array_values($result);
+	$east4_4[]="毎週土曜日";
+}
 //西1区pet
 if ($east4_e[0]==1) {$east4_5[]="第1日曜日";}
 if ($east4_e[1]==1) {$east4_5[]="第2日曜日";}
@@ -1802,10 +2072,20 @@ if ($east4_e[20]==1) {$east4_5[]="第1金曜日";}
 if ($east4_e[21]==1) {$east4_5[]="第2金曜日";}
 if ($east4_e[22]==1) {$east4_5[]="第3金曜日";}
 if ($east4_e[23]==1) {$east4_5[]="第4金曜日";}
+if (($east4_e[20]==1 && $east4_e[21]==1) && ($east4_e[22]==1 && $east4_e[23]==1)){
+	$result = array_diff($east4_5, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east4_5 = array_values($result);
+	$east4_5[]="毎週金曜日";
+}
 if ($east4_e[24]==1) {$east4_5[]="第1土曜日";}
 if ($east4_e[25]==1) {$east4_5[]="第2土曜日";}
 if ($east4_e[26]==1) {$east4_5[]="第3土曜日";}
 if ($east4_e[27]==1) {$east4_5[]="第4土曜日";}
+if (($east4_e[24]==1 && $east4_e[25]==1) && ($east4_e[26]==1 && $east4_e[27]==1)){
+	$result = array_diff($east4_5, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east4_5 = array_values($result);
+	$east4_5[]="毎週土曜日";
+}
 //西1区plastic
 if ($east4_f[0]==1) {$east4_6[]="第1日曜日";}
 if ($east4_f[1]==1) {$east4_6[]="第2日曜日";}
@@ -1856,10 +2136,20 @@ if ($east4_f[20]==1) {$east4_6[]="第1金曜日";}
 if ($east4_f[21]==1) {$east4_6[]="第2金曜日";}
 if ($east4_f[22]==1) {$east4_6[]="第3金曜日";}
 if ($east4_f[23]==1) {$east4_6[]="第4金曜日";}
+if (($east4_f[20]==1 && $east4_f[21]==1) && ($east4_f[22]==1 && $east4_f[23]==1)){
+	$result = array_diff($east4_6, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east4_6 = array_values($result);
+	$east4_6[]="毎週金曜日";
+}
 if ($east4_f[24]==1) {$east4_6[]="第1土曜日";}
 if ($east4_f[25]==1) {$east4_6[]="第2土曜日";}
 if ($east4_f[26]==1) {$east4_6[]="第3土曜日";}
 if ($east4_f[27]==1) {$east4_6[]="第4土曜日";}
+if (($east4_f[24]==1 && $east4_f[25]==1) && ($east4_f[26]==1 && $east4_f[27]==1)){
+	$result = array_diff($east4_6, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east4_6 = array_values($result);
+	$east4_6[]="毎週土曜日";
+}
 //西1区paper
 if ($east4_g[0]==1) {$east4_7[]="第1日曜日";}
 if ($east4_g[1]==1) {$east4_7[]="第2日曜日";}
@@ -1910,10 +2200,20 @@ if ($east4_g[20]==1) {$east4_7[]="第1金曜日";}
 if ($east4_g[21]==1) {$east4_7[]="第2金曜日";}
 if ($east4_g[22]==1) {$east4_7[]="第3金曜日";}
 if ($east4_g[23]==1) {$east4_7[]="第4金曜日";}
+if (($east4_g[20]==1 && $east4_g[21]==1) && ($east4_g[22]==1 && $east4_g[23]==1)){
+	$result = array_diff($east4_7, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east4_7 = array_values($result);
+	$east4_7[]="毎週金曜日";
+}
 if ($east4_g[24]==1) {$east4_7[]="第1土曜日";}
 if ($east4_g[25]==1) {$east4_7[]="第2土曜日";}
 if ($east4_g[26]==1) {$east4_7[]="第3土曜日";}
 if ($east4_g[27]==1) {$east4_7[]="第4土曜日";}
+if (($east4_g[24]==1 && $east4_g[25]==1) && ($east4_g[26]==1 && $east4_g[27]==1)){
+	$result = array_diff($east4_7, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east4_7 = array_values($result);
+	$east4_7[]="毎週土曜日";
+}
 //西1区cloth
 if ($east4_h[0]==1) {$east4_8[]="第1日曜日";}
 if ($east4_h[1]==1) {$east4_8[]="第2日曜日";}
@@ -1964,10 +2264,20 @@ if ($east4_h[20]==1) {$east4_8[]="第1金曜日";}
 if ($east4_h[21]==1) {$east4_8[]="第2金曜日";}
 if ($east4_h[22]==1) {$east4_8[]="第3金曜日";}
 if ($east4_h[23]==1) {$east4_8[]="第4金曜日";}
+if (($east4_h[20]==1 && $east4_h[21]==1) && ($east4_h[22]==1 && $east4_h[23]==1)){
+	$result = array_diff($east4_8, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east4_8 = array_values($result);
+	$east4_8[]="毎週金曜日";
+}
 if ($east4_h[24]==1) {$east4_8[]="第1土曜日";}
 if ($east4_h[25]==1) {$east4_8[]="第2土曜日";}
 if ($east4_h[26]==1) {$east4_8[]="第3土曜日";}
 if ($east4_h[27]==1) {$east4_8[]="第4土曜日";}
+if (($east4_h[24]==1 && $east4_h[25]==1) && ($east4_h[26]==1 && $east4_h[27]==1)){
+	$result = array_diff($east4_8, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east4_8 = array_values($result);
+	$east4_8[]="毎週土曜日";
+}
 
 //ここから西2区
 #データの抽出
@@ -2056,10 +2366,20 @@ if ($east5_a[20]==1) {$east5_1[]="第1金曜日";}
 if ($east5_a[21]==1) {$east5_1[]="第2金曜日";}
 if ($east5_a[22]==1) {$east5_1[]="第3金曜日";}
 if ($east5_a[23]==1) {$east5_1[]="第4金曜日";}
+if (($east5_a[20]==1 && $east5_a[21]==1) && ($east5_a[22]==1 && $east5_a[23]==1)){
+	$result = array_diff($east5_1, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east5_1 = array_values($result);
+	$east5_1[]="毎週金曜日";
+}
 if ($east5_a[24]==1) {$east5_1[]="第1土曜日";}
 if ($east5_a[25]==1) {$east5_1[]="第2土曜日";}
 if ($east5_a[26]==1) {$east5_1[]="第3土曜日";}
 if ($east5_a[27]==1) {$east5_1[]="第4土曜日";}
+if (($east5_a[24]==1 && $east5_a[25]==1) && ($east5_a[26]==1 && $east5_a[27]==1)){
+	$result = array_diff($east5_1, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east5_1 = array_values($result);
+	$east5_1[]="毎週土曜日";
+}
 //西2区metal
 if ($east5_b[0]==1) {$east5_2[]="第1日曜日";}
 if ($east5_b[1]==1) {$east5_2[]="第2日曜日";}
@@ -2110,10 +2430,20 @@ if ($east5_b[20]==1) {$east5_2[]="第1金曜日";}
 if ($east5_b[21]==1) {$east5_2[]="第2金曜日";}
 if ($east5_b[22]==1) {$east5_2[]="第3金曜日";}
 if ($east5_b[23]==1) {$east5_2[]="第4金曜日";}
+if (($east5_b[20]==1 && $east5_b[21]==1) && ($east5_b[22]==1 && $east5_b[23]==1)){
+	$result = array_diff($east5_2, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east5_2 = array_values($result);
+	$east5_2[]="毎週金曜日";
+}
 if ($east5_b[24]==1) {$east5_2[]="第1土曜日";}
 if ($east5_b[25]==1) {$east5_2[]="第2土曜日";}
 if ($east5_b[26]==1) {$east5_2[]="第3土曜日";}
 if ($east5_b[27]==1) {$east5_2[]="第4土曜日";}
+if (($east5_b[24]==1 && $east5_b[25]==1) && ($east5_b[26]==1 && $east5_b[27]==1)){
+	$result = array_diff($east5_2, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east5_2 = array_values($result);
+	$east5_2[]="毎週土曜日";
+}
 //西2区bottle
 if ($east5_c[0]==1) {$east5_3[]="第1日曜日";}
 if ($east5_c[1]==1) {$east5_3[]="第2日曜日";}
@@ -2164,10 +2494,20 @@ if ($east5_c[20]==1) {$east5_3[]="第1金曜日";}
 if ($east5_c[21]==1) {$east5_3[]="第2金曜日";}
 if ($east5_c[22]==1) {$east5_3[]="第3金曜日";}
 if ($east5_c[23]==1) {$east5_3[]="第4金曜日";}
+if (($east5_c[20]==1 && $east5_c[21]==1) && ($east5_c[22]==1 && $east5_c[23]==1)){
+	$result = array_diff($east5_3, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east5_3 = array_values($result);
+	$east5_3[]="毎週金曜日";
+}
 if ($east5_c[24]==1) {$east5_3[]="第1土曜日";}
 if ($east5_c[25]==1) {$east5_3[]="第2土曜日";}
 if ($east5_c[26]==1) {$east5_3[]="第3土曜日";}
 if ($east5_c[27]==1) {$east5_3[]="第4土曜日";}
+if (($east5_c[24]==1 && $east5_c[25]==1) && ($east5_c[26]==1 && $east5_c[27]==1)){
+	$result = array_diff($east5_3, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east5_3 = array_values($result);
+	$east5_3[]="毎週土曜日";
+}
 //西2区nonburn
 if ($east5_d[0]==1) {$east5_4[]="第1日曜日";}
 if ($east5_d[1]==1) {$east5_4[]="第2日曜日";}
@@ -2218,10 +2558,20 @@ if ($east5_d[20]==1) {$east5_4[]="第1金曜日";}
 if ($east5_d[21]==1) {$east5_4[]="第2金曜日";}
 if ($east5_d[22]==1) {$east5_4[]="第3金曜日";}
 if ($east5_d[23]==1) {$east5_4[]="第4金曜日";}
+if (($east5_d[20]==1 && $east5_d[21]==1) && ($east5_d[22]==1 && $east5_d[23]==1)){
+	$result = array_diff($east5_4, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east5_4 = array_values($result);
+	$east5_4[]="毎週金曜日";
+}
 if ($east5_d[24]==1) {$east5_4[]="第1土曜日";}
 if ($east5_d[25]==1) {$east5_4[]="第2土曜日";}
 if ($east5_d[26]==1) {$east5_4[]="第3土曜日";}
 if ($east5_d[27]==1) {$east5_4[]="第4土曜日";}
+if (($east5_d[24]==1 && $east5_d[25]==1) && ($east5_d[26]==1 && $east5_d[27]==1)){
+	$result = array_diff($east5_4, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east5_4 = array_values($result);
+	$east5_4[]="毎週土曜日";
+}
 //西2区pet
 if ($east5_e[0]==1) {$east5_5[]="第1日曜日";}
 if ($east5_e[1]==1) {$east5_5[]="第2日曜日";}
@@ -2272,10 +2622,20 @@ if ($east5_e[20]==1) {$east5_5[]="第1金曜日";}
 if ($east5_e[21]==1) {$east5_5[]="第2金曜日";}
 if ($east5_e[22]==1) {$east5_5[]="第3金曜日";}
 if ($east5_e[23]==1) {$east5_5[]="第4金曜日";}
+if (($east5_e[20]==1 && $east5_e[21]==1) && ($east5_e[22]==1 && $east5_e[23]==1)){
+	$result = array_diff($east5_5, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east5_5 = array_values($result);
+	$east5_5[]="毎週金曜日";
+}
 if ($east5_e[24]==1) {$east5_5[]="第1土曜日";}
 if ($east5_e[25]==1) {$east5_5[]="第2土曜日";}
 if ($east5_e[26]==1) {$east5_5[]="第3土曜日";}
 if ($east5_e[27]==1) {$east5_5[]="第4土曜日";}
+if (($east5_e[24]==1 && $east5_e[25]==1) && ($east5_e[26]==1 && $east5_e[27]==1)){
+	$result = array_diff($east5_5, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east5_5 = array_values($result);
+	$east5_5[]="毎週土曜日";
+}
 //西2区plastic
 if ($east5_f[0]==1) {$east5_6[]="第1日曜日";}
 if ($east5_f[1]==1) {$east5_6[]="第2日曜日";}
@@ -2326,10 +2686,20 @@ if ($east5_f[20]==1) {$east5_6[]="第1金曜日";}
 if ($east5_f[21]==1) {$east5_6[]="第2金曜日";}
 if ($east5_f[22]==1) {$east5_6[]="第3金曜日";}
 if ($east5_f[23]==1) {$east5_6[]="第4金曜日";}
+if (($east5_f[20]==1 && $east5_f[21]==1) && ($east5_f[22]==1 && $east5_f[23]==1)){
+	$result = array_diff($east5_6, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east5_6 = array_values($result);
+	$east5_6[]="毎週金曜日";
+}
 if ($east5_f[24]==1) {$east5_6[]="第1土曜日";}
 if ($east5_f[25]==1) {$east5_6[]="第2土曜日";}
 if ($east5_f[26]==1) {$east5_6[]="第3土曜日";}
 if ($east5_f[27]==1) {$east5_6[]="第4土曜日";}
+if (($east5_f[24]==1 && $east5_f[25]==1) && ($east5_f[26]==1 && $east5_f[27]==1)){
+	$result = array_diff($east5_6, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east5_6 = array_values($result);
+	$east5_6[]="毎週土曜日";
+}
 //西2区paper
 if ($east5_g[0]==1) {$east5_7[]="第1日曜日";}
 if ($east5_g[1]==1) {$east5_7[]="第2日曜日";}
@@ -2380,10 +2750,20 @@ if ($east5_g[20]==1) {$east5_7[]="第1金曜日";}
 if ($east5_g[21]==1) {$east5_7[]="第2金曜日";}
 if ($east5_g[22]==1) {$east5_7[]="第3金曜日";}
 if ($east5_g[23]==1) {$east5_7[]="第4金曜日";}
+if (($east5_g[20]==1 && $east5_g[21]==1) && ($east5_g[22]==1 && $east5_g[23]==1)){
+	$result = array_diff($east5_7, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east5_7 = array_values($result);
+	$east5_7[]="毎週金曜日";
+}
 if ($east5_g[24]==1) {$east5_7[]="第1土曜日";}
 if ($east5_g[25]==1) {$east5_7[]="第2土曜日";}
 if ($east5_g[26]==1) {$east5_7[]="第3土曜日";}
 if ($east5_g[27]==1) {$east5_7[]="第4土曜日";}
+if (($east5_g[24]==1 && $east5_g[25]==1) && ($east5_g[26]==1 && $east5_g[27]==1)){
+	$result = array_diff($east5_7, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east5_7 = array_values($result);
+	$east5_7[]="毎週土曜日";
+}
 //西2区cloth
 if ($east5_h[0]==1) {$east5_8[]="第1日曜日";}
 if ($east5_h[1]==1) {$east5_8[]="第2日曜日";}
@@ -2434,10 +2814,20 @@ if ($east5_h[20]==1) {$east5_8[]="第1金曜日";}
 if ($east5_h[21]==1) {$east5_8[]="第2金曜日";}
 if ($east5_h[22]==1) {$east5_8[]="第3金曜日";}
 if ($east5_h[23]==1) {$east5_8[]="第4金曜日";}
+if (($east5_h[20]==1 && $east5_h[21]==1) && ($east5_h[22]==1 && $east5_h[23]==1)){
+	$result = array_diff($east5_8, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east5_8 = array_values($result);
+	$east5_8[]="毎週金曜日";
+}
 if ($east5_h[24]==1) {$east5_8[]="第1土曜日";}
 if ($east5_h[25]==1) {$east5_8[]="第2土曜日";}
 if ($east5_h[26]==1) {$east5_8[]="第3土曜日";}
 if ($east5_h[27]==1) {$east5_8[]="第4土曜日";}
+if (($east5_h[24]==1 && $east5_h[25]==1) && ($east5_h[26]==1 && $east5_h[27]==1)){
+	$result = array_diff($east5_8, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east5_8 = array_values($result);
+	$east5_8[]="毎週土曜日";
+}
 
 //ここから西3区
 #データの抽出
@@ -2526,10 +2916,20 @@ if ($east6_a[20]==1) {$east6_1[]="第1金曜日";}
 if ($east6_a[21]==1) {$east6_1[]="第2金曜日";}
 if ($east6_a[22]==1) {$east6_1[]="第3金曜日";}
 if ($east6_a[23]==1) {$east6_1[]="第4金曜日";}
+if (($east6_a[20]==1 && $east6_a[21]==1) && ($east6_a[22]==1 && $east6_a[23]==1)){
+	$result = array_diff($east6_1, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east6_1 = array_values($result);
+	$east6_1[]="毎週金曜日";
+}
 if ($east6_a[24]==1) {$east6_1[]="第1土曜日";}
 if ($east6_a[25]==1) {$east6_1[]="第2土曜日";}
 if ($east6_a[26]==1) {$east6_1[]="第3土曜日";}
 if ($east6_a[27]==1) {$east6_1[]="第4土曜日";}
+if (($east6_a[24]==1 && $east6_a[25]==1) && ($east6_a[26]==1 && $east6_a[27]==1)){
+	$result = array_diff($east6_1, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east6_1 = array_values($result);
+	$east6_1[]="毎週土曜日";
+}
 //西3区metal
 if ($east6_b[0]==1) {$east6_2[]="第1日曜日";}
 if ($east6_b[1]==1) {$east6_2[]="第2日曜日";}
@@ -2580,10 +2980,20 @@ if ($east6_b[20]==1) {$east6_2[]="第1金曜日";}
 if ($east6_b[21]==1) {$east6_2[]="第2金曜日";}
 if ($east6_b[22]==1) {$east6_2[]="第3金曜日";}
 if ($east6_b[23]==1) {$east6_2[]="第4金曜日";}
+if (($east6_b[20]==1 && $east6_b[21]==1) && ($east6_b[22]==1 && $east6_b[23]==1)){
+	$result = array_diff($east6_2, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east6_2 = array_values($result);
+	$east6_2[]="毎週金曜日";
+}
 if ($east6_b[24]==1) {$east6_2[]="第1土曜日";}
 if ($east6_b[25]==1) {$east6_2[]="第2土曜日";}
 if ($east6_b[26]==1) {$east6_2[]="第3土曜日";}
 if ($east6_b[27]==1) {$east6_2[]="第4土曜日";}
+if (($east6_b[24]==1 && $east6_b[25]==1) && ($east6_b[26]==1 && $east6_b[27]==1)){
+	$result = array_diff($east6_2, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east6_2 = array_values($result);
+	$east6_2[]="毎週土曜日";
+}
 //西3区bottle
 if ($east6_c[0]==1) {$east6_3[]="第1日曜日";}
 if ($east6_c[1]==1) {$east6_3[]="第2日曜日";}
@@ -2634,10 +3044,20 @@ if ($east6_c[20]==1) {$east6_3[]="第1金曜日";}
 if ($east6_c[21]==1) {$east6_3[]="第2金曜日";}
 if ($east6_c[22]==1) {$east6_3[]="第3金曜日";}
 if ($east6_c[23]==1) {$east6_3[]="第4金曜日";}
+if (($east6_c[20]==1 && $east6_c[21]==1) && ($east6_c[22]==1 && $east6_c[23]==1)){
+	$result = array_diff($east6_3, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east6_3 = array_values($result);
+	$east6_3[]="毎週金曜日";
+}
 if ($east6_c[24]==1) {$east6_3[]="第1土曜日";}
 if ($east6_c[25]==1) {$east6_3[]="第2土曜日";}
 if ($east6_c[26]==1) {$east6_3[]="第3土曜日";}
 if ($east6_c[27]==1) {$east6_3[]="第4土曜日";}
+if (($east6_c[24]==1 && $east6_c[25]==1) && ($east6_c[26]==1 && $east6_c[27]==1)){
+	$result = array_diff($east6_3, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east6_3 = array_values($result);
+	$east6_3[]="毎週土曜日";
+}
 //西3区nonburn
 if ($east6_d[0]==1) {$east6_4[]="第1日曜日";}
 if ($east6_d[1]==1) {$east6_4[]="第2日曜日";}
@@ -2688,10 +3108,20 @@ if ($east6_d[20]==1) {$east6_4[]="第1金曜日";}
 if ($east6_d[21]==1) {$east6_4[]="第2金曜日";}
 if ($east6_d[22]==1) {$east6_4[]="第3金曜日";}
 if ($east6_d[23]==1) {$east6_4[]="第4金曜日";}
+if (($east6_d[20]==1 && $east6_d[21]==1) && ($east6_d[22]==1 && $east6_d[23]==1)){
+	$result = array_diff($east6_4, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east6_4 = array_values($result);
+	$east6_4[]="毎週金曜日";
+}
 if ($east6_d[24]==1) {$east6_4[]="第1土曜日";}
 if ($east6_d[25]==1) {$east6_4[]="第2土曜日";}
 if ($east6_d[26]==1) {$east6_4[]="第3土曜日";}
 if ($east6_d[27]==1) {$east6_4[]="第4土曜日";}
+if (($east6_d[24]==1 && $east6_d[25]==1) && ($east6_d[26]==1 && $east6_d[27]==1)){
+	$result = array_diff($east6_4, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east6_4 = array_values($result);
+	$east6_4[]="毎週土曜日";
+}
 //西3区pe
 if ($east6_e[0]==1) {$east6_5[]="第1日曜日";}
 if ($east6_e[1]==1) {$east6_5[]="第2日曜日";}
@@ -2742,10 +3172,20 @@ if ($east6_e[20]==1) {$east6_5[]="第1金曜日";}
 if ($east6_e[21]==1) {$east6_5[]="第2金曜日";}
 if ($east6_e[22]==1) {$east6_5[]="第3金曜日";}
 if ($east6_e[23]==1) {$east6_5[]="第4金曜日";}
+if (($east6_e[20]==1 && $east6_e[21]==1) && ($east6_e[22]==1 && $east6_e[23]==1)){
+	$result = array_diff($east6_5, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east6_5 = array_values($result);
+	$east6_5[]="毎週金曜日";
+}
 if ($east6_e[24]==1) {$east6_5[]="第1土曜日";}
 if ($east6_e[25]==1) {$east6_5[]="第2土曜日";}
 if ($east6_e[26]==1) {$east6_5[]="第3土曜日";}
 if ($east6_e[27]==1) {$east6_5[]="第4土曜日";}
+if (($east6_e[24]==1 && $east6_e[25]==1) && ($east6_e[26]==1 && $east6_e[27]==1)){
+	$result = array_diff($east6_5, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east6_5 = array_values($result);
+	$east6_5[]="毎週土曜日";
+}
 //西3区plastic
 if ($east6_f[0]==1) {$east6_6[]="第1日曜日";}
 if ($east6_f[1]==1) {$east6_6[]="第2日曜日";}
@@ -2796,10 +3236,20 @@ if ($east6_f[20]==1) {$east6_6[]="第1金曜日";}
 if ($east6_f[21]==1) {$east6_6[]="第2金曜日";}
 if ($east6_f[22]==1) {$east6_6[]="第3金曜日";}
 if ($east6_f[23]==1) {$east6_6[]="第4金曜日";}
+if (($east6_f[20]==1 && $east6_f[21]==1) && ($east6_f[22]==1 && $east6_f[23]==1)){
+	$result = array_diff($east6_6, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east6_6 = array_values($result);
+	$east6_6[]="毎週金曜日";
+}
 if ($east6_f[24]==1) {$east6_6[]="第1土曜日";}
 if ($east6_f[25]==1) {$east6_6[]="第2土曜日";}
 if ($east6_f[26]==1) {$east6_6[]="第3土曜日";}
 if ($east6_f[27]==1) {$east6_6[]="第4土曜日";}
+if (($east6_f[24]==1 && $east6_f[25]==1) && ($east6_f[26]==1 && $east6_f[27]==1)){
+	$result = array_diff($east6_6, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east6_6 = array_values($result);
+	$east6_6[]="毎週土曜日";
+}
 //西3区paper
 if ($east6_g[0]==1) {$east6_7[]="第1日曜日";}
 if ($east6_g[1]==1) {$east6_7[]="第2日曜日";}
@@ -2850,10 +3300,20 @@ if ($east6_g[20]==1) {$east6_7[]="第1金曜日";}
 if ($east6_g[21]==1) {$east6_7[]="第2金曜日";}
 if ($east6_g[22]==1) {$east6_7[]="第3金曜日";}
 if ($east6_g[23]==1) {$east6_7[]="第4金曜日";}
+if (($east6_g[20]==1 && $east6_g[21]==1) && ($east6_g[22]==1 && $east6_g[23]==1)){
+	$result = array_diff($east6_7, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east6_7 = array_values($result);
+	$east6_7[]="毎週金曜日";
+}
 if ($east6_g[24]==1) {$east6_7[]="第1土曜日";}
 if ($east6_g[25]==1) {$east6_7[]="第2土曜日";}
 if ($east6_g[26]==1) {$east6_7[]="第3土曜日";}
 if ($east6_g[27]==1) {$east6_7[]="第4土曜日";}
+if (($east6_g[24]==1 && $east6_g[25]==1) && ($east6_g[26]==1 && $east6_g[27]==1)){
+	$result = array_diff($east6_7, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east6_7 = array_values($result);
+	$east6_7[]="毎週土曜日";
+}
 //西3区cloth
 if ($east6_h[0]==1) {$east6_8[]="第1日曜日";}
 if ($east6_h[1]==1) {$east6_8[]="第2日曜日";}
@@ -2904,10 +3364,20 @@ if ($east6_h[20]==1) {$east6_8[]="第1金曜日";}
 if ($east6_h[21]==1) {$east6_8[]="第2金曜日";}
 if ($east6_h[22]==1) {$east6_8[]="第3金曜日";}
 if ($east6_h[23]==1) {$east6_8[]="第4金曜日";}
+if (($east6_h[20]==1 && $east6_h[21]==1) && ($east6_h[22]==1 && $east6_h[23]==1)){
+	$result = array_diff($east6_8, array("第1金曜日", "第2金曜日", "第3金曜日", "第4金曜日"));
+	$east6_8 = array_values($result);
+	$east6_8[]="毎週金曜日";
+}
 if ($east6_h[24]==1) {$east6_8[]="第1土曜日";}
 if ($east6_h[25]==1) {$east6_8[]="第2土曜日";}
 if ($east6_h[26]==1) {$east6_8[]="第3土曜日";}
 if ($east6_h[27]==1) {$east6_8[]="第4土曜日";}
+if (($east6_h[24]==1 && $east6_h[25]==1) && ($east6_h[26]==1 && $east6_h[27]==1)){
+	$result = array_diff($east6_8, array("第1土曜日", "第2土曜日", "第3土曜日", "第4土曜日"));
+	$east6_8 = array_values($result);
+	$east6_8[]="毎週土曜日";
+}
 
 $nasi = "回収日なし";
 

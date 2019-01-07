@@ -58,12 +58,12 @@
   <dt>Admin_list_cal.php 95%</dt>
   <dd>
     ほぼほぼできたと思います。
-    微修正してます。
+    エラー処理してます。
   </dd>
   <dt>Admin_edit_cal.php 90%</dt>
   <dd>
     ほぼほぼできたと思います。
-    ちょっとだけ苦戦中？
+    エラー処理してます。
   </dd>
   <dt>Admin_edit_cal_comp.php 90%</dt>
   <dd>簡単に書いただけ、たすとこあればたします。</dd>

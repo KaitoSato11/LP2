@@ -300,6 +300,8 @@ $gomi8 = "衣類";
 		<form method="POST" action="">-->
 		<h5>
 			<a>
+				<input type="hidden" name="chikku" value="<?php echo $chikumei; ?>"/>
+				<input type="hidden" name="gommi" value="<?php echo $gomimei; ?>"/>
 				<input type="submit" name="sakujo" value="削除"/>
 			</a>
 		</h5>
@@ -354,7 +356,6 @@ $gomi8 = "衣類";
 		if ($gommi == "紙類"){$gomi_id = "paper";}
 		if ($gommi == "衣類"){$gomi_id = "cloth";}
 
-    if (isset($_POST['update'])){
 			try{
 				$sql = "UPDATE week SET $gomi_id=$week_id WHERE area_id=$chiku_id";
 				$stmt1 = $pdo->prepare($sql);
@@ -364,151 +365,6 @@ $gomi8 = "衣類";
 			} catch (PDOException $e) {
 			  exit('データベースの抽出に失敗しました。'.$e->getMessage());
 			}
-	}
-	?>
-	<HEAD>
-		<meta charset="utf-8">
-		<title>GDSS ゴミ出し支援システム</title>
-		<link rel="icon" href="iconG.ico">
-		<meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
-		<link rel="stylesheet" href="design.css">
-		<style type="text/css">
-		</style>
-	</HEAD>
-<BODY>
-	<!-- HEADER -->
-	<div class="header">
-		<p class="title">GDSS</p>
-		<p class="wayaku">ゴミ出し支援システム</p>
-		<p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
-	</div>
-	<h3>
-		次の通り変更しますか？
-	</h3>
-	<h3>
-	<table border="1">
-		<tr><td colspan="100px">地区</td></tr>
-		<tr><td><?php print $chikku; ?></td></tr>
-		<tr><td>ゴミの種類</td></tr>
-		<tr><td><?php print $gommi; ?></td></tr>
-		<tr><td>曜日</td></tr>
-		<tr><td>
-			<?php
-			if ($week_id==0) {print "回収日なし";
-			?><br>
-		  <?php }
-			if ($week[0]==1) {print "第1日曜日";
-			?><br>
-		  <?php }
-			if ($week[1]==1) {print "第2日曜日";
-			?><br>
-		  <?php }
-			if ($week[2]==1) {print "第3日曜日";
-			?><br>
-		  <?php }
-			if ($week[3]==1) {print "第4日曜日";
-			?><br>
-		  <?php }
-			if ($week[4]==1) {print "第1月曜日";
-			?><br>
-		  <?php }
-			if ($week[5]==1) {print "第2月曜日";
-			?><br>
-		  <?php }
-			if ($week[6]==1) {print "第3月曜日";
-			?><br>
-		  <?php }
-			if ($week[7]==1) {print "第4月曜日";
-			?><br>
-		  <?php }
-			if ($week[8]==1) {print "第1火曜日";
-			?><br>
-		  <?php }
-			if ($week[9]==1) {print "第2火曜日";
-			?><br>
-		  <?php }
-			if ($week[10]==1) {print "第3火曜日";
-			?><br>
-		  <?php }
-			if ($week[11]==1) {print "第4火曜日";
-			?><br>
-		  <?php }
-			if ($week[12]==1) {print "第1水曜日";
-			?><br>
-		  <?php }
-			if ($week[13]==1) {print "第2水曜日";
-			?><br>
-		  <?php }
-			if ($week[14]==1) {print "第3水曜日";
-			?><br>
-		  <?php }
-			if ($week[15]==1) {print "第4水曜日";
-			?><br>
-		  <?php }
-			if ($week[16]==1) {print "第1木曜日";
-			?><br>
-		  <?php }
-			if ($week[17]==1) {print "第2木曜日";
-			?><br>
-		  <?php }
-			if ($week[18]==1) {print "第3木曜日";
-			?><br>
-		  <?php }
-			if ($week[19]==1) {print "第4木曜日";
-			?><br>
-		  <?php }
-			if ($week[20]==1) {print "第1金曜日";
-			?><br>
-		  <?php }
-			if ($week[21]==1) {print "第2金曜日";
-			?><br>
-		  <?php }
-			if ($week[22]==1) {print "第3金曜日";
-			?><br>
-		  <?php }
-			if ($week[23]==1) {print "第4金曜日";
-			?><br>
-		  <?php }
-			if ($week[24]==1) {print "第1土曜日";
-			?><br>
-		  <?php }
-			if ($week[25]==1) {print "第2土曜日";
-			?><br>
-		  <?php }
-			if ($week[26]==1) {print "第3土曜日";
-			?><br>
-		  <?php }
-			if ($week[27]==1) {print "第4土曜日";
-			?><br>
-		  <?php } ?>
-		</td></tr>
-	</table>
-</h3>
-	<h4>
-		<form method="POST" action="">
-		  <input type="submit" name="update" value="変更"/>
-	  </form>
-		<!--<a href="Admin_edit_cal_comp.php">
-			<input type="submit" name="update" value="変更"/>
-		</a>-->
-	<h4>
-		<a href="Admin_list_cal.php">
-			<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
-		</a>
-	</h4>
-
-
-	<!-- PAGE TOPに戻るボタン
-ぺーじによっては、コメントアウトして消してください -->
-	<a class="pagetop" href="#">PAGE TOP</a>
-
-	<!-- FOOTER -->
-	<div class="footer">
-		<p class="title">GDSS</p>
-		<p class="company">L&P</p>
-	</div>
-</BODY>
-<?php
 }
 ?>
 
@@ -545,56 +401,11 @@ if($check == 2) {
 		$sql = "UPDATE week SET $gomi_id=0 WHERE area_id=$chiku_id";
 		$stmt1 = $pdo->prepare($sql);
 		$stmt1->execute();
+		header("Location: ./Admin_edit_cal_comp.php");
+		exit();
 	} catch (PDOException $e) {
 		exit('データベースの抽出に失敗しました。'.$e->getMessage());
 	}
-?>
-<HEAD>
-	<meta charset="utf-8">
-	<title>GDSS ゴミ出し支援システム</title>
-	<link rel="icon" href="iconG.ico">
-	<meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
-	<link rel="stylesheet" href="design.css">
-	<style type="text/css">
-	</style>
-</HEAD>
-<BODY>
-	<!-- HEADER -->
-	<div class="header">
-		<p class="title">GDSS</p>
-		<p class="wayaku">ゴミ出し支援システム</p>
-		<p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
-	</div>
-<h3>
-	以下の地区、ゴミ種の曜日情報を削除しますか？
-</h3>
-<table border="1">
-	<tr><td colspan="100px">地区</td></tr>
-	<tr><td><?php print $chikku; ?></td></tr>
-	<tr><td>ゴミの種類</td></tr>
-	<tr><td><?php print $gommi; ?></td></tr>
-</table>
-<h4><a href="Admin_edit_cal_comp.php">
-	<input type="submit" value="削除"/>
-</a></h4>
-<h4>
-	<a href="Admin_list_cal.php">
-		<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
-	</a>
-</h4>
-
-
-<!-- PAGE TOPに戻るボタン
-ぺーじによっては、コメントアウトして消してください -->
-<a class="pagetop" href="#">PAGE TOP</a>
-
-<!-- FOOTER -->
-<div class="footer">
-	<p class="title">GDSS</p>
-	<p class="company">L&P</p>
-</div>
-</BODY>
-<?php
 }
 ?>
 

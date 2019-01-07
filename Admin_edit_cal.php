@@ -303,12 +303,13 @@ $gomi8 = "衣類";
 				<input type="submit" name="sakujo" value="削除"/>
 			</a>
 		</h5>
+		</form>
 	<h6>
 		<a href="Admin_list_cal.php">
 			<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
 		</a>
 	</h6>
-	</form>
+
 
     <!-- PAGE TOPに戻るボタン
   ぺーじによっては、コメントアウトして消してください -->
@@ -353,13 +354,17 @@ $gomi8 = "衣類";
 		if ($gommi == "紙類"){$gomi_id = "paper";}
 		if ($gommi == "衣類"){$gomi_id = "cloth";}
 
-		try{
-			$sql = "UPDATE week SET $gomi_id=$week_id WHERE area_id=$chiku_id";
-			$stmt1 = $pdo->prepare($sql);
-			$stmt1->execute();
-		} catch (PDOException $e) {
-		  exit('データベースの抽出に失敗しました。'.$e->getMessage());
-		}
+    if (isset($_POST['update'])){
+			try{
+				$sql = "UPDATE week SET $gomi_id=$week_id WHERE area_id=$chiku_id";
+				$stmt1 = $pdo->prepare($sql);
+				$stmt1->execute();
+				header("Location: ./Admin_edit_cal_comp.php");
+	      exit();
+			} catch (PDOException $e) {
+			  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+			}
+	}
 	?>
 	<HEAD>
 		<meta charset="utf-8">
@@ -389,7 +394,9 @@ $gomi8 = "衣類";
 		<tr><td>曜日</td></tr>
 		<tr><td>
 			<?php
-
+			if ($week_id==0) {print "回収日なし";
+			?><br>
+		  <?php }
 			if ($week[0]==1) {print "第1日曜日";
 			?><br>
 		  <?php }
@@ -476,15 +483,19 @@ $gomi8 = "衣類";
 		  <?php } ?>
 		</td></tr>
 	</table>
-  </h3>
-	<h4><a href="Admin_edit_cal_comp.php">
-		<input type="submit" value="変更"/>
-	</a></h4>
-	<form method="POST" action="">
-	<h4><a>
-		<input type="submit" name="modo" value="戻る"/>
-	</a></h4>
-  </form>
+</h3>
+	<h4>
+		<form method="POST" action="">
+		  <input type="submit" name="update" value="変更"/>
+	  </form>
+		<!--<a href="Admin_edit_cal_comp.php">
+			<input type="submit" name="update" value="変更"/>
+		</a>-->
+	<h4>
+		<a href="Admin_list_cal.php">
+			<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
+		</a>
+	</h4>
 
 
 	<!-- PAGE TOPに戻るボタン
@@ -566,11 +577,11 @@ if($check == 2) {
 <h4><a href="Admin_edit_cal_comp.php">
 	<input type="submit" value="削除"/>
 </a></h4>
-<form method="POST" action="">
-<h4><a>
-	<input type="submit" name="modo1" value="戻る"/>
-</a></h4>
-</form>
+<h4>
+	<a href="Admin_list_cal.php">
+		<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
+	</a>
+</h4>
 
 
 <!-- PAGE TOPに戻るボタン
@@ -613,6 +624,19 @@ if($check == 3) {
 </div>
 </BODY>
 <?php
+}
+?>
+<?php
+if ($check == 4){
+	try{
+		$sql = "UPDATE week SET $gomi_id=$week_id WHERE area_id=$chiku_id";
+		$stmt1 = $pdo->prepare($sql);
+		$stmt1->execute();
+		header("Location: ./Admin_edit_cal_comp.php");
+		exit();
+	} catch (PDOException $e) {
+		exit('データベースの抽出に失敗しました。'.$e->getMessage());
+	}
 }
 ?>
 </HTML>

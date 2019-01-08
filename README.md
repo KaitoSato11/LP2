@@ -12,67 +12,75 @@
   <dd>試験用だから消しても良いです。</dd>
 </dl>
 
-## 里崎 12/19
+## 里崎 1/4
 <dl>
-  <dt>Separate.php 100%(気づいていないミスあるかも)</dt>
-    <dd>
-      HTMLファイルのクラス名を意味のあるものにしたほうがいい？  
-      ※CSSファイルも適当ですが書いてます
-    </dd>  
+  <dt>Separate.php 100%(気づいていないミスあるかも)</dt>  
   <dt>Separate_list 100%(同じくミスあるかも)</dt>
-    <dd>
-      同じくファイルのクラス名  
-      これもCSS書いてます
-    </dd>  
-  <dt>Normal_rule.php 10%(画像貼るだけでいいならすぐ終わる)</dt>
-    <dd>特になし</dd>  
-  <dt>Special_rule.php 0%(同じく貼るだけなら終わる)</dt>
-    <dd>特になし</dd>  
+  <dt>Normal_rule.php 95%</dt>
+    <dd>フリーのイラストがなくて困ってます</dd>  
+  <dt>Special_rule.php 95%</dt>
   <dt>design_satozaki.css</dt>
-    文字の色が変更できないクラスがある。  
-    文字の太さの変更ができない。変更できるフォントにするべき？  
+   ↑4ファイルのcss適当に書いてます
 </dl>
 
-## 江川 12/20
+## 江川 1/1
 <dl>
-  <dt>Main.php 100%(大体)</dt>
+  <dt>担当の分は大体完成しました。</dt>
+  <dt>Main.php 98%(大体)</dt>
   <dd>動くけど見た目はめっちゃ適当です</dd>  
-  <dt>Login.php 100%(大体)</dt>
+  <dt>Login.php 98%(大体)</dt>
   <dd>動くけど見た目はめっちゃ適当です</dd>
-  <dt>Create_user.php 100%（エラー処理はできてる）</dt>
-  <dd>動くけどボタンの位置とか見た目が微妙</dd>  
-</dl>
+  <dt>Create_user.php 98%（エラー処理はできてる）</dt>
+  <dd>動くけどボタンの位置とか見た目が微妙</dd> 
+  <dt>Create_user_comp.php 98%(大体)</dt>
+  <dd>ボタンの位置が適当</dd>
+  <dt>Delete_user.php 98%(大体)</dt>
+  <dd>動くけど見た目はめっちゃ適当です</dd>  
+  <dt>Delete_user_comp.php 98%(大体)</dt>
+  <dd>動くけど見た目はめっちゃ適当です</dd></dl>
 
 ## 中 12/20
 <dl>
   <dt>iconG.ico 100%</dt>
   <dd>文句なければ完成で</dd>
   <dt>sodaimap.jpg 97%</dt>
-  <dd>文句・注文あれば受け付け中</dd>
+  <dd>ひとまず、文句・注文あれば受け付け中</dd>
   <dt>suiginmap.jpg 97%</dt>
-  <dd>文句・注文あれば受け付け中</dd>
-  <dt>distmap.jpg 30%</dt>
-  <dd>鋭意製作中</dd>
+  <dd>ひとまず、文句・注文あれば受け付け中</dd>
+  <dt>distmap.jpg 95%</dt>
+  <dd>ひとまず完成、文句・注文あれば受け付け中</dd>
   <dt>design.css 5%</dt>
   <dd>ヘッダ、フッタ、PAGETOPボタンのみ完成</dd>
 </dl>
 
-## 松下 12/20
+## 松下 1/7時点
 <dl>
-  <dt>Admin_list_cal.php 50%</dt>
-  <dd>とりあえず頑張ります</dd>
-  <dt>Admin_edit_cal.php 40%</dt>
-  <dd>こっちも頑張ります</dd>
-  <dt>Admin_edit_cal_comp.php 70%</dt>
-  <dd>簡単に書いただけ</dd>
+  <dt>Admin_list_cal.php 95%</dt>
+  <dd>
+    ほぼほぼできたと思います。
+    エラー処理してます。
+  </dd>
+  <dt>Admin_edit_cal.php 90%</dt>
+  <dd>
+    ほぼほぼできたと思います。
+    エラー処理してます。
+  </dd>
+  <dt>Admin_edit_cal_comp.php 90%</dt>
+  <dd>簡単に書いただけ、たすとこあればたします。</dd>
 </dl>
 
-## 畠 12/21
+## 畠 1/5時点
 <dl>
-  <dt>Reg_district.php 40%</dt>
-  <dd>少し触ったぐらい</dd>
-  <dt>Mail.php 70%</dt>
-  <dd>もうすぐ完成</dd>
+  <dt>Reg_district.php 80%</dt>
+  <dd>アロー演算子解決</dd>
+  <dt>Mail.php 80%</dt>
+  <dd>問題がないか検証中</dd>
+  <dt>Admin_delete_user.php 100%</dt>
+  <dd>完成(おそらく)</dd>
+  <dt>Reg_district_comp.php 100%</dt>
+  <dd>たぶんできた</dd>
   <dt>Mail_comp.php 100%</dt>
   <dd>デザインを触るかも</dd>
+  <dt>Mail_comp.php 100%</dt>
+  <dd>同じくデザインを触るかも</dd>
 </dl>

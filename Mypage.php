@@ -78,7 +78,7 @@ if (!isset($_SESSION['ID'])) {
               <li><a href=\"Special_rule.php\">粗大・特別ゴミルール</a></li>
               <li><a href=\"Reg_district.php\">ゴミ捨て地区登録</a></li>
               <li><a href=\"Mail.php\">リマインド設定</a></li>
-              <li><a href=\"Admin_delete_user.php\">ユーザ削除</a></li>
+              <li><a href=\"Delete_user.php\">ユーザ削除</a></li>
             </ul>
           </div>
       </div>

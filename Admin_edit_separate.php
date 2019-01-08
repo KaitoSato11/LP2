@@ -68,7 +68,7 @@ if (!isset($_SESSION['ID'])) {
 				$reading = $_POST["reading"];
 	      $type = $_POST["type"];
 	      $remarks = $_POST["garbage_remarks"];
-				$sql = "UPDATE separate SET garbage_name = \"" . $name . "\", type = \"" . $type . "\", garbage_remarks = \"" . $remarks . "\" WHERE garbage_id = \"" . $id . "\"";
+				$sql = "UPDATE separate SET garbage_name = \"" . $name . "\", reading = \"" . $reading . "\", type = \"" . $type . "\", garbage_remarks = \"" . $remarks . "\" WHERE garbage_id = \"" . $id . "\"";
 	      $stm = $pdo->prepare($sql);
 	      $stm->execute();
 				header('Location: ./Admin_edit_separate_comp.php');
@@ -217,4 +217,3 @@ if (!isset($_SESSION['ID'])) {
     </div>
   </body>
 </html>
-

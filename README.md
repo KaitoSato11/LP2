@@ -1,10 +1,12 @@
 # LP2
 ***
-## 中島 12/18
+## 中島 1/8
 <dl>
   <dt>Mypage.php 100%(だと嬉しい)</dt>
   <dd>awsに入れる段階でエラーが発生。</dd>
   <dt>Admin_separate_list.php 100%(だと嬉しい)</dt>
+  <dd>awsに入れる段階でエラーが発生するかも。</dd>
+  <dt>Admin_insert_separate.php 100%(だと嬉しい)</dt>
   <dd>awsに入れる段階でエラーが発生するかも。</dd>
   <dt>Admin_edit_separate.php 100%(だと嬉しい)</dt>
   <dd>awsに入れる段階でエラーが発生するかも。</dd>
@@ -31,7 +33,7 @@
   <dt>Login.php 98%(大体)</dt>
   <dd>動くけど見た目はめっちゃ適当です</dd>
   <dt>Create_user.php 98%（エラー処理はできてる）</dt>
-  <dd>動くけどボタンの位置とか見た目が微妙</dd> 
+  <dd>動くけどボタンの位置とか見た目が微妙</dd>
   <dt>Create_user_comp.php 98%(大体)</dt>
   <dd>ボタンの位置が適当</dd>
   <dt>Delete_user.php 98%(大体)</dt>

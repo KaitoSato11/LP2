@@ -73,7 +73,7 @@ if (!isset($_SESSION['ID'])) {
           <div id=\"menu\">
             <ul>
               <li class=\"top\">メニュー</li>
-              <li><a href=\"Separate_list.php\">ゴミ分別リスト</a></li>
+              <li><a href=\"Separate.php\">ゴミ分別リスト</a></li>
               <li><a href=\"Normal_rule.php\">ゴミ分別ルール</a></li>
               <li><a href=\"Special_rule.php\">粗大・特別ゴミルール</a></li>
               <li><a href=\"Reg_district.php\">ゴミ捨て地区登録</a></li>

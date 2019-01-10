@@ -55,14 +55,14 @@
   <dd>ヘッダ、フッタ、PAGETOPボタンのみ完成</dd>
 </dl>
 
-## 松下 1/7時点
+## 松下 1/10時点
 <dl>
   <dt>Admin_list_cal.php 95%</dt>
   <dd>
     ほぼほぼできたと思います。
     エラー処理してます。
   </dd>
-  <dt>Admin_edit_cal.php 90%</dt>
+  <dt>Admin_edit_cal.php 95%</dt>
   <dd>
     ほぼほぼできたと思います。
     エラー処理してます。

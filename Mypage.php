@@ -215,29 +215,30 @@ if (!isset($_SESSION['ID'])) {
                 }
 
                 if ($the_bit == 0b0) {
-                  print $burn >> $a;
-                  if ($burn >> $a == 15) {
+                  //print $burn >> $a;
+									$b = 0b1111 << $a;
+                  if (($burn & $b) >> $a == 15) {
                     $tommorow_burn = "[燃えるゴミ]";
                   }
-                  if ($metal >> $a == 15) {
+                  if (($metal & $b) >> $a == 15) {
                     $tommorow_metal = "[金属類]";
                   }
-                  if ($bottle >> $a == 15) {
+                  if (($bottle & $b) >> $a == 15) {
                     $tommorow_bottle = "[ビン類]";
                   }
-                  if ($nonburn >> $a == 15) {
+                  if (($nonburn & $b) >> $a == 15) {
                     $tommorow_nonburn = "[その他の不燃物]";
                   }
-                  if ($pet >> $a == 15) {
+                  if (($pet & $b) >> $a == 15) {
                     $tommorow_pet = "[ペットボトル]";
                   }
-                  if ($plastic >> $a == 15) {
+                  if (($plastic & $b) >> $a == 15) {
                     $tommorow_plastic = "[容器包装プラスチック]";
                   }
-                  if ($paper >> $a == 15) {
+                  if (($paper & $b) >> $a == 15) {
                     $tommorow_paper = "[紙類]";
                   }
-                  if ($cloth >> $a == 15) {
+                  if (($cloth & $b) >> $a == 15) {
                     $tommorow_cloth = "[衣類]";
                   }
                 }
@@ -379,28 +380,29 @@ if (!isset($_SESSION['ID'])) {
                   }
 
                   if ($today_bit == 0) {
-                    if ($burn >> $a == 15) {
+										$b = 0b1111 << $a;
+                    if (($burn & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_burn;
                     }
-                    if ($metal >> $a == 15) {
+                    if (($metal & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_metal;
                     }
-                    if ($bottle >> $a == 15) {
+                    if (($bottle & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_bottle;
                     }
-                    if ($nonburn >> $a == 15) {
+                    if (($nonburn & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_nonburn;
                     }
-                    if ($pet >> $a == 15) {
+                    if (($pet & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_pet;
                     }
-                    if ($plastic >> $a == 15) {
+                    if (($plastic & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_plastic;
                     }
-                    if ($paper >> $a == 15) {
+                    if (($paper & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_paper;
                     }
-                    if ($cloth >> $a == 15) {
+                    if (($cloth & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_cloth;
                     }
                   }
@@ -461,7 +463,9 @@ if (!isset($_SESSION['ID'])) {
               if ($month == 12) {
                 $year = date('Y') + 1;
                 $month = 1;
-              }
+              } else {
+								$month = $month + 1;
+							}
               // 月末日を取得
               $last_day = date('j', mktime(0, 0, 0, $month + 1, 0, $year));
 
@@ -572,6 +576,7 @@ if (!isset($_SESSION['ID'])) {
                     $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_cloth;
                   }
 
+									/*
                   if ($today_bit == 0) {
                     $b = 0b1111;
                     $b = $b << $a;
@@ -597,6 +602,34 @@ if (!isset($_SESSION['ID'])) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_paper;
                     }
                     if (($cloth >> $a) & $b == $b) {
+                      $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_cloth;
+                    }
+                  }
+									*/
+									if ($today_bit == 0) {
+										$b = 0b1111 << $a;
+                    if (($burn & $b) >> $a == 15) {
+                      $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_burn;
+                    }
+                    if (($metal & $b) >> $a == 15) {
+                      $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_metal;
+                    }
+                    if (($bottle & $b) >> $a == 15) {
+                      $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_bottle;
+                    }
+                    if (($nonburn & $b) >> $a == 15) {
+                      $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_nonburn;
+                    }
+                    if (($pet & $b) >> $a == 15) {
+                      $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_pet;
+                    }
+                    if (($plastic & $b) >> $a == 15) {
+                      $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_plastic;
+                    }
+                    if (($paper & $b) >> $a == 15) {
+                      $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_paper;
+                    }
+                    if (($cloth & $b) >> $a == 15) {
                       $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_cloth;
                     }
                   }

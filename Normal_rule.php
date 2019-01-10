@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 session_start();
-if (isset($_SESSION['ID'])) {
+if (!isset($_SESSION['ID'])) {
     header('Location: ./Main.php');
     exit();
 }
@@ -51,7 +51,6 @@ $db['dbname'] = DB_NAME;
         <tr>
           <th></th>
           <th width="3%" colspan="2">分別</th>
-          <th width="5%">収集日</th>
           <th colspan="2">出せるもの</th>
           <th width="20%">注意点</th>
           <th width="8%">使用できるゴミ袋</th>
@@ -60,12 +59,6 @@ $db['dbname'] = DB_NAME;
           <td rowspan="9" width="2%">ゴミステーションに出せるもの</td>
           <td colspan="2">
             燃えるゴミ
-          </td>
-          <td align="center">
-            毎週
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
-            曜日
           </td>
           <td colspan="2">
             <div class="Zu1">
@@ -87,12 +80,6 @@ $db['dbname'] = DB_NAME;
         <tr>
           <td rowspan="7">資源ゴミ</td>
           <td>金属類</td>
-          <td align="center">
-            毎週
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
-            曜日
-          </td>
 
           <td valign="top">
             <p class="center"><b>金属類(飲料用の缶)アルミ缶・スチール缶</b></p>
@@ -128,12 +115,6 @@ $db['dbname'] = DB_NAME;
           <td>
             ビン類
           </td>
-          <td align="center">
-            毎週
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
-            曜日
-          </td>
           <td>
             <p class="center"><b>透明ビン・茶色ビン・その他の色のビン(食品用・飲み薬用)</b></p>
             <div class="bin">
@@ -167,12 +148,6 @@ $db['dbname'] = DB_NAME;
 
         <tr>
           <td>その他の不燃物</td>
-          <td align="center">
-            毎週
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
-            曜日
-          </td>
           <td colspan="2">
             <div class="Zu1">
               <img src="./img/mato11.png" alt="まとめ11">
@@ -191,11 +166,6 @@ $db['dbname'] = DB_NAME;
 
         <tr>
           <td>ペットボトル</td>
-          <td align="center"> 毎週
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
-            曜日
-          </td>
           <td colspan="2">
             <div class="Zu1">
               <img src="./img/mato7.png" alt="まとめ7">
@@ -213,12 +183,7 @@ $db['dbname'] = DB_NAME;
 
         <tr>
           <td>容器包装プラスチック</td>
-          <td align="center">
-            毎週
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
-            曜日
-          </td>
+
           <td colspan="2">
             <div class="Zu1">
               <img src="./img/mato8.png" alt="まとめ8">
@@ -237,12 +202,7 @@ $db['dbname'] = DB_NAME;
 
         <tr>
           <td>紙類</td>
-          <td align="center">
-            毎週
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
-            曜日
-          </td>
+
           <td colspan="2">
             <div class="Zu1">
               <img src="./img/mato9.png" alt="まとめ9">
@@ -259,11 +219,7 @@ $db['dbname'] = DB_NAME;
 
         <tr>
           <td>衣類</td>
-          <td align="center">
-            毎週
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>・
-            <div style="padding: 30px; margin-bottom: 10px; border: 1px dashed #333333; border-radius: 5px;"></div>
-            曜日
+
           <td colspan="2">
             <div class="Zu1">
               <img src="./img/mato10.png" alt="まとめ10">

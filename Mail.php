@@ -66,7 +66,7 @@ if(isset($_POST['signup'])){
 if(isset($_POST['result'])==true){
   if(isset($_POST['remind01'])==false){
     $check=0;
-  	$errorMessage .= "受け取り可否を決めてください";
+  	$errorMessage .= "どちらかのラジオボタンを押してください";
 	}else if((empty($_POST['mail_address'])) && isset($_POST['remind01'])==true && ($_POST['remind01']== "1")){
 	$check=0;
 	$errorMessage .= "メールアドレスを入力してください";

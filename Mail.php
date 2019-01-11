@@ -109,6 +109,7 @@ if(isset($_POST['result'])==true){
 <?php if($check == "1"){ ?>
   <body>
       <div class="content">
+        <br><h2><?php echo $errorMessage; ?></br></h2>
   	<table>
   	  <tr><td>メールアドレス</td><td><?php echo $_POST['mail_address']; ?></td></tr>
   	  <tr><td>リマインド受け取り可否</td><td><?php if($_POST['remind01']== "1"){ ?>受け取る<?php }else{?> 受け取らない<?php } ?></td></tr>
@@ -126,13 +127,13 @@ if(isset($_POST['result'])==true){
          <input type="submit" value="変更" name="back">
         </form>
 
-  	<br><h2><b>この内容でよろしいですか？</br></h2>
-  	<br><h2><?php echo $errorMessage; ?></br></h2>
+	<br><h2><b>この内容でよろしいですか？</br></h2>	
         </div>  		  
   </body>
 <?php } ?>
 
 <div class="footer">
-		<p class="title">GDSS</p>
-		<p class="company">L&P</p>
+ <p class="title">GDSS</p>
+ <p class="company">L&P</p>
+</div>	
 </html>

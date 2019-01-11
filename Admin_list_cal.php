@@ -27,6 +27,7 @@ $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_EMULATE_PREPARES => false
 //$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
 	echo "データベースとの接続に失敗しました。";
+	print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 	exit();
 }
 
@@ -37,6 +38,7 @@ try{
 	$stmt1->execute();
 } catch (PDOException $e) {
 	echo "データベースの抽出に失敗しました。";
+	print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 	exit();
 }
 
@@ -639,6 +641,7 @@ try{
 	$stmt2->execute();
 } catch (PDOException $e) {
 	echo "データベースの抽出に失敗しました。";
+	print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 	exit();
 }
 $value2 = $stmt2->fetch();
@@ -1190,6 +1193,7 @@ try{
 	$stmt3->execute();
 } catch (PDOException $e) {
 	echo "データベースの抽出に失敗しました。";
+	print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 	exit();
 }
 $value3 = $stmt3->fetch();
@@ -1741,6 +1745,7 @@ try{
 	$stmt4->execute();
 } catch (PDOException $e) {
 	echo "データベースの抽出に失敗しました。";
+	print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 	exit();
 }
 $value4 = $stmt4->fetch();
@@ -2292,6 +2297,7 @@ try{
 	$stmt5->execute();
 } catch (PDOException $e) {
 	echo "データベースの抽出に失敗しました。";
+	print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 	exit();
 }
 $value5 = $stmt5->fetch();
@@ -2843,6 +2849,7 @@ try{
 	$stmt6->execute();
 } catch (PDOException $e) {
 	echo "データベースの抽出に失敗しました。";
+	print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 	exit();
 }
 $value6 = $stmt6->fetch();

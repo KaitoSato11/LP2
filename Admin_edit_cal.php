@@ -8,7 +8,7 @@ session_start();
 // page = 3 エラー画面
 $check = 0;
 
-if (isset($_SESSION['ID'])) {
+if (!isset($_SESSION['ID'])) {
 	header('Location: ./Main.php');
 	exit();
 }

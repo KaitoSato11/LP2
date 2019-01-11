@@ -26,7 +26,8 @@ $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_EMULATE_PREPARES => false
 //$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 //$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-exit('データベースとの接続に失敗しました。'.$e->getMessage());
+	echo "データベースとの接続に失敗しました。";
+	exit();
 }
 
 #データの抽出
@@ -35,7 +36,8 @@ try{
 	$stmt1 = $pdo->prepare($sql);
 	$stmt1->execute();
 } catch (PDOException $e) {
-  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+	echo "データベースの抽出に失敗しました。";
+	exit();
 }
 
 $east1_1=null;
@@ -636,7 +638,8 @@ try{
 	$stmt2 = $pdo->prepare($sql);
 	$stmt2->execute();
 } catch (PDOException $e) {
-  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+	echo "データベースの抽出に失敗しました。";
+	exit();
 }
 $value2 = $stmt2->fetch();
 
@@ -1186,7 +1189,8 @@ try{
 	$stmt3 = $pdo->prepare($sql);
 	$stmt3->execute();
 } catch (PDOException $e) {
-  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+	echo "データベースの抽出に失敗しました。";
+	exit();
 }
 $value3 = $stmt3->fetch();
 
@@ -1736,7 +1740,8 @@ try{
 	$stmt4 = $pdo->prepare($sql);
 	$stmt4->execute();
 } catch (PDOException $e) {
-  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+	echo "データベースの抽出に失敗しました。";
+	exit();
 }
 $value4 = $stmt4->fetch();
 
@@ -2286,7 +2291,8 @@ try{
 	$stmt5 = $pdo->prepare($sql);
 	$stmt5->execute();
 } catch (PDOException $e) {
-  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+	echo "データベースの抽出に失敗しました。";
+	exit();
 }
 $value5 = $stmt5->fetch();
 
@@ -2836,7 +2842,8 @@ try{
 	$stmt6 = $pdo->prepare($sql);
 	$stmt6->execute();
 } catch (PDOException $e) {
-  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+	echo "データベースの抽出に失敗しました。";
+	exit();
 }
 $value6 = $stmt6->fetch();
 

@@ -18,21 +18,19 @@
   <div class="content">
 
   <form action="Mypage.php" method="POST">
-   <table width="1024"  border="0" cellspacing="0" align="center" >
-   <tr height="50" bgcolor="#8fc27a">
-   <th>利用者削除</th>
-   </tr>
-   <tr><td align="center" valign="middle" bgcolor="#fff8e0">
+   <table>
+   <tr><th>利用者削除</th></tr>
+   <tr><td>
    <p style="margin:100px"><h3>削除が完了しました。</h3></p>
-   <input type="submit" style="color:#ffffff;background-color:#3c78d3;width:160px;height:50px" value="マイページに戻る">
- </td></tr>
+   <input type="submit" value="マイページに戻る">
+   </td></tr>
    </table>
  </form>
  </div>
 </body>
 
 <div class="footer">
-		<p class="title">GDSS</p>
-		<p class="company">L&P</p>
-
+ <p class="title">GDSS</p>
+ <p class="company">L&P</p>
+</div>
 </html>

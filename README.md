@@ -78,10 +78,10 @@
 
 ## 畠 1/5時点
 <dl>
-  <dt>Reg_district.php 80%</dt>
+  <dt>Reg_district.php 100%</dt>
   <dd>アロー演算子解決</dd>
-  <dt>Mail.php 80%</dt>
-  <dd>問題がないか検証中</dd>
+  <dt>Mail.php 100%</dt>
+  <dd>完成？</dd>
   <dt>Admin_delete_user.php 100%</dt>
   <dd>完成(おそらく)</dd>
   <dt>Reg_district_comp.php 100%</dt>

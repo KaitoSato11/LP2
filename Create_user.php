@@ -26,16 +26,16 @@ if(isset($_POST['signup'])){
 	
         //学籍番号の重複確認
         $stmt = $db->prepare("SELECT COUNT(*) FROM users WHERE user_id = :id");
-        $stmt->bindValue(":id", $userid, PDO::PARAM_INT);
+        $stmt->bindValue(":id", $userid, PDO::PARAM_STR);
         $stmt->execute();
         $count = $stmt->fetchColumn();
         if($count > 0){
             $errorMessage = "このユーザIDはすでに登録されています";
-            $chekc = 0; //登録画面にする
+            $check = 0; //登録画面にする
         }else{
             //データベースに入力情報を追加
             $stmt = $db->prepare( "INSERT INTO users(user_id, password) VALUES (:id, :pass )");
-            $stmt->bindValue(":id", $userid, PDO::PARAM_INT);
+            $stmt->bindValue(":id", $userid, PDO::PARAM_STR);
             $stmt->bindParam(":pass", $pass, PDO::PARAM_STR);
             $stmt->execute();
             header('Location: ./Create_user_comp.php');
@@ -56,7 +56,7 @@ if(isset($_POST["add_user"])) {
         $errorMessage .= "確認用パスワードが違います<br>";
     }
     //ユーザIDは半角英数字8文字にしてください
-    if(!empty($_POST['userid']) && strlen($_POST['userid']) != 8 && !preg_match("/^[a-zA-Z0-9]+$/", $_POST['userid'])) {
+    if(!empty($_POST['userid']) && (strlen($_POST['userid']) != 8 || !preg_match("/^[a-zA-Z0-9]+$/", $_POST['userid']))) {
         $errorMessage .= "ユーザIDは半角英数字8文字にしてください<br>";
         $check = 0; //登録画面にする
     }

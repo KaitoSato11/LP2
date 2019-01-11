@@ -31,7 +31,8 @@ $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_EMULATE_PREPARES => false
 //$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 //$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-exit('データベースとの接続に失敗しました。'.$e->getMessage());
+	echo "データベースの接続に失敗しました。";
+	exit();
 }
 
 #データの抽出
@@ -356,6 +357,9 @@ $gomi8 = "衣類";
 		if ($gommi == "紙類"){$gomi_id = "paper";}
 		if ($gommi == "衣類"){$gomi_id = "cloth";}
 
+		if ($week_id == 0){
+			$check = 3;
+		}else{
 			try{
 				$sql = "UPDATE week SET $gomi_id=$week_id WHERE area_id=$chiku_id";
 				$stmt1 = $pdo->prepare($sql);
@@ -363,8 +367,10 @@ $gomi8 = "衣類";
 				header("Location: ./Admin_edit_cal_comp.php");
 	      exit();
 			} catch (PDOException $e) {
-			  exit('データベースの抽出に失敗しました。'.$e->getMessage());
+				echo "データベースの抽出に失敗しました。";
+				exit();
 			}
+		}
 }
 ?>
 
@@ -404,7 +410,8 @@ if($check == 2) {
 		header("Location: ./Admin_edit_cal_comp.php");
 		exit();
 	} catch (PDOException $e) {
-		exit('データベースの抽出に失敗しました。'.$e->getMessage());
+		echo "データベースの抽出に失敗しました。";
+		exit();
 	}
 }
 ?>
@@ -423,6 +430,21 @@ if($check == 3) {
 	</style>
 </HEAD>
 <BODY>
+	<!-- HEADER -->
+	<div class="header">
+		<p class="title">GDSS</p>
+		<p class="wayaku">ゴミ出し支援システム</p>
+		<p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
+	</div>
+	<div class="content">
+		<!-- ここに各ページの中身いれてください -->
+		<h2><?php print "曜日を1つ以上選択してください。"; ?></h2>
+		<h6>
+			<a href="Admin_list_cal.php">
+				<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
+			</a>
+		</h6>
+</div>
 
 <!-- PAGE TOPに戻るボタン
 ぺーじによっては、コメントアウトして消してください -->
@@ -435,19 +457,6 @@ if($check == 3) {
 </div>
 </BODY>
 <?php
-}
-?>
-<?php
-if ($check == 4){
-	try{
-		$sql = "UPDATE week SET $gomi_id=$week_id WHERE area_id=$chiku_id";
-		$stmt1 = $pdo->prepare($sql);
-		$stmt1->execute();
-		header("Location: ./Admin_edit_cal_comp.php");
-		exit();
-	} catch (PDOException $e) {
-		exit('データベースの抽出に失敗しました。'.$e->getMessage());
-	}
 }
 ?>
 </HTML>

@@ -32,6 +32,7 @@ $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_EMULATE_PREPARES => false
 //$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
 	echo "データベースの接続に失敗しました。";
+	print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 	exit();
 }
 
@@ -368,6 +369,7 @@ $gomi8 = "衣類";
 	      exit();
 			} catch (PDOException $e) {
 				echo "データベースの抽出に失敗しました。";
+				print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 				exit();
 			}
 		}
@@ -411,6 +413,7 @@ if($check == 2) {
 		exit();
 	} catch (PDOException $e) {
 		echo "データベースの抽出に失敗しました。";
+		print "<a href=\"Mypage.php\"><input type=\"submit\" value=\"マイページに戻る\"/></a>";
 		exit();
 	}
 }

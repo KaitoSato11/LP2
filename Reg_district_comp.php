@@ -16,13 +16,13 @@
 <body>
   <div class="content">
   <form action="Mypage.php" method="POST">
-   <table width="800" height="400" border="1" cellspacing="0" align="center">
-   <tr height="50" bgcolor="#8fc27a">
+   <table>
+   <tr>
    <th>地区登録・変更</th>
    </tr>
-   <td align="center" valign="middle" bgcolor="#fff8e0">
+   <td>
    <p>登録が完了しました。</p>
-   <input type="submit" style="color:#ffffff;background-color:#3c78d3;width:100px;height:50px" size="2" value="マイページに戻る">
+   <input type="submit" value="マイページに戻る">
    </td>
    </table>
  </form>
@@ -30,7 +30,7 @@
 </body>
 
 <div class="footer">
-		<p class="title">GDSS</p>
-		<p class="company">L&P</p>
-
+ <p class="title">GDSS</p>
+ <p class="company">L&P</p>
+</div>
 </html>

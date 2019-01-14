@@ -14,13 +14,12 @@
   <dd>試験用だから消しても良いです。</dd>
 </dl>
 
-## 里崎 1/4
+## 里崎 1/14
 <dl>
-  <dt>Separate.php 100%(気づいていないミスあるかも)</dt>  
-  <dt>Separate_list 100%(同じくミスあるかも)</dt>
-  <dt>Normal_rule.php 95%</dt>
-    <dd>フリーのイラストがなくて困ってます</dd>  
-  <dt>Special_rule.php 95%</dt>
+  <dt>Separate.php 100%</dt>  
+  <dt>Separate_list 100%</dt>
+  <dt>Normal_rule.php 100%</dt>
+  <dt>Special_rule.php 100%</dt>
   <dt>design_satozaki.css</dt>
    ↑4ファイルのcss適当に書いてます
 </dl>

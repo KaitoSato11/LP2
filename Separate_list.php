@@ -9,32 +9,23 @@ $db['host'] = DB_HOST;
 $db['user'] = DB_USER;
 $db['pass'] = DB_PASSWORD;
 $db['dbname'] = DB_NAME;
-
-
 // 文字化け対策
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET CHARACTER SET 'utf8'");
-
 // 接続時のコードが長くならないよう変数に入れる
 $dsn = sprintf("mysql:host=%s;dbname=%s;charset=utf8", $db['host'], $db['dbname']);
-
 try {
     // データベース接続
     $pdo = new PDO($dsn, $db['user'], $db['pass']);
 } catch (PDOException $e) {
     exit('データベース接続失敗。'.$e->getMessage()); //エラー処理
 }
-
 //データベース操作
-
 //$nameにクリックされた50音の文字を格納
 $name = $_GET['head'];
-
 //SQL作成
 $sql = ("SELECT * FROM separate WHERE reading collate utf8_unicode_ci like '$name%' ORDER BY reading ASC"); //->アロー演算子 データを引っ張ってくる likeはあいまい検索
-
 //SQL実行
 $stmt = $pdo->query($sql); //query:prepare使わないやつ
-
 //データ取得
 while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) { //FETCH_ASSOC:実行したSQLの中を連想配列で取得する
 $result2[] = $result;
@@ -79,6 +70,7 @@ $result2[] = $result;
 
     </div>
 
+
     <!-- table作成 -->
     <div class="Table_Garbage">
       <table class="Garbage_List" border='1' width="100%">
@@ -96,7 +88,8 @@ $result2[] = $result;
         </tr>
 
         <?php
-        foreach ($result2 as $result) { //fireach:forみたいなの?>
+        if (!empty($result2)) {
+            foreach ($result2 as $result) { //fireach:forみたいなの ?>
         <tr>
           <td>
             <?php echo $result['garbage_name']; ?>
@@ -109,9 +102,18 @@ $result2[] = $result;
           </td>
         </tr>
         <?php
+            }
         }
     ?>
+
       </table>
+
+      <h3 align="center" style="margin-top:80px;">
+        <?php if (empty($result2)) {
+        echo "ゴミデータが存在しません";
+    }?>
+      </h3>
+
 
     </div>
   </div>

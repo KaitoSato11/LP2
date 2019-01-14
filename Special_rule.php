@@ -174,7 +174,11 @@ $db['dbname'] = DB_NAME;
         <tr>
           <td>最大積載量501kg以上1,000以下の車両による搬入の車両による搬入</td>
           <td>4100円</td>
-          <td>画像</td>
+          <td>
+            <div class="Zu2">
+              <img src="./img/car_truck.png" alt="トラックの画像">
+            </div>
+          </td>
         </tr>
 
         <tr>

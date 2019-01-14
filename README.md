@@ -17,7 +17,7 @@
 ## 里崎 1/14
 <dl>
   <dt>Separate.php 100%</dt>  
-  <dt>Separate_list 100%</dt>
+  <dt>Separate_list.php 100%</dt>
   <dt>Normal_rule.php 100%</dt>
   <dt>Special_rule.php 100%</dt>
   <dt>design_satozaki.css</dt>

@@ -160,7 +160,7 @@ if(isset($_POST["back"])){
    </form>
 
    <form action="" method="POST">
-   <input type="submit" value="変更" name="back" id="back" name="back">
+   <input type="submit" value="戻る" name="back" id="back" name="back">
   </form>
 </td></tr>
 </table>

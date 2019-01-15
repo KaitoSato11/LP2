@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -35,7 +35,7 @@ try{
   $user=DB_USER;
   $password = DB_PASSWORD;
   $dbName = DB_NAME;
-　$host = DB_HOST;
+	$host = DB_HOST;
 
   $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   $db = new PDO($dsn, $user, $password);
@@ -60,26 +60,29 @@ try{
   die('接続に失敗しました:' .$Exception->getMessage());
 }
 
+
 if(isset($_POST['result'])){
   $check=1;
 	}
 	if(isset($_POST['back'])){
   $check = 0;
 	}
+
+
 ?>
 
   <?php if($check=="0"){ ?>
     <body>
       <!-- HEADER -->
     <div class="content">
-    <table>
-    <tr><th colspan="3">利用者一覧</th></tr>
+    <table border = "1">
+    <tr ><th colspan="3">利用者一覧</th></tr>
     <tr><th>削除</th><th>ID</th><th>メールアドレス</th></tr>
     <?php while($row = $stmh->fetch(PDO::FETCH_ASSOC)){ ?>
     <tr>
     <th>
       <form action="" method="post">
-      <input type="submit" id="result" name="result"　value="">
+      <input type="submit" id="result" name="result" value="">
       <input type="hidden" name="user_id" value="<?=$row['user_id'] ?>">
       <input type="hidden" name="address" value="<?=$row['address'] ?>">
     </form>
@@ -96,17 +99,17 @@ if(isset($_POST['result'])){
 
   <?php if($check=="1"){ ?>
     <body>
-      <div align="center">
+      <div>
         <div class="content">
           <table>
             <td><h2>利用者削除</h2></td>
             <tr><td>
-      <br><h3><b>この利用者を削除しますか？</font></br></h3>
-      <table>
+      <br><b><font color="red">この利用者を削除しますか？</font></br>
+      <table border="1">
         <tr><td>削除する利用者のID</td></tr>
         <tr><td><?php echo $_POST['user_id']; ?></td></tr>
       </table>
-      <p style="margin:30px">
+      <p>
               <form  action="" method="POST">
                 <input type="hidden" name="address" value="<?php echo $row['address'];?>">
                 <input type="hidden"  name="user_id" value="<?php echo $_POST['user_id']; ?>">
@@ -123,11 +126,11 @@ if(isset($_POST['result'])){
     </body>
   <?php } ?>
 
-  <!-- PAGE TOPに戻るボタンぺーじによっては、コメントアウトして消してください -->  
+  <!-- PAGE TOPに戻るボタンぺーじによっては、コメントアウトして消してください -->
   <a class="pagetop" href="#">PAGE TOP</a>
-  
+
   <div class="footer">
   		<p class="title">GDSS</p>
   		<p class="company">L&P</p>
-  </div>
+
   </html>

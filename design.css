@@ -75,3 +75,14 @@ div.content {
   max-width: 1024px;
   background-color: #fff8e0;
 }
+
+/* Main.php用 */
+div.content div#side {
+  width: 256px;
+  float: left;
+}
+
+div.content div#side2 {
+  width: 738px;
+  float: right;
+}

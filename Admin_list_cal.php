@@ -6,14 +6,14 @@ if (!isset($_SESSION['ID'])) {
 	exit();
 }
 
-//$db['host'] = DB_HOST;
-//$db['user'] = DB_USER;
-//$db['pass'] = DB_PASSWORD;
-//$db['dbname'] = DB_NAME;
-$user = 'root';
-$password = '';
-$dbName = 'gdss_db';
-$host = 'localhost';
+$user=DB_USER;
+$password=DB_PASSWORD;
+$dbName=DB_NAME;
+$host=DB_HOST;
+//$user = 'root';
+//$password = '';
+//$dbName = 'gdss_db';
+//$host = 'localhost';
 $errorMessage = "";
 
 

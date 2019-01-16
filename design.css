@@ -77,12 +77,64 @@ div.content {
 }
 
 /* Main.php用 */
+/* 左側 */
 div.content div#side {
   width: 256px;
   float: left;
 }
 
+div#side > div {
+  width: 240px;
+  margin: auto;
+  background-color: #deeed8;
+}
+
+div#side > div > ul {
+  list-style: none;
+  padding: 0px;
+}
+
+div#side > div > ul > li.top {
+  background-color: #a4c2f4;
+  border-top: solid 2px #3c78d8;
+  border-bottom: none;
+}
+
+div#side > div > ul li {
+  padding: 5px 10px;
+}
+
+div#menu ul li {
+  margin: 3px 0px;
+  background-color: #ebf1eb;
+  border-top: solid 1px #999999;
+  border-bottom: solid 1px #999999;
+}
+
+div#menu ul li > a {
+  text-decoration: none;
+}
+
+/* 右側 */
 div.content div#side2 {
   width: 738px;
   float: right;
+}
+
+div#side2 > div {
+  width: 720px;
+  margin: 20px auto;
+}
+
+div#remind {
+  background-color: #fff8e0;
+  border: solid 2px #b45f06;
+}
+
+div#remind > h1 {
+  margin: 5px 10px;
+}
+
+div#cal1>table, div#cal2>table {
+  background-color: #edf0f8;
 }

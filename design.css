@@ -137,4 +137,5 @@ div#remind > h1 {
 
 div#cal1>table, div#cal2>table {
   background-color: #edf0f8;
+  margin: auto;
 }

@@ -73,12 +73,17 @@ div.content {
   min-height: 800px;
   margin: 25px auto;
   max-width: 1024px;
-  background-color: #fff8e0;
+  /* background-color: #fff8e0; */
 }
 
 /* Main.php用 */
+/* div#contentMy {
+  min-height: 800px;
+  margin: 25px auto;
+  max-width: 1024px;
+} */
 /* 左側 */
-div.content div#side {
+div#side {
   width: 256px;
   float: left;
 }
@@ -117,12 +122,13 @@ div#menu ul li > a {
 
 /* 右側 */
 div.content div#side2 {
-  width: 738px;
-  float: right;
+  max-width: 738px;
+  margin-left: auto;
+  padding: 1px 0px;
 }
 
 div#side2 > div {
-  width: 720px;
+  max-width: 720px;
   margin: 20px auto;
 }
 
@@ -136,6 +142,20 @@ div#remind > h1 {
 }
 
 div#cal1>table, div#cal2>table {
-  background-color: #edf0f8;
+  background-color: #999999;
   margin: auto;
 }
+
+div#side2 table th {
+  min-width: 60px;
+}
+
+div#side2 table tr.top {
+  background-color: #ffffff;
+}
+
+div#side2 table tr {
+  background-color: #edf0f8;
+}
+
+/* Reg_district.php用 */

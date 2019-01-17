@@ -199,13 +199,13 @@ if (!isset($_SESSION['ID'])) {
                   $tommorow_bottle = "[ビン類]";
                 }
                 if (decbin($nonburn & $tommorow_bit) != 0) {
-                  $tommorow_nonburn = "[その他の不燃物]";
+                  $tommorow_nonburn = "[不燃物]";
                 }
                 if (decbin($pet & $tommorow_bit) != 0) {
                   $tommorow_pet = "[ペットボトル]";
                 }
                 if (decbin($plastic & $tommorow_bit) != 0) {
-                  $tommorow_plastic = "[容器包装プラスチック]";
+                  $tommorow_plastic = "[プラスチック]";
                 }
                 if (decbin($paper & $tommorow_bit) != 0) {
                   $tommorow_paper = "[紙類]";
@@ -227,13 +227,16 @@ if (!isset($_SESSION['ID'])) {
                     $tommorow_bottle = "[ビン類]";
                   }
                   if (($nonburn & $b) >> $a == 15) {
-                    $tommorow_nonburn = "[その他の不燃物]";
+                    //$tommorow_nonburn = "[その他の不燃物]";
+										$tommorow_nonburn = "[不燃物]";
                   }
                   if (($pet & $b) >> $a == 15) {
-                    $tommorow_pet = "[ペットボトル]";
+                    //$tommorow_pet = "[ペットボトル]";
+										$tommorow_pet = "[ペットボトル]";
                   }
                   if (($plastic & $b) >> $a == 15) {
-                    $tommorow_plastic = "[容器包装プラスチック]";
+                    //$tommorow_plastic = "[容器包装プラスチック]";
+										$tommorow_plastic = "[プラスチック]";
                   }
                   if (($paper & $b) >> $a == 15) {
                     $tommorow_paper = "[紙類]";
@@ -345,14 +348,17 @@ if (!isset($_SESSION['ID'])) {
                       break;
                   }
 
-                  $today_burn = "[燃えるゴミ]";
-                  $today_metal = "[金属類]";
-                  $today_bottle = "[ビン類]";
-                  $today_nonburn = "[その他の不燃物]";
-                  $today_pet = "[ペットボトル]";
-                  $today_plastic = "[容器包装プラスチック]";
-                  $today_paper = "[紙類]";
-                  $today_cloth = "[衣類]";
+                  $today_burn = "燃えるゴミ";
+                  $today_metal = "金属類";
+                  $today_bottle = "ビン類";
+                  //$today_nonburn = "[その他の不燃物]";
+									$today_nonburn = "不燃物";
+                  //$today_pet = "ペットボトル";
+									$today_pet = "ペットボトル";
+                  //$today_plastic = "容器包装プラスチック";
+									$today_plastic = "プラスチック";
+                  $today_paper = "紙類";
+                  $today_cloth = "衣類";
 
                   if (decbin($burn & $today_bit) != 0) {
                     $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_burn;
@@ -542,14 +548,17 @@ if (!isset($_SESSION['ID'])) {
                       break;
                   }
 
-                  $today_burn = "[燃えるゴミ]";
-                  $today_metal = "[金属類]";
-                  $today_bottle = "[ビン類]";
-                  $today_nonburn = "[その他の不燃物]";
-                  $today_pet = "[ペットボトル]";
-                  $today_plastic = "[容器包装プラスチック]";
-                  $today_paper = "[紙類]";
-                  $today_cloth = "[衣類]";
+									$today_burn = "燃えるゴミ";
+                  $today_metal = "金属類";
+                  $today_bottle = "ビン類";
+                  //$today_nonburn = "[その他の不燃物]";
+									$today_nonburn = "不燃物";
+                  //$today_pet = "ペットボトル";
+									$today_pet = "ペットボトル";
+                  //$today_plastic = "容器包装プラスチック";
+									$today_plastic = "プラスチック";
+                  $today_paper = "紙類";
+                  $today_cloth = "衣類";
 
                   if (decbin($burn & $today_bit) != 0) {
                     $calendar[$j]['day'] = $calendar[$j]['day'] . "<br>" . $today_burn;

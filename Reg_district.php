@@ -2,27 +2,23 @@
 <html lang="ja">
 
 <!-- HEADER -->
-<head>
-<meta charset="UTF-8" />
-<title>GDSS ゴミ出し支援システム</title>
-<link rel="icon" href="iconG.ico">
-<meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
-<link rel="stylesheet" href="design.css">
-</head>
-<div class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GDSS ゴミ出し支援システム</title>
+    <link rel="icon" href="iconG.ico">
+    <meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
+    <link rel="stylesheet" href="design.css">
+  </head>
+
+  <body>
+    <div class="header">
       <p class="title">GDSS</p>
       <p class="wayaku">ゴミ出し支援システム</p>
       <p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
-</div>
+    </div>
 
 <!-- メインコンテンツエリア -->
-  <div>
-    <!-- ここに各ページの中身いれてください -->
-    <div class="Main_Block1">
-      <a class="Block5" href="Mypage.php">
-        <h3>マイページに戻る</h3>
-      </a>
-    </div>
+<!-- ここに各ページの中身いれてください -->
 
 <?php
 session_start();
@@ -114,63 +110,69 @@ if(isset($_POST["back"])){
 
 <?php if($check=="0"){ ?>
   <!-- 登録画面 -->
-  <body>
-   <div class="content">
-    <img src="distmap.jpg">
-    <form action="" method="POST">
-    <table>
-  	<tr>
-  	  <th colspan="3">地区登録・変更</th>
-  	</tr>
-  	<tr>
-  	  <td><p><input type="submit" id="dist1" name="dist1" value="東1区"></p></td>
-  	  <td><p><input type="submit" id="dist2" name="dist2" value="東2区"></p></td>
-  	  <td><p><input type="submit" id="dist3" name="dist3" value="東3区"></p></td>
-  	</tr>
-          
-  	<tr>
-  	  <td><p><input type="submit" id="dist4" name="dist4" value="西1区"></p></td>
-  	  <td><p><input type="submit" id="dist5" name="dist5" value="西2区"></p></td>
-  	  <td><p><input type="submit" id="dist6" name="dist6" value="西3区"></p></td>
-    </tr>
-  	 </table>
-     </form>
-   </div>
-</body>
+    <div class="content">
+      <div id="RegMain_Block1">
+        <a class="Mybutton" href="Mypage.php">
+          マイページに戻る
+        </a>
+      </div>
+      <img src="distmap.jpg">
+      <form action="" method="POST">
+        <table id="RegDis">
+  	       <tr class="top">
+  	          <th colspan="3">地区登録・変更</th>
+  	       </tr>
+  	       <tr>
+  	          <td><p><input type="submit" id="dist1" name="dist1" value="東1区"></p></td>
+  	          <td><p><input type="submit" id="dist2" name="dist2" value="東2区"></p></td>
+  	          <td><p><input type="submit" id="dist3" name="dist3" value="東3区"></p></td>
+  	       </tr>
+  	       <tr>
+  	          <td><p><input type="submit" id="dist4" name="dist4" value="西1区"></p></td>
+  	          <td><p><input type="submit" id="dist5" name="dist5" value="西2区"></p></td>
+  	          <td><p><input type="submit" id="dist6" name="dist6" value="西3区"></p></td>
+           </tr>
+  	    </table>
+      </form>
+    </div>
 <?php } ?>
 
 <?php if($check=="1"){ ?>
-  <body>
-  <div class="content">
-  <table>
-    <tr><th><h3>地区登録・変更</h3></th></tr>
-    <tr><td>
-  <h3>地区を新たに変更・登録しますか。</h3>
-  <table>
-  <tr><th colspan="2">登録前地区</th></tr>
-   <tr><td><?php if($area!=null)echo $area;else print "なし"; ?></td></tr>
-  </table>
-  <table>
-<tr><th colspan="2">変更後地区</th></tr>
- <tr><td><?php echo $dist_name; ?></td></tr>
-</table>
-   <form action="" method="POST">
-     <input type="hidden" id="dist" name="dist" value="<?php echo $dist; ?>">
-     <input type="submit" value="変更・登録" name="signup" id="signup">
-   </form>
+    <div class="content">
+      <div id="RegMain_Block1">
+        <a class="Mybutton" href="Mypage.php">
+          マイページに戻る
+        </a>
+      </div>
+      <table>
+        <tr><th><h3>地区登録・変更</h3></th></tr>
+        <tr><td>
+          <h3>地区を新たに変更・登録しますか。</h3>
+          <table>
+            <tr><th colspan="2">登録前地区</th></tr>
+            <tr><td><?php if($area!=null)echo $area;else print "なし"; ?></td></tr>
+          </table>
+          <table>
+            <tr><th colspan="2">変更後地区</th></tr>
+            <tr><td><?php echo $dist_name; ?></td></tr>
+          </table>
+          <form action="" method="POST">
+            <input type="hidden" id="dist" name="dist" value="<?php echo $dist; ?>">
+            <input type="submit" value="変更・登録" name="signup" id="signup">
+          </form>
 
-   <form action="" method="POST">
-   <input type="submit" value="戻る" name="back" id="back" name="back">
-  </form>
-</td></tr>
-</table>
-  </div>
-  </body>
+          <form action="" method="POST">
+            <input type="submit" value="戻る" name="back" id="back" name="back">
+          </form>
+        </td></tr>
+      </table>
+    </div>
 <?php } ?>
-    
+
 <div class="footer">
  <p class="title">GDSS</p>
  <p class="company">L&P</p>
 </div>
-    
+</body>
+
 </html>

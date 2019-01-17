@@ -159,3 +159,39 @@ div#side2 table tr {
 }
 
 /* Reg_district.php用 */
+div#RegMain_Block1 {
+  margin: 30px 20px;
+}
+
+a.Mybutton {
+  border: solid 1px #3c78d8;
+  background-color: #6d9eed;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+table#RegDis {
+  width: 1024px;
+  margin: auto;
+  background-color: #deeed8;
+  border-top: solid 2px #3c78d8;
+}
+
+table#RegDis tr.top {
+  background-color: #aad397;
+}
+
+table#RegDis th {
+  text-align: left;
+  padding: 5px 15px;
+}
+
+table#RegDis td {
+  text-align: center;
+  padding: 5px 15px;
+}
+
+table#RegDis td p {
+  margin: 10px 0px;
+}

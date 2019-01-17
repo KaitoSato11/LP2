@@ -428,7 +428,7 @@ if (!isset($_SESSION['ID'])) {
               echo $year . "年" . $month . "月のカレンダー";
               print "<br>";
               print "<table>";
-                  print "<tr>";
+                  print "<tr class=\"top\">";
                       print "<th>日</th>";
                       print "<th>月</th>";
                       print "<th>火</th>";
@@ -658,7 +658,7 @@ if (!isset($_SESSION['ID'])) {
               echo $year . "年" . $month . "月のカレンダー";
               print "<br>";
               print "<table>";
-                  print "<tr>";
+                  print "<tr class=\"top\">";
                       print "<th>日</th>";
                       print "<th>月</th>";
                       print "<th>火</th>";

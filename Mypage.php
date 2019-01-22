@@ -29,7 +29,7 @@ if (!isset($_SESSION['ID'])) {
     </div>
 
     <!-- メインコンテンツエリア -->
-    <div class="content">
+    <div class="content" id="contmy">
       <!-- ここに各ページの中身いれてください -->
 			<!-- ログアウト判定 -->
 			<?php

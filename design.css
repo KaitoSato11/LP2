@@ -70,18 +70,47 @@ a.pagetop:hover {
 
 /* メインコンテンツ用仮置き */
 div.content {
-  min-height: 800px;
+  min-height: 532px;
   margin: 25px auto;
   max-width: 1024px;
-  /* background-color: #fff8e0; */
+  background-color: #fff8e0;
 }
 
 /* Main.php用 */
-/* div#contentMy {
-  min-height: 800px;
-  margin: 25px auto;
-  max-width: 1024px;
-} */
+div.content a#logbut {
+  text-decoration: none;
+  color: white;
+  background-color: #8fc27a;
+  padding: 5px 25px;
+}
+
+div.content a#logbut:hover {
+  background-color: #7daa6a;
+}
+
+/* Login.php用 */
+div.content div.title > h2 {
+  background-color: #8fc27a;
+  border-top: solid 2px #3c78d8;
+  padding: 0px 15px;
+}
+
+/* Create_user_comp.php用 */
+div.content div#event > a {
+  text-decoration: none;
+  color: white;
+  background-color: #6d9eeb;
+  padding: 5px 25px;
+}
+
+div.content div#event > a:hover {
+  background-color: #3c78d8;
+}
+
+/* Mypage.php用 */
+div#contmy {
+  background-color: #fff;
+}
 /* 左側 */
 div#side {
   width: 256px;
@@ -159,6 +188,10 @@ div#side2 table tr {
 }
 
 /* Reg_district.php用 */
+div#contreg {
+  background-color: #fff;
+}
+
 div#RegMain_Block1 {
   margin: 30px 20px;
 }
@@ -169,6 +202,10 @@ a.Mybutton {
   color: #ffffff;
   text-decoration: none;
   padding: 10px 30px;
+}
+
+a.Mybutton:hover {
+  background-color: #3c78d8;
 }
 
 table#RegDis {
@@ -194,4 +231,38 @@ table#RegDis td {
 
 table#RegDis td p {
   margin: 10px 0px;
+}
+
+div#RegMain_Block1 {
+  max-width: 1024px;
+  margin: 25px auto;
+}
+
+div#contRgg > table {
+  width: 100%;
+}
+
+div#contRgg table h2 {
+  background-color: #aad397;
+  border-top: solid 3px #3c78d8;
+  margin: 0px;
+  text-align: left;
+  padding: 0px 20px;
+}
+
+/* Reg_district_comp.php用 */
+div#contRgc table {
+  width: 100%;
+}
+
+div#contRgc table td {
+  text-align: center;
+}
+
+div#contRgc table h2 {
+  background-color: #aad397;
+  border-top: solid 3px #3c78d8;
+  margin: 0px;
+  text-align: left;
+  padding: 0px 20px;
 }

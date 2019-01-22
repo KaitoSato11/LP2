@@ -110,7 +110,7 @@ if(isset($_POST["back"])){
 
 <?php if($check=="0"){ ?>
   <!-- 登録画面 -->
-    <div class="content">
+    <div class="content" id="contreg">
       <div id="RegMain_Block1">
         <a class="Mybutton" href="Mypage.php">
           マイページに戻る
@@ -138,14 +138,14 @@ if(isset($_POST["back"])){
 <?php } ?>
 
 <?php if($check=="1"){ ?>
-    <div class="content">
-      <div id="RegMain_Block1">
-        <a class="Mybutton" href="Mypage.php">
-          マイページに戻る
-        </a>
-      </div>
+  <div id="RegMain_Block1">
+    <a class="Mybutton" href="Mypage.php">
+      マイページに戻る
+    </a>
+  </div>
+    <div class="content" id=contRgg>
       <table>
-        <tr><th><h3>地区登録・変更</h3></th></tr>
+        <tr><th><h2>地区登録・変更</h2></th></tr>
         <tr><td>
           <h3>地区を新たに変更・登録しますか。</h3>
           <table>

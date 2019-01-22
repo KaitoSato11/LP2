@@ -23,7 +23,7 @@ if(isset($_POST['signup'])){
     try {
         $db = new PDO($db_name, $db_username, $db_password);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	
+
         //学籍番号の重複確認
         $stmt = $db->prepare("SELECT COUNT(*) FROM users WHERE user_id = :id");
         $stmt->bindValue(":id", $userid, PDO::PARAM_STR);
@@ -49,8 +49,8 @@ if(isset($_POST['signup'])){
 //～～～～～～～画面遷移関連～～～～～～～～～
 //「次へ」を押したとき確認画面に移動
 if(isset($_POST["add_user"])) {
-    $check = 1; 
-    
+    $check = 1;
+
     if(!empty($_POST['pass']) && !empty($_POST['nextpass']) && $_POST['pass'] != $_POST['nextpass']) {
         $check = 0;//同じ入力ではない時
         $errorMessage .= "確認用パスワードが違います<br>";
@@ -60,7 +60,7 @@ if(isset($_POST["add_user"])) {
         $errorMessage .= "ユーザIDは半角英数字8文字にしてください<br>";
         $check = 0; //登録画面にする
     }
- 
+
     //全て空のときかつエラーメッセージが空じゃなければエラー文を付ける
     if(empty($_POST['userid']) || empty($_POST['pass']) || empty($_POST['nextpass'])){
         $errorMessage .= "全てを入力してください";
@@ -79,76 +79,116 @@ if(isset($_POST["back"])){
     if($check == 0 ) {
     ?>
     <head>
-    <title>新規登録</title>
-		<meta charset="utf-8"/>
-        <link rel="stylesheet" href="../css/main.css" type="text/css">
+      <meta charset="utf-8">
+      <title>GDSS ゴミ出し支援システム</title>
+      <link rel="icon" href="iconG.ico">
+      <meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
+      <link rel="stylesheet" href="design.css">
     </head>
     <body>
+      <!-- HEADER -->
+      <div class="header">
+        <p class="title">GDSS</p>
+        <p class="wayaku">ゴミ出し支援システム</p>
+        <p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
+      </div>
+
+      <!-- メインコンテンツエリア -->
+      <p id="back_main"><input type="button" onClick="location.href='./Main.php'" value="メイン画面に戻る" style="WIDTH:150px; HEIGHT:30px"></p>
+      <div class="content">
         <!--規定画面-->
-        <p id="back_main"><input type="button" onClick="location.href='./Main.php'" value="メイン画面に戻る" style="WIDTH:150px; HEIGHT:30px"></p>
-        <center><h1>新規登録</h1></center>
-        <div align="center">
-            <h2><?php echo $errorMessage; ?></h2><br>
-            <div class="box_gray">
-                <br>
-                <form action="" method="POST">
-                    <table>
-                        <tr><td>ユーザID</td><td><input type="text" name="userid" size="15" placeholder="半角英数字8文字" value="<?php if(!empty($_POST['userid'])){echo h($_POST['userid']);} ?>"></td>
-                        <tr><td>パスワード</td><td colspan="3"><input type="password" name="pass" placeholder="パスワード" value="<?php if(!empty($_POST['pass'])){echo h($_POST['pass']);}  ?>" size="51"></td></tr>
-                        <tr><td>確認用パスワード</td><td colspan="3"><input type="password" name="nextpass" placeholder="もう一度" value="<?php if(!empty($_POST['nextpass'])){echo h($_POST['nextpass']);}  ?>" size="51"></td></tr>
-                    </table>
-                    <br><input type="submit" value="登録" id="add_user" name="add_user" style="WIDTH:150px; HEIGHT:30px">
-                </form>
-                <br>
-            </div>
+        <div class="title">
+          <h2>新規登録</h2>
         </div>
+        <div align="center">
+          <h2><?php echo $errorMessage; ?></h2><br>
+          <div class="box_gray">
+            <br>
+            <form action="" method="POST">
+              <table>
+                <tr><td>ユーザID</td><td><input type="text" name="userid" size="15" placeholder="半角英数字8文字" value="<?php if(!empty($_POST['userid'])){echo h($_POST['userid']);} ?>"></td>
+                <tr><td>パスワード</td><td colspan="3"><input type="password" name="pass" placeholder="パスワード" value="<?php if(!empty($_POST['pass'])){echo h($_POST['pass']);}  ?>" size="51"></td></tr>
+                <tr><td>確認用パスワード</td><td colspan="3"><input type="password" name="nextpass" placeholder="もう一度" value="<?php if(!empty($_POST['nextpass'])){echo h($_POST['nextpass']);}  ?>" size="51"></td></tr>
+              </table>
+              <br><input type="submit" value="登録" id="add_user" name="add_user" style="WIDTH:150px; HEIGHT:30px">
+            </form>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <p class="title">GDSS</p>
+        <p class="company">L&P</p>
+      </div>
     </body>
-    <?php 
+    <?php
     }
     ?>
 
     <!--　～～～～～～～～～～～～～～～登録確認画面の表示～～～～～～～～～～～～～～～～～　-->
-    <?php 
+    <?php
     if($check == 1) {
     ?>
     <head>
-    <title>新規登録確認画面</title>
-		<meta charset="utf-8"/>
-        <link rel="stylesheet" href="../css/main.css" type="text/css">
+      <meta charset="utf-8">
+      <title>GDSS ゴミ出し支援システム</title>
+      <link rel="icon" href="iconG.ico">
+      <meta name="description" content="高知県香美市土佐山田町を対象とした、ゴミ出しを支援するサイトです。">
+      <link rel="stylesheet" href="design.css">
     </head>
     <body>
+      <!-- HEADER -->
+      <div class="header">
+        <p class="title">GDSS</p>
+        <p class="wayaku">ゴミ出し支援システム</p>
+        <p class="desc">このサイトは、高知県香美市土佐山田町が対象となっています。</p>
+      </div>
+
+      <!-- メインコンテンツエリア -->
+      <p id="back_main"><input type="button" onClick="location.href='./Main.php'" value="メイン画面に戻る" style="WIDTH:150px; HEIGHT:30px"></p>
+      <div class="content">
         <!--規定画面-->
-        <p id="back_main"><input type="button" onClick="location.href='./Main.php'" value="メイン画面に戻る" style="WIDTH:150px; HEIGHT:30px"></p>
-            <div align="center">
-                <br><h2><b>この内容でよろしいですか？</b></h2>
-                <br><h2><?php echo $errorMessage; ?></h2>
-                <div class="box_gray">
-                    <h2>新規登録内容</h2>
-                    <br>
-                    <form id="check_user" name="check_user" action="" method="POST">
-                    <!--登録を押したとき-->
-                        <table>
-                            <tr><td>ユーザID</td><td><?php echo $_POST['userid']; ?></td>
-			    <tr><td>パスワード</td><td colspan="3">表示されません</td></tr>
-                        </table>
-			
-                        <!--次の場所に伝えるための情報-->
-                        <input type="hidden" id="userid" name="userid" size="15" value= "<?php echo $_POST['userid']; ?>"> 
-                        <input type="hidden" name="pass" value="<?php if(!empty($_POST['pass'])){echo h($_POST['pass']);}  ?>">
-                        <input type="hidden" name="nextpass" value="<?php if(!empty($_POST['nextpass'])){echo h($_POST['nextpass']);}  ?>">
-                        <input type="submit" value="登録" name="signup"  style="WIDTH:70px; HEIGHT:30px;"> 
-                    </form>
-                    <!--変更するを押したとき-->
-                    <form action="" method="POST">
-                        <!--次の場所に伝えるための情報-->
-                        <input type="hidden" id="userid" name="userid" size="15" value= "<?php echo $_POST['userid']; ?>">
-                        <input type="hidden" name="pass" value="<?php echo $_POST['pass']; ?>">
-                        <input type="hidden" name="nextpass" value="<?php echo $_POST['nextpass']; ?>">
-                        <input type="submit" id="back" name="back" value="変更する" style="WIDTH:70px; HEIGHT:30px">
-                    </form>
-                    <br>
-                </div>
-            </div>
+        <div class="title">
+          <h2>新規登録</h2>
+        </div>
+        <div align="center">
+          <h2><b>この内容でよろしいですか？</b></h2>
+          <br><h2><?php echo $errorMessage; ?></h2>
+          <div class="box_gray">
+            <h2>新規登録内容</h2>
+            <br>
+            <form id="check_user" name="check_user" action="" method="POST">
+              <!--登録を押したとき-->
+              <table>
+                <tr><td>ユーザID</td><td><?php echo $_POST['userid']; ?></td>
+                <tr><td>パスワード</td><td colspan="3">表示されません</td></tr>
+              </table>
+
+              <!--次の場所に伝えるための情報-->
+              <input type="hidden" id="userid" name="userid" size="15" value= "<?php echo $_POST['userid']; ?>">
+              <input type="hidden" name="pass" value="<?php if(!empty($_POST['pass'])){echo h($_POST['pass']);}  ?>">
+              <input type="hidden" name="nextpass" value="<?php if(!empty($_POST['nextpass'])){echo h($_POST['nextpass']);}  ?>">
+              <input type="submit" value="登録" name="signup"  style="WIDTH:70px; HEIGHT:30px;">
+            </form>
+            <!--変更するを押したとき-->
+            <form action="" method="POST">
+              <!--次の場所に伝えるための情報-->
+              <input type="hidden" id="userid" name="userid" size="15" value= "<?php echo $_POST['userid']; ?>">
+              <input type="hidden" name="pass" value="<?php echo $_POST['pass']; ?>">
+              <input type="hidden" name="nextpass" value="<?php echo $_POST['nextpass']; ?>">
+              <input type="submit" id="back" name="back" value="変更する" style="WIDTH:70px; HEIGHT:30px">
+            </form>
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="footer">
+        <p class="title">GDSS</p>
+        <p class="company">L&P</p>
+      </div>
     </body>
     <?php
     }

@@ -191,13 +191,10 @@ div#side2 table tr {
   background-color: #edf0f8;
 }
 
+
 /* Reg_district.php用 */
 div#contreg {
   background-color: #fff;
-}
-
-div#RegMain_Block1 {
-  margin: 30px 20px;
 }
 
 a.Mybutton {
@@ -212,28 +209,28 @@ a.Mybutton:hover {
   background-color: #3c78d8;
 }
 
-table#RegDis {
+table#RegDisT {
   width: 1024px;
   margin: auto;
   background-color: #deeed8;
   border-top: solid 2px #3c78d8;
 }
 
-table#RegDis tr.top {
+table#RegDisT tr.top {
   background-color: #aad397;
 }
 
-table#RegDis th {
+table#RegDisT th {
   text-align: left;
   padding: 5px 15px;
 }
 
-table#RegDis td {
+table#RegDisT td {
   text-align: center;
   padding: 5px 15px;
 }
 
-table#RegDis td p {
+table#RegDisT td p {
   margin: 10px 0px;
 }
 
@@ -269,4 +266,37 @@ div#contRgc table h2 {
   margin: 0px;
   text-align: left;
   padding: 0px 20px;
+}
+
+/* Mail.php用 */
+div#MlMain_Block1 {
+  max-width: 1024px;
+  margin: 25px auto;
+}
+
+table.MailT {
+  width: 100%;
+}
+
+table.MailT td {
+  text-align: center;
+}
+
+table.MailT tr.top h2 {
+  background-color: #aad397;
+  border-top: solid 3px #3c78d8;
+  margin: 0px;
+  text-align: left;
+  padding: 0px 20px;
+}
+
+div#contMl h3 {
+  margin: 0px;
+}
+
+
+/* Delete_user.php用 */
+p#back_main {
+  width: 1024px;
+  margin: 20px auto;
 }

@@ -20,22 +20,16 @@ echo "Hello Everyone.";
     </div>
 		<!-- メインコンテンツエリア -->
     <div class="content">
-			<br><br><br>
-			<div align="center">
+			<br>
+			<div align="center" id="conmain">
 				<h1>Welcome to GDSS!</h1>
-				<a href="./Login.php" id="logbut">ログイン</a>
+				<!-- 消してもらっても問題ありません -->
+				<img id="cat" src="./img/cat.png" alt="猫の画像" height="150">
+				<p>「GDSS」は、香美市のゴミ出し及びゴミの分別を補助するシステムです。</p>
+				<p>機能としては、ゴミ回収日のカレンダー、ゴミ分別の一覧、資源ゴミの回収場所の表示等があります。</p>
+				<br><a href="./Login.php" id="logbut">ログイン</a>
 			</div>
 			<br>
-			<div align='center'>
-				「GDSS」は、香美市のゴミ出し及びゴミの分別を補助するシステムです。<br>
-				機能としては、ゴミ回収日のカレンダー、ゴミ分別の一覧、資源ゴミの回収場所の表示等があります。
-			</div>
-			<br>
-			<!-- 消してもらっても問題ありません -->
-			<div align="center">
-				<img src="./img/cat.png" alt="猫の画像" height="441" width="551">
-			</div>
-			<br><br><br>
 			<div align="right">
 				LastUpdate is 2018/12/7 16:30
 			</div>

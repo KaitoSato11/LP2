@@ -88,6 +88,10 @@ div.content a#logbut:hover {
   background-color: #7daa6a;
 }
 
+div#conmain p {
+  margin: 5px auto;
+}
+
 /* Login.php用 */
 div.content div.title > h2 {
   background-color: #8fc27a;

@@ -40,7 +40,7 @@
   <dt>Delete_user_comp.php 98%(大体)</dt>
   <dd>動くけど見た目はめっちゃ適当です</dd></dl>
 
-## 中 12/20
+## 中 1/25
 <dl>
   <dt>iconG.ico 100%</dt>
   <dd>文句なければ完成で</dd>
@@ -50,8 +50,8 @@
   <dd>ひとまず、文句・注文あれば受け付け中</dd>
   <dt>distmap.jpg 95%</dt>
   <dd>ひとまず完成、文句・注文あれば受け付け中</dd>
-  <dt>design.css 5%</dt>
-  <dd>ヘッダ、フッタ、PAGETOPボタンのみ完成</dd>
+  <dt>design.css 70%</dt>
+  <dd>一般ユーザ用ひとまず完成</dd>
 </dl>
 
 ## 松下 1/11時点

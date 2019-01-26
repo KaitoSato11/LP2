@@ -26,7 +26,7 @@ if (!isset($_SESSION['ID'])) {
     </div>
 
     <!-- メインコンテンツエリア -->
-    <div class="content">
+    <div class="content" id="Acontul">
       <!-- ここに各ページの中身いれてください -->
 			<!-- 画面の判定 -->
 			<?php
@@ -146,7 +146,7 @@ if (!isset($_SESSION['ID'])) {
         <?php
 				if ($check == 0) {
 					print "
-	        <table>
+	        <table class=\"titleT\">
 	        <thead>
 	        <tr>
 	        <td colspan=\"5\">ゴミ分別</td>
@@ -167,17 +167,17 @@ if (!isset($_SESSION['ID'])) {
 							exit();
 						}
 	          print "
-	          <table>
+	          <table class=\"elemT\">
 	          <thead>
-	          <tr>
-	          <td colspan=\"5\" style=\"background-color: #a4c2f4\">" . $character_array[$i]. "</td>
-	          <tr>
-	          <tr>
-	          <th>編集</th>
-	          <th>名称</th>
-	          <th>分別</th>
+	          <tr class=\"fifs\">
+	          <td colspan=\"5\">" . $character_array[$i]. "</td>
+	          </tr>
+	          <tr class=\"titem\">
+	          <th class=\"tButton\">編集</th>
+	          <th class=\"shitem\">名称</th>
+	          <th class=\"shitem\">分別</th>
 	          <th>分別ルール</th>
-	          <th>削除</th>
+	          <th class=\"tButton\">削除</th>
 	          </tr>
 	          </thead>
 	          ";
@@ -218,17 +218,17 @@ if (!isset($_SESSION['ID'])) {
 							exit();
 						}
 	          print "
-	          <table>
+	          <table class=\"elemT\">
 	          <thead>
-	          <tr>
-	          <td colspan=\"5\" style=\"background-color: #a4c2f4\">" . $character_array[$i]. "</td>
-	          <tr>
-	          <tr>
-	          <th>編集</th>
-	          <th>名称</th>
-	          <th>分別</th>
+	          <tr class=\"fifs\">
+	          <td colspan=\"5\">" . $character_array[$i]. "</td>
+	          </tr>
+	          <tr class=\"titem\">
+	          <th class=\"tButton\">編集</th>
+	          <th class=\"shitem\">名称</th>
+	          <th class=\"shitem\">分別</th>
 	          <th>分別ルール</th>
-	          <th>削除</th>
+	          <th class=\"tButton\">削除</th>
 	          </tr>
 	          </thead>
 	          ";
@@ -268,17 +268,17 @@ if (!isset($_SESSION['ID'])) {
 							exit();
 						}
 	          print "
-	          <table>
+	          <table class=\"elemT\">
 	          <thead>
-	          <tr>
-	          <td colspan=\"5\" style=\"background-color: #a4c2f4\">" . $character_array[$i]. "</td>
-	          <tr>
-	          <tr>
-	          <th>編集</th>
-	          <th>名称</th>
-	          <th>分別</th>
+	          <tr class=\"fifs\">
+	          <td colspan=\"5\">" . $character_array[$i]. "</td>
+	          </tr>
+	          <tr class=\"titem\">
+	          <th class=\"tButton\">編集</th>
+	          <th class=\"shitem\">名称</th>
+	          <th class=\"shitem\">分別</th>
 	          <th>分別ルール</th>
-	          <th>削除</th>
+	          <th class=\"tButton\">削除</th>
 	          </tr>
 	          </thead>
 	          ";
@@ -320,17 +320,17 @@ if (!isset($_SESSION['ID'])) {
 							exit();
 						}
 	          print "
-	          <table>
+	          <table class=\"elemT\">
 	          <thead>
-	          <tr>
-	          <td colspan=\"5\" style=\"background-color: #a4c2f4\">" . $character_array[$i]. "</td>
-	          <tr>
-	          <tr>
-	          <th>編集</th>
-	          <th>名称</th>
-	          <th>分別</th>
+	          <tr class=\"fifs\">
+	          <td colspan=\"5\">" . $character_array[$i]. "</td>
+	          </tr>
+	          <tr class=\"titem\">
+	          <th class=\"tButton\">編集</th>
+	          <th class=\"shitem\">名称</th>
+	          <th class=\"shitem\">分別</th>
 	          <th>分別ルール</th>
-	          <th>削除</th>
+	          <th class=\"tButton\">削除</th>
 	          </tr>
 	          </thead>
 	          ";
@@ -370,17 +370,17 @@ if (!isset($_SESSION['ID'])) {
 							exit();
 						}
 	          print "
-	          <table>
+	          <table class=\"elemT\">
 	          <thead>
-	          <tr>
-	          <td colspan=\"5\" style=\"background-color: #a4c2f4\">" . $character_array[$i]. "</td>
-	          <tr>
-	          <tr>
-	          <th>編集</th>
-	          <th>名称</th>
-	          <th>分別</th>
+	          <tr class=\"fifs\">
+	          <td colspan=\"5\">" . $character_array[$i]. "</td>
+	          </tr>
+	          <tr class=\"titem\">
+	          <th class=\"tButton\">編集</th>
+	          <th class=\"shitem\">名称</th>
+	          <th class=\"shitem\">分別</th>
 	          <th>分別ルール</th>
-	          <th>削除</th>
+	          <th class=\"tButton\">削除</th>
 	          </tr>
 	          </thead>
 	          ";
@@ -420,17 +420,17 @@ if (!isset($_SESSION['ID'])) {
 							exit();
 						}
 	          print "
-	          <table>
+	          <table class=\"elemT\">
 	          <thead>
-	          <tr>
-	          <td colspan=\"5\" style=\"background-color: #a4c2f4\">" . $character_array[$i]. "</td>
-	          <tr>
-	          <tr>
-	          <th>編集</th>
-	          <th>名称</th>
-	          <th>分別</th>
+	          <tr class=\"fifs\">
+	          <td colspan=\"5\">" . $character_array[$i]. "</td>
+	          </tr>
+	          <tr class=\"titem\">
+	          <th class=\"tButton\">編集</th>
+	          <th class=\"shitem\">名称</th>
+	          <th class=\"shitem\">分別</th>
 	          <th>分別ルール</th>
-	          <th>削除</th>
+	          <th class=\"tButton\">削除</th>
 	          </tr>
 	          </thead>
 	          ";
@@ -470,17 +470,17 @@ if (!isset($_SESSION['ID'])) {
 							exit();
 						}
 	          print "
-	          <table>
+	          <table class=\"elemT\">
 	          <thead>
-	          <tr>
-	          <td colspan=\"5\" style=\"background-color: #a4c2f4\">" . $character_array[$i]. "</td>
-	          <tr>
-	          <tr>
-	          <th>編集</th>
-	          <th>名称</th>
-	          <th>分別</th>
+	          <tr class=\"fifs\">
+	          <td colspan=\"5\">" . $character_array[$i]. "</td>
+	          </tr>
+	          <tr class=\"titem\">
+	          <th class=\"tButton\">編集</th>
+	          <th class=\"shitem\">名称</th>
+	          <th class=\"shitem\">分別</th>
 	          <th>分別ルール</th>
-	          <th>削除</th>
+	          <th class=\"tButton\">削除</th>
 	          </tr>
 	          </thead>
 	          ";
@@ -520,17 +520,17 @@ if (!isset($_SESSION['ID'])) {
 							exit();
 						}
 	          print "
-	          <table>
+	          <table class=\"elemT\">
 	          <thead>
-	          <tr>
-	          <td colspan=\"5\" style=\"background-color: #a4c2f4\">" . $character_array[$i]. "</td>
-	          <tr>
-	          <tr>
-	          <th>編集</th>
-	          <th>名称</th>
-	          <th>分別</th>
+	          <tr class=\"fifs\">
+	          <td colspan=\"5\">" . $character_array[$i]. "</td>
+	          </tr>
+	          <tr class=\"titem\">
+	          <th class=\"tButton\">編集</th>
+	          <th class=\"shitem\">名称</th>
+	          <th class=\"shitem\">分別</th>
 	          <th>分別ルール</th>
-	          <th>削除</th>
+	          <th class=\"tButton\">削除</th>
 	          </tr>
 	          </thead>
 	          ";

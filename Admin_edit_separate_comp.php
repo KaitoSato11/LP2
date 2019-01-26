@@ -26,13 +26,20 @@ if (!isset($_SESSION['ID'])) {
     </div>
 
     <!-- メインコンテンツエリア -->
-    <div class="content">
+		<div id="AMain_Block1">
+			<a class="Mybutton" href="Mypage.php">マイページに戻る</a>
+		</div>
+		<div class="content">
       <!-- ここに各ページの中身いれてください -->
-			<a href="Mypage.php">マイページに戻る</a>
-			<p>分別編集</p>
-			<p>編集が完了しました。</p>
-			<a href="Admin_separate_list.php">ゴミ分別一覧に戻る</a>
-    </div>
+			<div class="title">
+				<h2>分別追加</h2>
+			</div>
+			<center>
+				<br>
+				<p>編集が完了しました。</p>
+				<a class="Mybutton" href="Admin_separate_list.php">ゴミ分別一覧に戻る</a>
+			</center>
+		</div>
 
     <!-- FOOTER -->
     <div class="footer">
@@ -41,4 +48,3 @@ if (!isset($_SESSION['ID'])) {
     </div>
   </BODY>
 </HTML>
-

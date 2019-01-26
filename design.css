@@ -300,3 +300,322 @@ p#back_main {
   width: 1024px;
   margin: 20px auto;
 }
+
+/* Admin_separate_list.php用 */
+div#Acontgl {
+  background-color: #fff;
+}
+
+/* 上ボタン */
+div#transition {
+  margin: 15px auto;
+}
+
+div#insert {
+  float: left;
+}
+
+div#mypage {
+  text-align: right;
+}
+
+/* リスト */
+div#dust_list {
+  background-color: #ebf1eb;
+}
+
+div#dust_list > table {
+  width: 100%;
+}
+
+table.titleT {
+  background-color: #aad397;
+  border-top: solid 2px #3c78d8;
+}
+
+div#dust_list table.elemT tr.fifs > td {
+  background-color: #a4c2f4;
+}
+
+div#dust_list table.elemT tr.titem th {
+  background-color: #deeed8;
+  border-bottom: solid 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #999999;
+}
+
+div#dust_list table.elemT th.tButton {
+  width: 50px;
+}
+
+div#dust_list table.elemT th.shitem {
+  width: 200px;
+}
+
+div#dust_list table.elemT tbody td {
+  border-top: dotted 1px #999;
+  border-bottom: dotted 1px #999;
+  border-left: solid 1px #999;
+  border-right: solid 1px #999;
+}
+
+/* 削除用 */
+div#Acontgl div.Tcontgl {
+  width: 100%;
+  margin: 35px auto;
+}
+
+div#Acontgl a.glBackB {
+  border: solid 1px #e69138;
+  background-color: #fff2cc;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+div#Acontgl a.glBackB:hover {
+  background-color: #f9cb9c;
+}
+
+div#Acontgl div.Mcontgl {
+  width: 100%;
+  background-color: #fff8e0;
+}
+
+div#Acontgl div.Mcontgl p {
+  margin: 0px;
+}
+
+div#Acontgl div.Mcontgl div.contin {
+  padding: 20px;
+}
+
+div#Acontgl div.Mcontgl div.contin p.elemS {
+  padding-left: 20px;
+}
+
+/* Admin_insert_separate.php用 */
+div#Acontgi {
+  background-color: #fff;
+}
+
+div#Acontgi div.Tcontgi {
+  width: 100%;
+  margin: 35px auto;
+}
+
+div#Acontgi a.glBackB {
+  border: solid 1px #e69138;
+  background-color: #fff2cc;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+div#Acontgi a.glBackB:hover {
+  background-color: #f9cb9c;
+}
+
+div#Acontgi div.Mcontgi {
+  width: 100%;
+  background-color: #fff8e0;
+}
+
+div#Acontgi div.Mcontgi p {
+  margin: 0px;
+}
+
+div#Acontgi div.Mcontgi div.contin {
+  padding: 20px;
+}
+
+/* Admin_edit_separate_comp.php用 */
+div#AMain_Block1 {
+  max-width: 1024px;
+  margin: 25px auto;
+}
+
+/* Admin_edit_separate.php用 */
+div#Acontgs {
+  background-color: #fff;
+}
+
+div#Acontgs div.Tcontgs {
+  width: 100%;
+  margin: 35px auto;
+}
+
+div#Acontgs a.glBackB {
+  border: solid 1px #e69138;
+  background-color: #fff2cc;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+div#Acontgs a.glBackB:hover {
+  background-color: #f9cb9c;
+}
+
+div#Acontgs div.Mcontgs {
+  width: 100%;
+  background-color: #fff8e0;
+}
+
+div#Acontgs div.Mcontgs p {
+  margin: 0px;
+}
+
+div#Acontgs div.Mcontgs div.contin {
+  padding: 20px;
+}
+
+div#Acontgs div.Mcontgs div.contin p.elemS {
+  padding-left: 20px;
+}
+
+/* Admin_edit_cal.php用 */
+div#Acontcl {
+  background-color: #fff;
+}
+
+div#Acontcl div.Mcontcl {
+  background-color: #ebf1eb;
+}
+
+div#Acontcl table.cledT td.cledtop {
+  background-color: #aad397;
+  border-top: solid 2px #3c78d8;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  text-align: left;
+  padding: 5px 15px;
+}
+
+div#Acontcl table.cledT td.cleditm {
+  background-color: #deeed8;
+  border-bottom: solid 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #999999;
+}
+
+div#Acontcl table.cledT td {
+  border-top: dotted 1px #999999;
+  border-bottom: dotted 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #999999;
+}
+
+/* Admin_edit_cal.php用 */
+div#Acontec {
+  background-color: #fff;
+}
+
+div#Acontec table#ecT {
+  width: 100%;
+}
+
+div#contecT {
+  background-color: #ebf1eb;
+}
+
+div#Acontec div#contecT td#ecTtop {
+  background-color: #aad397;
+  border-top: solid 2px #3c78d8;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  text-align: left;
+  padding: 5px 15px;
+}
+
+div#Acontec div#contecT td.ecTitm {
+  background-color: #deeed8;
+  border-bottom: solid 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #999999;
+}
+
+div#Acontec div#contecT td {
+  border-top: solid 1px #999999;
+  border-bottom: solid 1px #999999;
+}
+
+/* Admin_delete_user.php用 */
+div#Acontdu {
+  background-color: #fff;
+}
+
+div#Acontdu div.Tcontdu {
+  width: 100%;
+  margin: 25px auto;
+}
+
+div#Acontdu div.Mcontdu {
+  background-color: #ebf1eb;
+}
+
+div#Acontdu div.Mcontdu > table {
+  width: 100%;
+}
+
+div#Acontdu div.Mcontdu th.duTtop {
+  background-color: #aad397;
+  border-top: solid 2px #3c78d8;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  text-align: left;
+  padding: 5px 15px;
+}
+
+div#Acontdu div.Mcontdu th.duTitm {
+  background-color: #deeed8;
+  border-bottom: solid 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #999999;
+}
+
+div#Acontdu div.Mcontdu td, div#Acontdu div.Mcontdu th {
+  border-top: dotted 1px #999999;
+  border-bottom: dotted 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #999999;
+}
+
+/* 確認ページ用 */
+div#Acontdu div#Mcontduc {
+  background-color: #fff8e0;
+}
+
+div#Mcontduc > table#ducT td {
+  border-style: none;
+}
+
+div#Mcontduc table#obuserT {
+  margin: 10px 20px;
+}
+
+div#Mcontduc table#obuserT td {
+  border: solid 1px #999999;
+}
+
+/* Admin_delete_user_comp.php用 */
+div#Acontduc table {
+  width: 100%;
+}
+
+div#Acontduc table th.duTtop {
+  background-color: #aad397;
+  border-top: solid 2px #3c78d8;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  text-align: left;
+  padding: 5px 15px;
+}
+
+div#Acontduc table td {
+  text-align: center;
+}

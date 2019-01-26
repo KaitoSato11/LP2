@@ -100,219 +100,222 @@ $gomi8 = "衣類";
     </div>
 
 		<!-- メインコンテンツエリア -->
-    <div class="content">
+    <div class="content" id="Acontec">
       <!-- ここに各ページの中身いれてください -->
       <div>
-      <h3><a href="Mypage.php">
-        <input type="submit" value="マイページに戻る"/>
-      </a></h3>
-      <table border="1">
-      <tr><td colspan="100%">カレンダー編集</td></tr>
-      <tr>
-        <td width="200px">地区名</td>
-        <td width="500px">
-					<?php
-					if(isset($_POST['east1a'])) {print $chiku1; $chikumei = "東1区";}
-					if(isset($_POST['east1b'])) {print $chiku1; $chikumei = "東1区";}
-					if(isset($_POST['east1c'])) {print $chiku1; $chikumei = "東1区";}
-					if(isset($_POST['east1d'])) {print $chiku1; $chikumei = "東1区";}
-					if(isset($_POST['east1e'])) {print $chiku1; $chikumei = "東1区";}
-					if(isset($_POST['east1f'])) {print $chiku1; $chikumei = "東1区";}
-					if(isset($_POST['east1g'])) {print $chiku1; $chikumei = "東1区";}
-					if(isset($_POST['east1h'])) {print $chiku1; $chikumei = "東1区";}
-					if(isset($_POST['east2a'])) {print $chiku2; $chikumei = "東2区";}
-					if(isset($_POST['east2b'])) {print $chiku2; $chikumei = "東2区";}
-					if(isset($_POST['east2c'])) {print $chiku2; $chikumei = "東2区";}
-					if(isset($_POST['east2d'])) {print $chiku2; $chikumei = "東2区";}
-					if(isset($_POST['east2e'])) {print $chiku2; $chikumei = "東2区";}
-					if(isset($_POST['east2f'])) {print $chiku2; $chikumei = "東2区";}
-					if(isset($_POST['east2g'])) {print $chiku2; $chikumei = "東2区";}
-					if(isset($_POST['east2h'])) {print $chiku2; $chikumei = "東2区";}
-					if(isset($_POST['east3a'])) {print $chiku3; $chikumei = "東3区";}
-					if(isset($_POST['east3b'])) {print $chiku3; $chikumei = "東3区";}
-					if(isset($_POST['east3c'])) {print $chiku3; $chikumei = "東3区";}
-					if(isset($_POST['east3d'])) {print $chiku3; $chikumei = "東3区";}
-					if(isset($_POST['east3e'])) {print $chiku3; $chikumei = "東3区";}
-					if(isset($_POST['east3f'])) {print $chiku3; $chikumei = "東3区";}
-					if(isset($_POST['east3g'])) {print $chiku3; $chikumei = "東3区";}
-					if(isset($_POST['east3h'])) {print $chiku3; $chikumei = "東3区";}
-					if(isset($_POST['east4a'])) {print $chiku4; $chikumei = "西1区";}
-					if(isset($_POST['east4b'])) {print $chiku4; $chikumei = "西1区";}
-					if(isset($_POST['east4c'])) {print $chiku4; $chikumei = "西1区";}
-					if(isset($_POST['east4d'])) {print $chiku4; $chikumei = "西1区";}
-					if(isset($_POST['east4e'])) {print $chiku4; $chikumei = "西1区";}
-					if(isset($_POST['east4f'])) {print $chiku4; $chikumei = "西1区";}
-					if(isset($_POST['east4g'])) {print $chiku4; $chikumei = "西1区";}
-					if(isset($_POST['east4h'])) {print $chiku4; $chikumei = "西1区";}
-					if(isset($_POST['east5a'])) {print $chiku5; $chikumei = "西2区";}
-					if(isset($_POST['east5b'])) {print $chiku5; $chikumei = "西2区";}
-					if(isset($_POST['east5c'])) {print $chiku5; $chikumei = "西2区";}
-					if(isset($_POST['east5d'])) {print $chiku5; $chikumei = "西2区";}
-					if(isset($_POST['east5e'])) {print $chiku5; $chikumei = "西2区";}
-					if(isset($_POST['east5f'])) {print $chiku5; $chikumei = "西2区";}
-					if(isset($_POST['east5g'])) {print $chiku5; $chikumei = "西2区";}
-					if(isset($_POST['east5h'])) {print $chiku5; $chikumei = "西2区";}
-					if(isset($_POST['east6a'])) {print $chiku6; $chikumei = "西3区";}
-					if(isset($_POST['east6b'])) {print $chiku6; $chikumei = "西3区";}
-					if(isset($_POST['east6c'])) {print $chiku6; $chikumei = "西3区";}
-					if(isset($_POST['east6d'])) {print $chiku6; $chikumei = "西3区";}
-					if(isset($_POST['east6e'])) {print $chiku6; $chikumei = "西3区";}
-					if(isset($_POST['east6f'])) {print $chiku6; $chikumei = "西3区";}
-					if(isset($_POST['east6g'])) {print $chiku6; $chikumei = "西3区";}
-					if(isset($_POST['east6h'])) {print $chiku6; $chikumei = "西3区";}
-					?>
-				</td>
-      </tr>
-			<tr>
-        <td>種類</td>
-        <td>
-					<?php
-					if(isset($_POST['east1a'])) {print $gomi1; $gomimei = "燃える";}
-					if(isset($_POST['east1b'])) {print $gomi2; $gomimei = "金属類";}
-					if(isset($_POST['east1c'])) {print $gomi3; $gomimei = "ビン類";}
-					if(isset($_POST['east1d'])) {print $gomi4; $gomimei = "他不燃";}
-					if(isset($_POST['east1e'])) {print $gomi5; $gomimei = "ペット";}
-					if(isset($_POST['east1f'])) {print $gomi6; $gomimei = "プラ";}
-					if(isset($_POST['east1g'])) {print $gomi7; $gomimei = "紙類";}
-					if(isset($_POST['east1h'])) {print $gomi8; $gomimei = "衣類";}
-					if(isset($_POST['east2a'])) {print $gomi1; $gomimei = "燃える";}
-					if(isset($_POST['east2b'])) {print $gomi2; $gomimei = "金属類";}
-					if(isset($_POST['east2c'])) {print $gomi3; $gomimei = "ビン類";}
-					if(isset($_POST['east2d'])) {print $gomi4; $gomimei = "他不燃";}
-					if(isset($_POST['east2e'])) {print $gomi5; $gomimei = "ペット";}
-					if(isset($_POST['east2f'])) {print $gomi6; $gomimei = "プラ";}
-					if(isset($_POST['east2g'])) {print $gomi7; $gomimei = "紙類";}
-					if(isset($_POST['east2h'])) {print $gomi8; $gomimei = "衣類";}
-					if(isset($_POST['east3a'])) {print $gomi1; $gomimei = "燃える";}
-					if(isset($_POST['east3b'])) {print $gomi2; $gomimei = "金属類";}
-					if(isset($_POST['east3c'])) {print $gomi3; $gomimei = "ビン類";}
-					if(isset($_POST['east3d'])) {print $gomi4; $gomimei = "他不燃";}
-					if(isset($_POST['east3e'])) {print $gomi5; $gomimei = "ペット";}
-					if(isset($_POST['east3f'])) {print $gomi6; $gomimei = "プラ";}
-					if(isset($_POST['east3g'])) {print $gomi7; $gomimei = "紙類";}
-					if(isset($_POST['east3h'])) {print $gomi8; $gomimei = "衣類";}
-					if(isset($_POST['east4a'])) {print $gomi1; $gomimei = "燃える";}
-					if(isset($_POST['east4b'])) {print $gomi2; $gomimei = "金属類";}
-					if(isset($_POST['east4c'])) {print $gomi3; $gomimei = "ビン類";}
-					if(isset($_POST['east4d'])) {print $gomi4; $gomimei = "他不燃";}
-					if(isset($_POST['east4e'])) {print $gomi5; $gomimei = "ペット";}
-					if(isset($_POST['east4f'])) {print $gomi6; $gomimei = "プラ";}
-					if(isset($_POST['east4g'])) {print $gomi7; $gomimei = "紙類";}
-					if(isset($_POST['east4h'])) {print $gomi8; $gomimei = "衣類";}
-					if(isset($_POST['east5a'])) {print $gomi1; $gomimei = "燃える";}
-					if(isset($_POST['east5b'])) {print $gomi2; $gomimei = "金属類";}
-					if(isset($_POST['east5c'])) {print $gomi3; $gomimei = "ビン類";}
-					if(isset($_POST['east5d'])) {print $gomi4; $gomimei = "他不燃";}
-					if(isset($_POST['east5e'])) {print $gomi5; $gomimei = "ペット";}
-					if(isset($_POST['east5f'])) {print $gomi6; $gomimei = "プラ";}
-					if(isset($_POST['east5g'])) {print $gomi7; $gomimei = "紙類";}
-					if(isset($_POST['east5h'])) {print $gomi8; $gomimei = "衣類";}
-					if(isset($_POST['east6a'])) {print $gomi1; $gomimei = "燃える";}
-					if(isset($_POST['east6b'])) {print $gomi2; $gomimei = "金属類";}
-					if(isset($_POST['east6c'])) {print $gomi3; $gomimei = "ビン類";}
-					if(isset($_POST['east6d'])) {print $gomi4; $gomimei = "他不燃";}
-					if(isset($_POST['east6e'])) {print $gomi5; $gomimei = "ペット";}
-					if(isset($_POST['east6f'])) {print $gomi6; $gomimei = "プラ";}
-					if(isset($_POST['east6g'])) {print $gomi7; $gomimei = "紙類";}
-					if(isset($_POST['east6h'])) {print $gomi8; $gomimei = "衣類";}
-					?>
-				</td>
-      </tr>
-			<tr>
-        <td height="250px">曜日</td>
-        <td height="250px">
-					<form method="POST" action="">
+      	<h3><a href="Mypage.php">
+        	<input type="submit" value="マイページに戻る"/>
+      	</a></h3>
+			</div>
+			<div id="contecT">
+      	<table id="ecT">
+      	<tr><td id="ecTtop" colspan="100%">カレンダー編集</td></tr>
+      	<tr>
+        	<td class="ecTitm" width="200px">地区名</td>
+        	<td>
+						<?php
+						if(isset($_POST['east1a'])) {print $chiku1; $chikumei = "東1区";}
+						if(isset($_POST['east1b'])) {print $chiku1; $chikumei = "東1区";}
+						if(isset($_POST['east1c'])) {print $chiku1; $chikumei = "東1区";}
+						if(isset($_POST['east1d'])) {print $chiku1; $chikumei = "東1区";}
+						if(isset($_POST['east1e'])) {print $chiku1; $chikumei = "東1区";}
+						if(isset($_POST['east1f'])) {print $chiku1; $chikumei = "東1区";}
+						if(isset($_POST['east1g'])) {print $chiku1; $chikumei = "東1区";}
+						if(isset($_POST['east1h'])) {print $chiku1; $chikumei = "東1区";}
+						if(isset($_POST['east2a'])) {print $chiku2; $chikumei = "東2区";}
+						if(isset($_POST['east2b'])) {print $chiku2; $chikumei = "東2区";}
+						if(isset($_POST['east2c'])) {print $chiku2; $chikumei = "東2区";}
+						if(isset($_POST['east2d'])) {print $chiku2; $chikumei = "東2区";}
+						if(isset($_POST['east2e'])) {print $chiku2; $chikumei = "東2区";}
+						if(isset($_POST['east2f'])) {print $chiku2; $chikumei = "東2区";}
+						if(isset($_POST['east2g'])) {print $chiku2; $chikumei = "東2区";}
+						if(isset($_POST['east2h'])) {print $chiku2; $chikumei = "東2区";}
+						if(isset($_POST['east3a'])) {print $chiku3; $chikumei = "東3区";}
+						if(isset($_POST['east3b'])) {print $chiku3; $chikumei = "東3区";}
+						if(isset($_POST['east3c'])) {print $chiku3; $chikumei = "東3区";}
+						if(isset($_POST['east3d'])) {print $chiku3; $chikumei = "東3区";}
+						if(isset($_POST['east3e'])) {print $chiku3; $chikumei = "東3区";}
+						if(isset($_POST['east3f'])) {print $chiku3; $chikumei = "東3区";}
+						if(isset($_POST['east3g'])) {print $chiku3; $chikumei = "東3区";}
+						if(isset($_POST['east3h'])) {print $chiku3; $chikumei = "東3区";}
+						if(isset($_POST['east4a'])) {print $chiku4; $chikumei = "西1区";}
+						if(isset($_POST['east4b'])) {print $chiku4; $chikumei = "西1区";}
+						if(isset($_POST['east4c'])) {print $chiku4; $chikumei = "西1区";}
+						if(isset($_POST['east4d'])) {print $chiku4; $chikumei = "西1区";}
+						if(isset($_POST['east4e'])) {print $chiku4; $chikumei = "西1区";}
+						if(isset($_POST['east4f'])) {print $chiku4; $chikumei = "西1区";}
+						if(isset($_POST['east4g'])) {print $chiku4; $chikumei = "西1区";}
+						if(isset($_POST['east4h'])) {print $chiku4; $chikumei = "西1区";}
+						if(isset($_POST['east5a'])) {print $chiku5; $chikumei = "西2区";}
+						if(isset($_POST['east5b'])) {print $chiku5; $chikumei = "西2区";}
+						if(isset($_POST['east5c'])) {print $chiku5; $chikumei = "西2区";}
+						if(isset($_POST['east5d'])) {print $chiku5; $chikumei = "西2区";}
+						if(isset($_POST['east5e'])) {print $chiku5; $chikumei = "西2区";}
+						if(isset($_POST['east5f'])) {print $chiku5; $chikumei = "西2区";}
+						if(isset($_POST['east5g'])) {print $chiku5; $chikumei = "西2区";}
+						if(isset($_POST['east5h'])) {print $chiku5; $chikumei = "西2区";}
+						if(isset($_POST['east6a'])) {print $chiku6; $chikumei = "西3区";}
+						if(isset($_POST['east6b'])) {print $chiku6; $chikumei = "西3区";}
+						if(isset($_POST['east6c'])) {print $chiku6; $chikumei = "西3区";}
+						if(isset($_POST['east6d'])) {print $chiku6; $chikumei = "西3区";}
+						if(isset($_POST['east6e'])) {print $chiku6; $chikumei = "西3区";}
+						if(isset($_POST['east6f'])) {print $chiku6; $chikumei = "西3区";}
+						if(isset($_POST['east6g'])) {print $chiku6; $chikumei = "西3区";}
+						if(isset($_POST['east6h'])) {print $chiku6; $chikumei = "西3区";}
+						?>
+					</td>
+      	</tr>
+				<tr>
+        	<td class="ecTitm">種類</td>
+        	<td>
+						<?php
+						if(isset($_POST['east1a'])) {print $gomi1; $gomimei = "燃える";}
+						if(isset($_POST['east1b'])) {print $gomi2; $gomimei = "金属類";}
+						if(isset($_POST['east1c'])) {print $gomi3; $gomimei = "ビン類";}
+						if(isset($_POST['east1d'])) {print $gomi4; $gomimei = "他不燃";}
+						if(isset($_POST['east1e'])) {print $gomi5; $gomimei = "ペット";}
+						if(isset($_POST['east1f'])) {print $gomi6; $gomimei = "プラ";}
+						if(isset($_POST['east1g'])) {print $gomi7; $gomimei = "紙類";}
+						if(isset($_POST['east1h'])) {print $gomi8; $gomimei = "衣類";}
+						if(isset($_POST['east2a'])) {print $gomi1; $gomimei = "燃える";}
+						if(isset($_POST['east2b'])) {print $gomi2; $gomimei = "金属類";}
+						if(isset($_POST['east2c'])) {print $gomi3; $gomimei = "ビン類";}
+						if(isset($_POST['east2d'])) {print $gomi4; $gomimei = "他不燃";}
+						if(isset($_POST['east2e'])) {print $gomi5; $gomimei = "ペット";}
+						if(isset($_POST['east2f'])) {print $gomi6; $gomimei = "プラ";}
+						if(isset($_POST['east2g'])) {print $gomi7; $gomimei = "紙類";}
+						if(isset($_POST['east2h'])) {print $gomi8; $gomimei = "衣類";}
+						if(isset($_POST['east3a'])) {print $gomi1; $gomimei = "燃える";}
+						if(isset($_POST['east3b'])) {print $gomi2; $gomimei = "金属類";}
+						if(isset($_POST['east3c'])) {print $gomi3; $gomimei = "ビン類";}
+						if(isset($_POST['east3d'])) {print $gomi4; $gomimei = "他不燃";}
+						if(isset($_POST['east3e'])) {print $gomi5; $gomimei = "ペット";}
+						if(isset($_POST['east3f'])) {print $gomi6; $gomimei = "プラ";}
+						if(isset($_POST['east3g'])) {print $gomi7; $gomimei = "紙類";}
+						if(isset($_POST['east3h'])) {print $gomi8; $gomimei = "衣類";}
+						if(isset($_POST['east4a'])) {print $gomi1; $gomimei = "燃える";}
+						if(isset($_POST['east4b'])) {print $gomi2; $gomimei = "金属類";}
+						if(isset($_POST['east4c'])) {print $gomi3; $gomimei = "ビン類";}
+						if(isset($_POST['east4d'])) {print $gomi4; $gomimei = "他不燃";}
+						if(isset($_POST['east4e'])) {print $gomi5; $gomimei = "ペット";}
+						if(isset($_POST['east4f'])) {print $gomi6; $gomimei = "プラ";}
+						if(isset($_POST['east4g'])) {print $gomi7; $gomimei = "紙類";}
+						if(isset($_POST['east4h'])) {print $gomi8; $gomimei = "衣類";}
+						if(isset($_POST['east5a'])) {print $gomi1; $gomimei = "燃える";}
+						if(isset($_POST['east5b'])) {print $gomi2; $gomimei = "金属類";}
+						if(isset($_POST['east5c'])) {print $gomi3; $gomimei = "ビン類";}
+						if(isset($_POST['east5d'])) {print $gomi4; $gomimei = "他不燃";}
+						if(isset($_POST['east5e'])) {print $gomi5; $gomimei = "ペット";}
+						if(isset($_POST['east5f'])) {print $gomi6; $gomimei = "プラ";}
+						if(isset($_POST['east5g'])) {print $gomi7; $gomimei = "紙類";}
+						if(isset($_POST['east5h'])) {print $gomi8; $gomimei = "衣類";}
+						if(isset($_POST['east6a'])) {print $gomi1; $gomimei = "燃える";}
+						if(isset($_POST['east6b'])) {print $gomi2; $gomimei = "金属類";}
+						if(isset($_POST['east6c'])) {print $gomi3; $gomimei = "ビン類";}
+						if(isset($_POST['east6d'])) {print $gomi4; $gomimei = "他不燃";}
+						if(isset($_POST['east6e'])) {print $gomi5; $gomimei = "ペット";}
+						if(isset($_POST['east6f'])) {print $gomi6; $gomimei = "プラ";}
+						if(isset($_POST['east6g'])) {print $gomi7; $gomimei = "紙類";}
+						if(isset($_POST['east6h'])) {print $gomi8; $gomimei = "衣類";}
+						?>
+					</td>
+      	</tr>
+				<tr>
+        	<td class="ecTitm" height="250px">曜日</td>
+        	<td height="250px">
+						<form method="POST" action="">
 
-          <input type="hidden" name="week[0]" value="0"/>
-					<input type="checkbox" name="week[0]" value="1">第1日曜日
-					<input type="hidden" name="week[1]" value="0"/>
-					<input type="checkbox" name="week[1]" value="1">第2日曜日
-					<input type="hidden" name="week[2]" value="0"/>
-					<input type="checkbox" name="week[2]" value="1">第3日曜日
-					<input type="hidden" name="week[3]" value="0"/>
-					<input type="checkbox" name="week[3]" value="1">第4日曜日
-					<br>
-					<input type="hidden" name="week[4]" value="0"/>
-					<input type="checkbox" name="week[4]" value="1">第1月曜日
-					<input type="hidden" name="week[5]" value="0"/>
-					<input type="checkbox" name="week[5]" value="1">第2月曜日
-					<input type="hidden" name="week[6]" value="0"/>
-					<input type="checkbox" name="week[6]" value="1">第3月曜日
-					<input type="hidden" name="week[7]" value="0"/>
-					<input type="checkbox" name="week[7]" value="1">第4月曜日
-					<br>
-					<input type="hidden" name="week[8]" value="0"/>
-					<input type="checkbox" name="week[8]" value="1">第1火曜日
-					<input type="hidden" name="week[9]" value="0"/>
-					<input type="checkbox" name="week[9]" value="1">第2火曜日
-					<input type="hidden" name="week[10]" value="0"/>
-					<input type="checkbox" name="week[10]" value="1">第3火曜日
-					<input type="hidden" name="week[11]" value="0"/>
-					<input type="checkbox" name="week[11]" value="1">第4火曜日
-					<br>
-					<input type="hidden" name="week[12]" value="0"/>
-					<input type="checkbox" name="week[12]" value="1">第1水曜日
-					<input type="hidden" name="week[13]" value="0"/>
-					<input type="checkbox" name="week[13]" value="1">第2水曜日
-					<input type="hidden" name="week[14]" value="0"/>
-					<input type="checkbox" name="week[14]" value="1">第3水曜日
-					<input type="hidden" name="week[15]" value="0"/>
-					<input type="checkbox" name="week[15]" value="1">第4水曜日
-					<br>
-					<input type="hidden" name="week[16]" value="0"/>
-					<input type="checkbox" name="week[16]" value="1">第1木曜日
-					<input type="hidden" name="week[17]" value="0"/>
-					<input type="checkbox" name="week[17]" value="1">第2木曜日
-					<input type="hidden" name="week[18]" value="0"/>
-					<input type="checkbox" name="week[18]" value="1">第3木曜日
-					<input type="hidden" name="week[19]" value="0"/>
-					<input type="checkbox" name="week[19]" value="1">第4木曜日
-					<br>
-					<input type="hidden" name="week[20]" value="0"/>
-					<input type="checkbox" name="week[20]" value="1">第1金曜日
-					<input type="hidden" name="week[21]" value="0"/>
-					<input type="checkbox" name="week[21]" value="1">第2金曜日
-					<input type="hidden" name="week[22]" value="0"/>
-					<input type="checkbox" name="week[22]" value="1">第3金曜日
-					<input type="hidden" name="week[23]" value="0"/>
-					<input type="checkbox" name="week[23]" value="1">第4金曜日
-					<br>
-					<input type="hidden" name="week[24]" value="0"/>
-					<input type="checkbox" name="week[24]" value="1">第1土曜日
-					<input type="hidden" name="week[25]" value="0"/>
-					<input type="checkbox" name="week[25]" value="1">第2土曜日
-					<input type="hidden" name="week[26]" value="0"/>
-					<input type="checkbox" name="week[26]" value="1">第3土曜日
-					<input type="hidden" name="week[27]" value="0"/>
-					<input type="checkbox" name="week[27]" value="1">第4土曜日
-
-
-				</td>
-      </tr>
+          	<input type="hidden" name="week[0]" value="0"/>
+						<input type="checkbox" name="week[0]" value="1">第1日曜日
+						<input type="hidden" name="week[1]" value="0"/>
+						<input type="checkbox" name="week[1]" value="1">第2日曜日
+						<input type="hidden" name="week[2]" value="0"/>
+						<input type="checkbox" name="week[2]" value="1">第3日曜日
+						<input type="hidden" name="week[3]" value="0"/>
+						<input type="checkbox" name="week[3]" value="1">第4日曜日
+						<br>
+						<input type="hidden" name="week[4]" value="0"/>
+						<input type="checkbox" name="week[4]" value="1">第1月曜日
+						<input type="hidden" name="week[5]" value="0"/>
+						<input type="checkbox" name="week[5]" value="1">第2月曜日
+						<input type="hidden" name="week[6]" value="0"/>
+						<input type="checkbox" name="week[6]" value="1">第3月曜日
+						<input type="hidden" name="week[7]" value="0"/>
+						<input type="checkbox" name="week[7]" value="1">第4月曜日
+						<br>
+						<input type="hidden" name="week[8]" value="0"/>
+						<input type="checkbox" name="week[8]" value="1">第1火曜日
+						<input type="hidden" name="week[9]" value="0"/>
+						<input type="checkbox" name="week[9]" value="1">第2火曜日
+						<input type="hidden" name="week[10]" value="0"/>
+						<input type="checkbox" name="week[10]" value="1">第3火曜日
+						<input type="hidden" name="week[11]" value="0"/>
+						<input type="checkbox" name="week[11]" value="1">第4火曜日
+						<br>
+						<input type="hidden" name="week[12]" value="0"/>
+						<input type="checkbox" name="week[12]" value="1">第1水曜日
+						<input type="hidden" name="week[13]" value="0"/>
+						<input type="checkbox" name="week[13]" value="1">第2水曜日
+						<input type="hidden" name="week[14]" value="0"/>
+						<input type="checkbox" name="week[14]" value="1">第3水曜日
+						<input type="hidden" name="week[15]" value="0"/>
+						<input type="checkbox" name="week[15]" value="1">第4水曜日
+						<br>
+						<input type="hidden" name="week[16]" value="0"/>
+						<input type="checkbox" name="week[16]" value="1">第1木曜日
+						<input type="hidden" name="week[17]" value="0"/>
+						<input type="checkbox" name="week[17]" value="1">第2木曜日
+						<input type="hidden" name="week[18]" value="0"/>
+						<input type="checkbox" name="week[18]" value="1">第3木曜日
+						<input type="hidden" name="week[19]" value="0"/>
+						<input type="checkbox" name="week[19]" value="1">第4木曜日
+						<br>
+						<input type="hidden" name="week[20]" value="0"/>
+						<input type="checkbox" name="week[20]" value="1">第1金曜日
+						<input type="hidden" name="week[21]" value="0"/>
+						<input type="checkbox" name="week[21]" value="1">第2金曜日
+						<input type="hidden" name="week[22]" value="0"/>
+						<input type="checkbox" name="week[22]" value="1">第3金曜日
+						<input type="hidden" name="week[23]" value="0"/>
+						<input type="checkbox" name="week[23]" value="1">第4金曜日
+						<br>
+						<input type="hidden" name="week[24]" value="0"/>
+						<input type="checkbox" name="week[24]" value="1">第1土曜日
+						<input type="hidden" name="week[25]" value="0"/>
+						<input type="checkbox" name="week[25]" value="1">第2土曜日
+						<input type="hidden" name="week[26]" value="0"/>
+						<input type="checkbox" name="week[26]" value="1">第3土曜日
+						<input type="hidden" name="week[27]" value="0"/>
+						<input type="checkbox" name="week[27]" value="1">第4土曜日
+					</td>
+      	</tr>
       </table>
-    </div>
-		<h4>
-			<a>
-				<input type="hidden" name="chikku" value="<?php echo $chikumei; ?>"/>
-				<input type="hidden" name="gommi" value="<?php echo $gomimei; ?>"/>
-				<input type="submit" name="henkou" value="変更"/>
-			</a>
-		</h4>
-		<!--</form>
-		<form method="POST" action="">-->
-		<h5>
-			<a>
-				<input type="hidden" name="chikku" value="<?php echo $chikumei; ?>"/>
-				<input type="hidden" name="gommi" value="<?php echo $gomimei; ?>"/>
-				<input type="submit" name="sakujo" value="削除"/>
-			</a>
-		</h5>
-		</form>
-	<h6>
-		<a href="Admin_list_cal.php">
-			<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
-		</a>
-	</h6>
+		</div>
+		<div>
+			<h4>
+				<a>
+					<input type="hidden" name="chikku" value="<?php echo $chikumei; ?>"/>
+					<input type="hidden" name="gommi" value="<?php echo $gomimei; ?>"/>
+					<input type="submit" name="henkou" value="変更"/>
+				</a>
+			</h4>
+			<!--</form>
+			<form method="POST" action="">-->
+			<h5>
+				<a>
+					<input type="hidden" name="chikku" value="<?php echo $chikumei; ?>"/>
+					<input type="hidden" name="gommi" value="<?php echo $gomimei; ?>"/>
+					<input type="submit" name="sakujo" value="削除"/>
+				</a>
+			</h5>
+			</form>
+			<h6>
+				<a href="Admin_list_cal.php">
+					<input type="submit" name="modoru" value="カレンダー一覧に戻る"/>
+				</a>
+			</h6>
+		</div>
+	</div>
 
 
     <!-- PAGE TOPに戻るボタン

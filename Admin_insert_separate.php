@@ -26,7 +26,7 @@ if (!isset($_SESSION['ID'])) {
     </div>
 
     <!-- メインコンテンツエリア -->
-    <div class="content">
+    <div class="content" id="Acontgi">
       <!-- ここに各ページの中身いれてください -->
 			<!-- 画面の判定 -->
 			<?php
@@ -82,13 +82,20 @@ if (!isset($_SESSION['ID'])) {
 					$errorMessage = $_SESSION["ERROR"];
 					unset($_SESSION["ERROR"]);
 				}
-				print "<a href=\"Admin_separate_list.php\">ゴミ分別リストに戻る</a>";
-				print "<br>";
-				print "<a href=\"Mypage.php\">マイページに戻る</a>";
-				print "<br>";
+				print "
+				<div class=\"Tcontgi\">
+				<a class=\"glBackB\" href=\"Admin_separate_list.php\">ゴミ分別リストに戻る</a>
+				";
+				// print "<br>";
+				print "<a class=\"Mybutton\" href=\"Mypage.php\">マイページに戻る</a>";
+				print "</div>";
 				print $errorMessage;
 				print "
-				<p>分別追加</p>
+				<div class=\"Mcontgi\">
+				<div class=\"title\">
+					<h2>分別追加</h2>
+				</div>
+				<div class=\"contin\">
 	      <form method=\"POST\" action=\"Admin_insert_separate.php\">
 	        <p>ゴミ名称</p>
 	        <input type=\"text\" name=\"garbage_name\">
@@ -101,6 +108,9 @@ if (!isset($_SESSION['ID'])) {
 	        <br>
 	        <input type=\"submit\" name=\"confirm\" value=\"登録\">
 	      </form>
+				</div>
+				<br><br>
+				</div>
 				";
 			}
 			?>
@@ -142,11 +152,22 @@ if (!isset($_SESSION['ID'])) {
 					header('Location: ./Admin_insert_separate.php');
 					exit();
 	      } else {
-					print "<a href=\"Admin_insert_separate.php\">入力画面に戻る</a>";
-					print "<br>";
-					print "<a href=\"Mypage.php\">マイページに戻る</a>";
-	        print "<p>分別追加</p>";
-	        print "<p>次の通り登録しますか。</p>";
+					print "
+					<div class=\"Tcontgi\">
+					<a class=\"glBackB\" href=\"Admin_insert_separate.php\">入力画面に戻る</a>
+					";
+					// print "<br>";
+					print "<a class=\"Mybutton\" href=\"Mypage.php\">マイページに戻る</a>";
+					print "</div>";
+	        print "
+					<div class=\"Mcontgi\">
+					<div class=\"title\">
+						<h2>分別追加</h2>
+					</div>
+					";
+	        print "
+					<div class=\"contin\">
+					<p>次の通り登録しますか。</p>";
 	        print "<p>ゴミ名称</p>";
 	        print "<p>" . $name . "</p>";
 					print "<p>よみがな</p>";
@@ -164,6 +185,9 @@ if (!isset($_SESSION['ID'])) {
 	          <br>
 	          <input type=\"submit\" name=\"insert\" value=\"登録\">
 	        </form>
+					</div>
+					<br>
+					</div>
 					";
 	      }
 			}

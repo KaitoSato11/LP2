@@ -29,20 +29,23 @@ if (!isset($_SESSION['ID'])) {
 		<!-- メインコンテンツエリア -->
     <div class="content">
       <!-- ここに各ページの中身いれてください -->
-      <div>
-				<h1>完了しました！</h1>
-      <h3><a href="Mypage.php">
-        <input type="submit" value="マイページに戻る"/>
-      </a></h3>
-			<h4><a href="Admin_list_cal.php">
-        <input type="submit" value="カレンダー一覧に戻る"/>
-      </a></h4>
+			<div class="title">
+				<h2>カレンダー編集</h2>
+			</div>
+			<center>
+				<h3>完了しました！</h3>
+      	<h3><a href="Mypage.php">
+      		<input type="submit" value="マイページに戻る"/>
+      	</a></h3>
+				<h4><a href="Admin_list_cal.php">
+      		<input type="submit" value="カレンダー一覧に戻る"/>
+      	</a></h4>
+			</center>
 		</div>
-	</div>
-	<!-- FOOTER -->
-	<div class="footer">
-		<p class="title">GDSS</p>
-		<p class="company">L&P</p>
-	</div>
-</BODY>
+		<!-- FOOTER -->
+		<div class="footer">
+			<p class="title">GDSS</p>
+			<p class="company">L&P</p>
+		</div>
+	</BODY>
 </HTML>

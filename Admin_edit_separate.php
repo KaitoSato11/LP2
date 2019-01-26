@@ -26,7 +26,7 @@ if (!isset($_SESSION['ID'])) {
     </div>
 
     <!-- メインコンテンツエリア -->
-    <div class="content">
+    <div class="content" id="Acontgs">
       <!-- ここに各ページの中身いれてください -->
 			<!-- 画面の判定 -->
 			<?php
@@ -110,13 +110,21 @@ if (!isset($_SESSION['ID'])) {
 					$errorMessage = $_SESSION["ERROR"];
 					unset($_SESSION["ERROR"]);
 				}
-				print "<a href=\"Admin_separate_list.php\">ゴミ分別リストに戻る</a>";
-				print "<br>";
-				print "<a href=\"Mypage.php\">マイページに戻る</a>";
-				print "<br>";
+				print "
+				<div class=\"Tcontgs\">
+				<a class=\"glBackB\" href=\"Admin_separate_list.php\">ゴミ分別リストに戻る</a>";
+				// print "<br>";
+				print "
+				<a class=\"Mybutton\" href=\"Mypage.php\">マイページに戻る</a>
+				</div>";
+				// print "<br>";
 				print $errorMessage;
 				print "
-				<p>分別変更</p>
+				<div class=\"Mcontgs\">
+				<div class=\"title\">
+					<h2>分別追加</h2>
+				</div>
+				<div class=\"contin\">
 	      <form method=\"POST\" action=\"Admin_edit_separate.php\">
 	        <input type=\"hidden\" name=\"id\" value=\"" . $id . "\">
 	        <p>ゴミ名称</p>
@@ -130,6 +138,9 @@ if (!isset($_SESSION['ID'])) {
 	        <br>
 	        <input type=\"submit\" name=\"confirm\" value=\"変更\">
 	      </form>
+				</div>
+				<br>
+				</div>
 				";
 			}
 			?>
@@ -172,19 +183,28 @@ if (!isset($_SESSION['ID'])) {
 					header('Location: ./Admin_edit_separate.php');
 					exit();
 	      } else {
-					print "<a href=\"Admin_edit_separate.php\">入力画面に戻る</a>";
-					print "<br>";
-					print "<a href=\"Mypage.php\">マイページに戻る</a>";
-	        print "<p>分別変更</p>";
-	        print "<p>次の通り変更しますか。</p>";
+					print "
+					<div class=\"Tcontgs\">
+					<a class=\"glBackB\" href=\"Admin_edit_separate.php\">入力画面に戻る</a>";
+					// print "<br>";
+					print "
+					<a class=\"Mybutton\" href=\"Mypage.php\">マイページに戻る</a>
+					</div>";
+	        print "
+					<div class=\"Mcontgs\">
+					<div class=\"title\">
+						<h2>分別追加</h2>
+					</div>
+					<div class=\"contin\">";
+	        print "<p>次の通り変更しますか。</p><br>";
 	        print "<p>ゴミ名称</p>";
-	        print "<p>" . $name . "</p>";
+	        print "<p class=\"elemS\">" . $name . "</p>";
 					print "<p>よみがな</p>";
-	        print "<p>" . $reading . "</p>";
+	        print "<p class=\"elemS\">" . $reading . "</p>";
 	        print "<p>分別</p>";
-	        print "<p>" . $type . "</p>";
+	        print "<p class=\"elemS\">" . $type . "</p>";
 	        print "<p>分別ルール</p>";
-	        print "<p>" . $remarks . "</p>";
+	        print "<p class=\"elemS\">" . $remarks . "</p>";
 	        print "
 					<form method=\"POST\" action=\"Admin_edit_separate.php\">
 	          <input type=\"hidden\" name=\"id\" value=" . $id . ">
@@ -195,6 +215,9 @@ if (!isset($_SESSION['ID'])) {
 	          <br>
 	          <input type=\"submit\" name=\"edit\" value=\"登録\">
 	        </form>
+					</div>
+					<br>
+					</div>
 					";
 	      }
 			}

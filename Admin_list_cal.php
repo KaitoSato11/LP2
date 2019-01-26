@@ -3419,22 +3419,28 @@ $nasi = "回収日なし";
     </div>
 
     <!-- メインコンテンツエリア -->
-    <div class="content">
+    <div class="content" id="Acontcl">
       <!-- ここに各ページの中身いれてください -->
       <div>
-      <h3><a href="Mypage.php">
-        <input type="submit" value="マイページに戻る"/>
-      </a></h3>
+      	<h3><a href="Mypage.php">
+        	<input type="submit" value="マイページに戻る"/>
+      	</a></h3>
+			</div>
 
+			<div class="Mcontcl">
       <form method="POST" action="Admin_edit_cal.php">
-      <table border="1">
-      <tr><td colspan="100%">カレンダー一覧</td></tr>
+      <table class="cledT">
+      <tr><td class="cledtop" colspan="100%">カレンダー一覧</td></tr>
       <tr>
-        <td width="200px">地区名</td>
-        <td width="100px">燃える</td><td width="100px">金属類</td>
-        <td width="100px">ビン類</td><td width="100px">他不燃</td>
-        <td width="100px">ペット</td><td width="100px">プラ</td>
-        <td width="100px">紙類</td><td width="100px">衣類</td>
+        <td class="cleditm" width="200px">地区名</td>
+        <td class="cleditm" width="100px">燃える</td>
+				<td class="cleditm" width="100px">金属類</td>
+        <td class="cleditm" width="100px">ビン類</td>
+				<td class="cleditm" width="100px">他不燃</td>
+        <td class="cleditm" width="100px">ペット</td>
+				<td class="cleditm" width="100px">プラ</td>
+        <td class="cleditm" width="100px">紙類</td>
+				<td class="cleditm" width="100px">衣類</td>
       </tr>
       <tr>
         <td id="east01">東1区</td>
@@ -4129,6 +4135,7 @@ $nasi = "回収日なし";
       </table>
 			</form>
     </div>
+	</div>
 
     <!-- PAGE TOPに戻るボタン
   ぺーじによっては、コメントアウトして消してください -->

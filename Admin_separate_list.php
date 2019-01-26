@@ -26,7 +26,7 @@ if (!isset($_SESSION['ID'])) {
     </div>
 
     <!-- メインコンテンツエリア -->
-    <div class="content" id="Acontul">
+    <div class="content" id="Acontgl">
       <!-- ここに各ページの中身いれてください -->
 			<!-- 画面の判定 -->
 			<?php

@@ -102,22 +102,32 @@ if (!isset($_SESSION['ID'])) {
 			<!-- 削除確認画面 -->
 			<?php
 			if ($check == 1) {
-				print "<a href=\"Admin_separate_list.php\">ゴミ分別リストに戻る</a>";
-				print "<br>";
-				print "<a href=\"Mypage.php\">マイページに戻る</a>";
-				print "<p>分別削除</p>";
+				print "
+				<div class=\"Tcontgl\">
+				<a class=\"glBackB\" href=\"Admin_separate_list.php\">ゴミ分別リストに戻る</a>";
+				// print "<br>";
+				print "<a class=\"Mybutton\" href=\"Mypage.php\">マイページに戻る</a>
+				</div>";
+				print "
+				<div class=\"Mcontgl\">
+				<div class=\"title\">
+					<h2>分別追加</h2>
+				</div>
+				<div class=\"contin\">";
 				print "<p>次の項目を削除しますか。</p>";
 				print "<p>ゴミ名称</p>";
-				print "<p>" . $name . "</p>";
+				print "<p class=\"elemS\">" . $name . "</p>";
 				print "<p>分別</p>";
-				print "<p>" . $type . "</p>";
+				print "<p class=\"elemS\">" . $type . "</p>";
 				print "<p>分別ルール</p>";
-				print "<p>" . $remarks . "</p>";
+				print "<p class=\"elemS\">" . $remarks . "</p>";
 				print "
 	      <form method=\"POST\" action=\"Admin_separate_list.php\">
 	        <input type=\"hidden\" name=\"id\" value=\"" . $id . "\">
 	        <input type=\"submit\" name=\"delete\" value=\"削除\">
 	      </form>
+				</div><br>
+				</div>
 				";
 			}
 			?>

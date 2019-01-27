@@ -45,7 +45,7 @@ $db['dbname'] = DB_NAME;
         <h2></h2>
       </div>
       <div class="Title">
-        <h2>粗大・特別ゴミルール</h2>
+        <h2>ゴミ分別ルール</h2>
       </div>
       <table class="Normal_rule" border="1" width="100%">
         <tr>
@@ -56,9 +56,9 @@ $db['dbname'] = DB_NAME;
           <th width="8%">使用できるゴミ袋</th>
         </tr>
         <tr>
-          <td rowspan="9" width="2%">ゴミステーションに出せるもの</td>
+          <td rowspan="9" width="2%"><b>ゴミステーションに出せるもの</b></td>
           <td colspan="2">
-            燃えるゴミ
+            <b>燃えるゴミ</b>
           </td>
           <td colspan="2">
             <div class="Zu1">
@@ -78,8 +78,8 @@ $db['dbname'] = DB_NAME;
             大・中・小</td>
         </tr>
         <tr>
-          <td rowspan="7">資源ゴミ</td>
-          <td>金属類</td>
+          <td rowspan="7"><b>資源ゴミ</b></td>
+          <td><b>金属類</b></td>
 
           <td valign="top">
             <p class="center"><b>金属類(飲料用の缶)アルミ缶・スチール缶</b></p>
@@ -113,7 +113,7 @@ $db['dbname'] = DB_NAME;
         </tr>
         <tr>
           <td>
-            ビン類
+            <b>ビン類</b>
           </td>
           <td>
             <p class="center"><b>透明ビン・茶色ビン・その他の色のビン(食品用・飲み薬用)</b></p>
@@ -147,7 +147,7 @@ $db['dbname'] = DB_NAME;
         </tr>
 
         <tr>
-          <td>その他の不燃物</td>
+          <td><b>その他の不燃物</b></td>
           <td colspan="2">
             <div class="Zu1">
               <img src="./img/mato11.png" alt="まとめ11">
@@ -165,7 +165,7 @@ $db['dbname'] = DB_NAME;
         </tr>
 
         <tr>
-          <td>ペットボトル</td>
+          <td><b>ペットボトル</b></td>
           <td colspan="2">
             <div class="Zu1">
               <img src="./img/mato7.png" alt="まとめ7">
@@ -182,7 +182,7 @@ $db['dbname'] = DB_NAME;
         </tr>
 
         <tr>
-          <td>容器包装プラスチック</td>
+          <td><b>容器包装プラスチック</b></td>
 
           <td colspan="2">
             <div class="Zu1">
@@ -201,7 +201,7 @@ $db['dbname'] = DB_NAME;
         </tr>
 
         <tr>
-          <td>紙類</td>
+          <td><b>紙類</b></td>
 
           <td colspan="2">
             <div class="Zu1">
@@ -218,7 +218,7 @@ $db['dbname'] = DB_NAME;
         </tr>
 
         <tr>
-          <td>衣類</td>
+          <td><b>衣類</b></td>
 
           <td colspan="2">
             <div class="Zu1">

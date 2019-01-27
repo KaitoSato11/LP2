@@ -56,8 +56,8 @@ $db['dbname'] = DB_NAME;
           <th width="30%">注意点</th>
         </tr>
         <tr>
-          <td rowspan="8" width="2%" align="center">直接持ち込むもの</td>
-          <td align="center">水銀を含むゴミ</td>
+          <td rowspan="8" width="2%" align="center"><b>直接持ち込むもの</b></td>
+          <td align="center"><b>水銀を含むゴミ</b></td>
           <td align="center">随時持ち込み</td>
           <td colspan="3" style="border-right: hidden">
             <div class="Zu1">
@@ -83,15 +83,15 @@ $db['dbname'] = DB_NAME;
           </td>
         </tr>
         <tr>
-          <td rowspan="7" align="center">粗大ごみ</td>
+          <td rowspan="7" align="center"><b>粗大ごみ</b></td>
           <td rowspan="7" align="center">毎月第3回目の日曜日と翌日の月曜日(香北町永野粗大ごみ置き場については第3回目の日曜日のみ)<br>
             9:30 ~ 12:00
             13:00 ~ 16:00
           </td>
 
-          <td width="15%" align="center">〇持ち込めるもの</td>
-          <td width="15%" align="center">×持ち込めないもの</td>
-          <td colspan="3" align="center">持ち込み手数料(1台につき)</td>
+          <td width="15%" align="center"><b>〇持ち込めるもの</b></td>
+          <td width="15%" align="center"><b>×持ち込めないもの</b></td>
+          <td colspan="3" align="center"><b>持ち込み手数料(1台につき)</b></td>
           <td rowspan="7">
             <ul>
               <li><b>持ち込み場所・日時</b></li>
@@ -172,7 +172,7 @@ $db['dbname'] = DB_NAME;
         </tr>
 
         <tr>
-          <td>最大積載量501kg以上1,000以下の車両による搬入の車両による搬入</td>
+          <td>最大積載量501kg以上1,000以下の車両による搬入</td>
           <td>4100円</td>
           <td>
             <div class="Zu2">
